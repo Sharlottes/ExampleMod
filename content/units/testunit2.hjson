@@ -1,0 +1,48 @@
+type: MechUnit
+speed: 0.3
+health: 1000
+weapons: [
+    {
+        name: testlightning1
+        top: false
+        shake: 2.2
+        shootY: 5
+        x: 9
+        y: 2
+        reload: 38
+        shots: 2
+        inaccuracy: 35
+        shotDelay: 0.5
+        spacing: 0
+        recoil: 2.5
+        ejectEffect: none
+        shootSound: spark
+        bullet: {
+            type: LightningBulletType
+            damage: 15
+            lightningLength: 7
+            lightningLengthRand: 7
+            lightningColor: f3e979
+        }
+    },
+    {
+        name: testbeam1
+        top: false
+        shake: 2
+        shootY: 4
+        x: 7
+        y: -2
+        reload: 50
+        recoil: 4
+        shootSound: laser
+        bullet: {
+            type: LaserBulletType
+            damage: 50
+            recoil: 1
+            sideAngle: 45
+            sideWidth: 1
+            sideLength: 70
+            colors: [f3e979,66f3e979,ffffff]
+        }
+    }
+]

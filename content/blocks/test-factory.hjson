@@ -1,0 +1,31 @@
+type: UnitFactory
+name: test
+
+health: 500
+size: 3
+
+requirements: [
+    silicon/10
+    copper/5
+    lead/5
+]
+
+plans: [
+    {
+        unit: testunit1
+        requirements: [
+            copper/1
+        ]
+        time: 100
+    },
+    {
+        unit: testunit2
+        requirements: [
+            copper/3
+            silicon/5
+        ]
+        time: 120
+    }
+]
+
+category: units

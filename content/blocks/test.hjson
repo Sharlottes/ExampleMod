@@ -1,0 +1,29 @@
+type: ItemTurret
+name: test
+
+requirements: [
+  lead/5
+]
+
+ammoTypes: {
+  scrap: flakScrap
+  lead: flakLead
+  metaglass: flakGlass
+}
+
+reloadTime: 18
+range: 160
+size: 2
+burstSpacing: 100
+shots: 2
+targetGround: true
+targetAir: true
+
+recoilAmount: 2
+rotateSpeed: 15
+inaccuracy: 17
+shootCone: 35
+health: 1200
+shootSound: shootSnap
+
+category: turret

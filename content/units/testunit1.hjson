@@ -1,0 +1,34 @@
+type: MechUnit
+speed: 0.5
+health: 500
+weapons: [
+    {
+        name: testgun
+        reload: 8
+        x: 9
+        y: 2
+        top: false
+        ejectEffect: shellEjectSmall
+        bullet: standardCopper
+    },
+    {
+        name: testgun2
+        reload: 60
+        shots: 2
+        spacing: 5
+        shake: 2
+        xRand: 3
+        inaccuracy: 10
+        velocityRnd: 0.3
+        x: 0
+        y: -5
+        rotate: true
+        rotateSpeed: 10
+        top: false
+        ejectEffect: shellEjectSmall
+        bullet: artilleryExplosive
+        alternate: false
+        mirror: false
+        shootSound: artillery
+    }
+]
