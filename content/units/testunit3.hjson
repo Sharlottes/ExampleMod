@@ -35,7 +35,7 @@ weapons: [
         shake: 2
         shootY: 4
         reload: 30
-        recoil: 4
+        recoil: 1
         shootSound: laser
         x: 11
         y: -5
@@ -58,6 +58,46 @@ weapons: [
         }
     },
     {
+        name: testgun3
+        reload: 8
+        x: 14
+        y: 3
+        bullet: {
+            type: BasicBulletType
+            backColor: 6d56bf
+            frontColor: bf92f9
+            mixColorFrom: bf92f9
+            mixColorTo: 6d56bf
+            damage: 15
+            speed: 2.5
+            width: 7
+            height: 9
+            lifetime: 60
+            shootEffect: shootSmall
+            smokeEffect: shootSmallSmoke
+        }
+    },
+    {
+        name: testgun3
+        reload: 14
+        x: 12
+        y: 2
+        bullet: {
+            type: BasicBulletType
+            backColor: 6d56bf
+            frontColor: bf92f9
+            mixColorFrom: bf92f9
+            mixColorTo: 6d56bf
+            damage: 25
+            speed: 2.5
+            width: 10
+            height: 12
+            lifetime: 60
+            shootEffect: shootSmall
+            smokeEffect: shootSmallSmoke
+        }
+    },
+    {
         name: testbeam2
         top: true
         shake: 5
@@ -69,7 +109,7 @@ weapons: [
         shots: 1
         recoil: 8
         x: 0
-        y: -14
+        y: -12
         shootSound: laserbig
         bullet: {
             type: RailBulletType
