@@ -33,13 +33,14 @@ weapons: [
         bullet: {
             type: LaserBulletType
             damage: 30
+            width: 30
             legnth: 60
             recoil: 1
             sideAngle: 45
             sideWidth: 1
             sideLength: 20
             colors: [7457ce66, 7457ce, ffffff]
-            lightningSpacing: 20
+            lightningSpacing: 45
             lightningDelay: 1.1
             lightningLengthRand: 15
             lightningColor: bf92f9
@@ -55,16 +56,17 @@ weapons: [
         alternate: false
         rotate: true
         rotateSpeed: 5
-        reload: 90
+        reload: 270
         shots: 1
         recoil: 8
+        x: -2
         y: -5
         shootSound: laserbig
         bullet: {
             type: RailBulletType
             shootEffect: railShoot
             speed: 70
-            lifetime: 5
+            lifetime: 6
             damage: 1500
             hitEffect: mssiveExplosion
             smokeEffect: shootBig2
