@@ -109,7 +109,7 @@ weapons: [
         shots: 1
         recoil: 8
         x: 0
-        y: -12
+        y: -10
         shootSound: laserbig
         bullet: {
             type: RailBulletType
