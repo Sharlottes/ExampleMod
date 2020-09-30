@@ -69,16 +69,18 @@ weapons: [
             trailColor: 62ae7f
             backColor: 62ae7f
             frontColor: 98ffa9
+            mixColorFrom: 98ffa9
+            mixColorTo: 62ae7f
             hitEffect: healWaveDynamic
             despawnEffect: healWaveDynamic
             weaveScale: 6
             weaveMag: 1
             shootEffect: shootHeal
             puddles: 8
-            puddleRange: 7
-            puddleAmount: 8
+            puddleRange: 35
+            puddleAmount: 12
             puddleLiquid: "water"
-            fragBullets: 3
+            fragBullets: 5
             hitColor: 98ffa9
             fragBullet: {
                 type: BombBulletType
@@ -86,7 +88,10 @@ weapons: [
                 height: 14
                 hitEffect: shootHeal
                 damage: 25
-                speed: 28
+                hitColor: 98ffa9
+                backColor: 98ffa9
+                frontColor: 98ffa9
+
             }
         }
     }
