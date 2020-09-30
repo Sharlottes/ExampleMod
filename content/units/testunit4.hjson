@@ -84,7 +84,7 @@ weapons: [
                 type: BombBulletType
                 width: 10
                 height: 14
-                hitEffect:
+                hitEffect: shootHeal
                 damage: 25
                 speed: 28
             }
