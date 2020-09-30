@@ -35,8 +35,14 @@ plans: [
             titanium/15
         ]
         time: 150
+    },
+    {
+        unit: testunit4
+        requirements: [
+            lead/10
+        ]
+        time: 100
     }
-
 ]
 
 category: units
