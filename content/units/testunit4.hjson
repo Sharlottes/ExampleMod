@@ -1,5 +1,5 @@
 type: BuilderMinerPayloadUnit
-minerTier: 2
+mineTier: 2
 health: 500
 armor: 5
 speed: 1.8
@@ -30,6 +30,7 @@ weapons: [
         x: 8
         y: -6
         rotate: true
+        shootSound: spark
         bullet: {
             type: LightningBulletType
             damage: 20
@@ -51,6 +52,7 @@ weapons: [
         velocityRnd: 0.2
         x: 4
         y: 5
+        shootSound: missile
         bullet: {
             type: MissileBulletType
             damage: 24
@@ -61,17 +63,27 @@ weapons: [
             drag: -0.003
             homingRange: 60
             keepVelocity: false
-            splashDmageRadius: 25
+            splashDamageRadius: 25
             splashDamage: 10
             lifetime: 60
             trailColor: 62ae7f
             backColor: 62ae7f
             frontColor: 98ffa9
-            hitEffect: shootHeal
-            despawnEffect: shootHeal
+            hitEffect: healWaveDynamic
+            despawnEffect: healWaveDynamic
             weaveScale: 6
             weaveMag: 1
             shootEffect: shootHeal
+            puddles: 2
+            puddleRange: 3
+            puddleAmount: 6
+            puddleLiquid: {
+                color: 98ffa9
+                flammability: 0.5
+                temperature: 0.5
+                heatCapacity: 0.75
+                viscosity: 0.25
+            }
         }
 
     }
