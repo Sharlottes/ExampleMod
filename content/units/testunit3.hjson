@@ -15,7 +15,7 @@ legBaseOffset: 8
 legExtension: -20
 landShake: 1
 legSpeed: 0.19
-legLengthSc1: 0.93
+legLengthScl: 0.93
 rippleScale: 3
 hovering: true
 
@@ -43,7 +43,7 @@ weapons: [
             type: LaserBulletType
             damage: 30
             width: 30
-            legngth: 60
+            length: 60
             recoil: 1
             sideAngle: 45
             sideWidth: 1
