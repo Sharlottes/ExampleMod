@@ -43,7 +43,7 @@ weapons: [
             type: LaserBulletType
             damage: 30
             width: 30
-            legnth: 60
+            legngth: 60
             recoil: 1
             sideAngle: 45
             sideWidth: 1
