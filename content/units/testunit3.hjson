@@ -59,6 +59,7 @@ weapons: [
         shots: 1
         recoil: 8
         y: -5
+        shootSound: laserbig
         bullet: {
             type: RailBulletType
             shootEffect: railShoot
