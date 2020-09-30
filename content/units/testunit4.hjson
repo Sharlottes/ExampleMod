@@ -77,7 +77,7 @@ weapons: [
             puddles: 8
             puddleRange: 7
             puddleAmount: 8
-            puddleLiquid: water
+            puddleLiquid: "water"
             fragBullets: 3
             hitColor: 98ffa9
             fragBullet: {
