@@ -104,7 +104,7 @@ weapons: [
                     type: ArtilleryBulletType
                     speed: 2.3
                     damage: 30
-                    hitEffect: spaExplosion
+                    hitEffect: sapExplosion
                     knockback: 0.8
                     lifetime: 90
                     width: 20
