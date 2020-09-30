@@ -15,7 +15,7 @@ legBaseOffset: 8
 legExtension: -20
 landShake: 1
 legSpeed: 0.19
-legLenthSc1: 0.93
+legLengthSc1: 0.93
 rippleScale: 3
 hovering: true
 
