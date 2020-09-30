@@ -74,11 +74,20 @@ weapons: [
             weaveScale: 6
             weaveMag: 1
             shootEffect: shootHeal
-            puddles: 2
-            puddleRange: 3
-            puddleAmount: 6
+            puddles: 8
+            puddleRange: 7
+            puddleAmount: 8
             puddleLiquid: water
+            fragBullets: 3
+            hitColor: 98ffa9
+            fragBullet: {
+                type: BombBulletType
+                width: 10
+                height: 14
+                hitEffect:
+                damage: 25
+                speed: 28
+            }
         }
-
     }
 ]
