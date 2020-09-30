@@ -1,0 +1,78 @@
+type: BuilderMinerPayloadUnit
+minerTier: 2
+health: 500
+armor: 5
+speed: 1.8
+accel: 0.06
+drag: 0.017
+lowAltitude: true
+flying: true
+engineOffset: 10.5
+rotateShooting: flase
+hitSize: 15
+engineSize: 3
+payloadCapacity: 4
+buildSpeed: 2.5
+
+weapons: [
+    {
+        name: testshotgun1
+        reload: 38
+        shootY: 2.5
+        top: false
+        shake: 2.2
+        shots: 3
+        inaccuracy: 35
+        shotDelay: 0.5
+        spacing: 0
+        ejectEffect: none
+        recoil: 2.5
+        x: 8
+        y: -6
+        rotate: true
+        bullet: {
+            type: LightningBulletType
+            damage: 20
+            lightningColor: 98ffa9
+            hitColor: 98ffa9
+            lightningLength: 9
+            lightningLengthRand: 7
+            shootEffect: shootHeal
+        }
+
+    }
+    {
+        name: testmissile1
+        reload: 40
+        rotate: true
+        shake: 1
+        shots: 2
+        inaccuracy: 5
+        velocityRnd: 0.2
+        x: 4
+        y: 5
+        bullet: {
+            type: MissileBulletType
+            damage: 24
+            speed: 3
+            width: 8
+            height: 8
+            shrinkY: 0
+            drag: -0.003
+            homingRange: 60
+            keepVelocity: false
+            splashDmageRadius: 25
+            splashDamage: 10
+            lifetime: 60
+            trailColor: 62ae7f
+            backColor: 62ae7f
+            frontColor: 98ffa9
+            hitEffect: shootHeal
+            despawnEffect: shootHeal
+            weaveScale: 6
+            weaveMag: 1
+            shootEffect: shootHeal
+        }
+
+    }
+]
