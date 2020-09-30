@@ -4,7 +4,7 @@ drag: 0.4
 hitSize: 12
 rotateSpeed: 3
 health: 760
-immunitites: [burning, melting]
+immunities: [burning, melting]
 legCount: 6
 legLength: 13
 legTrns: 0.8
@@ -34,7 +34,7 @@ weapons: [
             type: LaserBulletType
             damage: 30
             recoil: 1
-            sideAnge: 25
+            sideAngle: 25
             sideWidth: 1
             sideLength: 30
             colors: [7457ce66, 7457ce, ffffff]
@@ -96,7 +96,7 @@ weapons: [
                 hitShake: 20
 
                 status: sapped
-                statusDuraion: 600
+                statusDuration: 600
                 fragLifeMin: 0.3
                 fragBullets: 9
 
