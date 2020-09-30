@@ -69,8 +69,8 @@ weapons: [
             frontColor: 98ffa9
             mixColorFrom: 98ffa9
             mixColorTo: 62ae7f
-            hitEffect: healWaveDynamic
-            despawnEffect: healWaveDynamic
+            hitEffect: healWave
+            despawnEffect: healWave
             weaveScale: 6
             weaveMag: 1
             shootEffect: shootHeal
