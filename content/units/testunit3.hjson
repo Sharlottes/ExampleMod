@@ -59,7 +59,7 @@ weapons: [
         reload: 270
         shots: 1
         recoil: 8
-        x: -2
+        x: -3
         y: -5
         shootSound: laserbig
         bullet: {
