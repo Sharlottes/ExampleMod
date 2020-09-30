@@ -78,7 +78,7 @@ weapons: [
             puddleRange: 12
             puddleAmount: 50
             puddleLiquid: "water"
-            fragBullets: 5
+            fragBullets: 3
             hitColor: 98ffa9
             fragBullet: {
                 type: BombBulletType
@@ -90,11 +90,11 @@ weapons: [
                 backColor: 98ffa9
                 frontColor: 98ffa9
                 speed: 2
-                splashDamageRadius: 55
-                splashDamage: 55
-                lightning: 3
+                splashDamageRadius: 24
+                splashDamage: 12
+                lightning: 2
                 lightningColor: 98ffa9
-                lightningLength: 7
+                lightningLength: 3
             }
         }
     }
