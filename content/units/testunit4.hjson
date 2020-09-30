@@ -40,8 +40,7 @@ weapons: [
             lightningLengthRand: 7
             shootEffect: shootHeal
         }
-
-    }
+    },
     {
         name: testmissile1
         reload: 40
@@ -76,8 +75,8 @@ weapons: [
             weaveScale: 6
             weaveMag: 1
             shootEffect: shootHeal
-            puddles: 8
-            puddleRange: 35
+            puddles: 16
+            puddleRange: 8
             puddleAmount: 12
             puddleLiquid: "water"
             fragBullets: 5
@@ -91,7 +90,7 @@ weapons: [
                 hitColor: 98ffa9
                 backColor: 98ffa9
                 frontColor: 98ffa9
-
+                speed: 3
             }
         }
     }
