@@ -13,7 +13,6 @@ hitSize: 15
 engineSize: 3
 payloadCapacity: 4
 buildSpeed: 2.5
-
 weapons: [
     {
         name: testshotgun1
@@ -75,9 +74,9 @@ weapons: [
             weaveScale: 6
             weaveMag: 1
             shootEffect: shootHeal
-            puddles: 4
-            puddleRange: 6
-            puddleAmount: 30
+            puddles: 8
+            puddleRange: 12
+            puddleAmount: 50
             puddleLiquid: "water"
             fragBullets: 5
             hitColor: 98ffa9
@@ -91,6 +90,11 @@ weapons: [
                 backColor: 98ffa9
                 frontColor: 98ffa9
                 speed: 2
+                splashDamageRadius: 55
+                splashDamage: 55
+                lightning: 3
+                lightningColor: 98ffa9
+                lightningLength: 7
             }
         }
     }
