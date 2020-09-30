@@ -75,9 +75,9 @@ weapons: [
             weaveScale: 6
             weaveMag: 1
             shootEffect: shootHeal
-            puddles: 16
-            puddleRange: 8
-            puddleAmount: 12
+            puddles: 4
+            puddleRange: 6
+            puddleAmount: 30
             puddleLiquid: "water"
             fragBullets: 5
             hitColor: 98ffa9
@@ -90,7 +90,7 @@ weapons: [
                 hitColor: 98ffa9
                 backColor: 98ffa9
                 frontColor: 98ffa9
-                speed: 3
+                speed: 2
             }
         }
     }
