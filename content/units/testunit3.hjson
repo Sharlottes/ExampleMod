@@ -1,0 +1,131 @@
+type: LegsUnit
+speed: 0.4
+drag: 0.4
+hitSize: 12
+rotateSpeed: 3
+health: 760
+immunitites: [burning, melting]
+legCount: 6
+legLength: 13
+legTrns: 0.8
+legMoveSpace: 1.4
+legBaseOffset: 2
+hovering: true
+armor: 5
+ammoType: power
+
+buildSpeed: 0.75
+
+allowLegStep: true
+visualElevation: 0.3
+groundLayer: 75
+
+weapons: [
+    {
+        name: testbeam3
+        top: false
+        shake: 2
+        shootY: 4
+        reload: 30
+        recoil: 4
+        shootSound: laser
+        x: 9
+        y: -3
+        bullet: {
+            type: LaserBulletType
+            damage: 30
+            recoil: 1
+            sideAnge: 25
+            sideWidth: 1
+            sideLength: 30
+            colors: [7457ce66, 7457ce, ffffff]
+            lightningSpacing: 5
+            lightningDelay: 0.1
+            lightningAngleRand: 0.4
+        }
+    },
+    {
+        name: testbeam2
+        top: true
+        shake: 5
+        mirror: false
+        alternate: false
+        rotate: true
+        rotateSpeed: 5
+        reload: 90
+        shots: 1
+        recoil: 8
+        y: -5
+        bullet: {
+            type: RailBulletType
+            shootEffect: railShoot
+            speed: 70
+            lifetime: 8
+            damage: 1500
+            hitEffect: mssiveExplosion
+            smokeEffect: shootBig2
+            pierceDamageFactor: 0.75
+            hitEffect: sapExplosion
+            updateEffect: sapExplosion
+            pierceEffect: railTrail
+            status: sapped
+            statusDuration: 600
+            fragBullets: 10
+            fragVelocityMin: 0.15
+            fragVelocityMax: 0.5
+            hitColor: bf92f9
+            fragBullet: {
+                type: ArtilleryBulletType
+                damage: 50
+                speed: 3
+                hitEffect: sapExplosion
+                knockback: 0.8
+                lifetime: 80
+                width: 25
+                height: 25
+                collidesTiles: true
+                collides: true
+                ammoMultiplier: 4
+                splashDamageRadius: 90
+                splashDamage: 75
+                backColor: 6d56bf
+                frontColor: bf92f9
+                lightningColor: bf92f9
+                lightning: 5
+                lightningLength: 20
+                smokeEffect: shootBigSmoke2
+                hitShake: 20
+
+                status: sapped
+                statusDuraion: 600
+                fragLifeMin: 0.3
+                fragBullets: 9
+
+                fragBullet: {
+                    type: ArtilleryBulletType
+                    speed: 2.3
+                    damage: 30
+                    hitEffect: spaExplosion
+                    knockback: 0.8
+                    lifetime: 90
+                    width: 20
+                    height: 20
+                    collidesTiles: false
+                    splashDamageRadius: 80
+                    splashDamage: 40
+                    backColor: 6d56bf
+                    frontColor: bf92f9
+                    lightningColor: bf92f9
+                    lightning: 2
+                    lightningLength: 5
+                    smokeEffect: shootBigSmoke2
+                    hitShake: 5
+
+                    status: sapped
+                    statusDuration: 600
+                }
+            }
+        }
+
+    }
+]
