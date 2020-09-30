@@ -12,7 +12,6 @@ legMoveSpace: 1.4
 legBaseOffset: 2
 hovering: true
 armor: 5
-ammoType: power
 
 buildSpeed: 0.75
 
