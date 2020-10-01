@@ -70,7 +70,7 @@ weapons: [
             backColor: 62ae7f
             frontColor: 98ffa9
             mixColorFrom: 98ffa9
-            mixColorTo: 62ae7f
+            mixColorTo: db401c
             hitEffect: healWave
             despawnEffect: healWave
             weaveScale: 6
@@ -86,11 +86,11 @@ weapons: [
                 type: BombBulletType
                 width: 10
                 height: 14
-                hitEffect: shootHeal
+                hitEffect: explosion
                 damage: 30
-                hitColor: 98ffa9
-                backColor: 98ffa9
-                frontColor: 98ffa9
+                hitColor: db401c
+                backColor: db401c
+                frontColor: db401c
                 speed: 2
                 splashDamageRadius: 24
                 splashDamage: 15
