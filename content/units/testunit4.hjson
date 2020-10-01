@@ -53,7 +53,7 @@ weapons: [
         shootSound: missile
         bullet: {
             type: MissileBulletType
-            damage: 24
+            damage: 35
             speed: 3
             width: 8
             height: 8
@@ -85,16 +85,16 @@ weapons: [
                 width: 10
                 height: 14
                 hitEffect: shootHeal
-                damage: 25
+                damage: 30
                 hitColor: 98ffa9
                 backColor: 98ffa9
                 frontColor: 98ffa9
                 speed: 2
                 splashDamageRadius: 24
-                splashDamage: 12
+                splashDamage: 15
                 lightning: 2
                 lightningColor: 98ffa9
-                lightningLength: 3
+                lightningLength: 4
             }
         }
     }
