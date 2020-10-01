@@ -137,7 +137,7 @@ weapons: [
             shootEffect: shootHeal
             puddles: 8
             puddleRange: 12
-            puddleAmount: 50
+            puddleAmount: 24
             puddleLiquid: "oil"
             fragBullets: 3
             hitColor: 98ffa9
@@ -156,7 +156,7 @@ weapons: [
                 lightning: 2
                 lightningColor: db401c
                 lightningLength: 4
-                incendAmount: 6
+                incendAmount: 4
                 incendSpread: 15
                 incendChance: 1
             }
