@@ -170,11 +170,11 @@ weapons: [
         rotate: true
         reload: 180
         recoil: 5
-        shootShake: 4
+        shake: 4
         cooldownTime: 0.009
         shots: 1
         shootCone: 2
-        shootSound: shootBig
+        shootSound: laser
         firstShotDelay: 80
         x: 17
         y: -8
