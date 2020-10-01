@@ -207,7 +207,6 @@ weapons: [
                 height: 30
 
                 range: 30
-                ignoreRotation: true
 
                 backColor: 98ffa9
                 frontColor: ffffff
