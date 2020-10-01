@@ -191,6 +191,8 @@ weapons: [
             smokeEffect: smokeCloud
             trailEffect: heal
             despawnEffect: greenBomb
+            splashDamageRadius: 90
+            splashDamage: 100
         }
     }
 ]

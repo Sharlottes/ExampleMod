@@ -5,7 +5,6 @@ health: 30000
 hitSize: 21
 armor: 13
 range: 240
-
 rotateSpeed: 1.9
 immunities: [burning, melting]
 legCount: 8
@@ -84,7 +83,6 @@ weapons: [
         reload: 14
         x: 12
         y: 2
-        top: true
         bullet: {
             type: BasicBulletType
             backColor: 6d56bf
