@@ -102,11 +102,11 @@ weapons: [
     },
     {
         name: testmissile1
-        reload: 90
+        reload: 45
         rotate: true
         top: true
         shake: 1
-        shots: 2
+        shots: 1
         inaccuracy: 5
         velocityRnd: 0.2
         x: 5
@@ -205,6 +205,7 @@ weapons: [
                 sprite: large-bomb
                 width: 30
                 height: 30
+
                 range: 30
                 backColor: 98ffa9
                 frontColor: ffffff
