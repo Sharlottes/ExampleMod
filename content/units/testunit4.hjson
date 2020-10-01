@@ -188,7 +188,7 @@ weapons: [
             shootEffect: greenLaserCharge
             hitEffect: healWave
             smokeEffect: smokeCloud
-            trailEffect: Effect
+            trailEffect: heal
             despawnEffect: greenBomb
         }
     }
