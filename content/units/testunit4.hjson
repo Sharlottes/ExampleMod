@@ -11,7 +11,7 @@ engineOffset: 10.5
 rotateShooting: flase
 hitSize: 15
 engineSize: 3
-payloadCapacity: 4
+payloadCapacity: 100
 buildSpeed: 2.5
 weapons: [
     {
