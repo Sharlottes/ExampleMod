@@ -77,8 +77,8 @@ weapons: [
             weaveMag: 1
             shootEffect: shootHeal
             puddles: 8
-            puddleRange: 12
-            puddleAmount: 50
+            puddleRange: 8
+            puddleAmount: 10
             puddleLiquid: "oil"
             fragBullets: 3
             hitColor: 98ffa9
@@ -95,7 +95,7 @@ weapons: [
                 splashDamageRadius: 24
                 splashDamage: 15
                 lightning: 2
-                lightningColor: 98ffa9
+                lightningColor: db401c
                 lightningLength: 4
             }
         }
@@ -136,8 +136,8 @@ weapons: [
             weaveMag: 1
             shootEffect: shootHeal
             puddles: 8
-            puddleRange: 12
-            puddleAmount: 24
+            puddleRange: 8
+            puddleAmount: 10
             puddleLiquid: "oil"
             fragBullets: 3
             hitColor: 98ffa9
@@ -194,7 +194,7 @@ weapons: [
             trailEffect: heal
             despawnEffect: greenBomb
             splashDamageRadius: 90
-            splashDamage: 100
+            splashDamage: 500
         }
     }
 ]
