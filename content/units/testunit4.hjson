@@ -213,7 +213,6 @@ weapons: [
                 frontColor: ffffff
                 mixColorTo: ffffff
 
-                shootCone: 180
                 despawnShake: 4
 
                 collidesAir: false
