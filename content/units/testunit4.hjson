@@ -1,6 +1,6 @@
 type: BuilderMinerPayloadUnit
 mineTier: 2
-health: 500
+health: 9000
 armor: 5
 speed: 1.8
 accel: 0.06
@@ -193,7 +193,7 @@ weapons: [
             smokeEffect: smokeCloud
             trailEffect: heal
             despawnEffect: greenBomb
-            splashDamageRadius: 90
+            splashDamageRadius: 0
             splashDamage: 500
         }
     }
