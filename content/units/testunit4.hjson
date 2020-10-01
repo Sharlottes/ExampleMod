@@ -5,6 +5,7 @@ armor: 5
 speed: 1.8
 accel: 0.06
 drag: 0.017
+range: 160
 lowAltitude: true
 flying: true
 engineOffset: 10.5

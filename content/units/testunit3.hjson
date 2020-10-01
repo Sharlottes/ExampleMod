@@ -4,6 +4,7 @@ speed: 0.5
 health: 30000
 hitSize: 21
 armor: 13
+range: 240
 
 rotateSpeed: 1.9
 immunities: [burning, melting]
