@@ -190,11 +190,49 @@ weapons: [
             hitShake: 6
             shootEffect: greenLaserCharge
             hitEffect: healWave
+            hitColor: 98ffa9
             smokeEffect: smokeCloud
             trailEffect: heal
             despawnEffect: greenBomb
             splashDamageRadius: 0
             splashDamage: 500
+            fragBullets: 4
+            fragBullet: {
+                type: BasicBulletType
+                sprite: large-bomb
+                width: 30
+                height: 30
+
+                range: 30
+                ignoreRotation: true
+
+                backColor: 98ffa9
+                frontColor: ffffff
+                mixColorTo: ffffff
+
+                shootCone: 180
+                ejectEffect: none
+                shootSound: none
+                despawnShake: 4
+
+                collidesAir: false
+
+                lifetime: 70
+
+                despawnEffect: greenBomb
+                hitEffect: massiveExplosion
+                keepVelocity: false
+                spin: 2
+
+                shrinkX: 0.7
+                shrinkY: 0.7
+
+                speed: 0.001
+                collides: false
+
+                splashDamage: 240
+                splashDamageRadius: 115
+            }
         }
     }
 ]
