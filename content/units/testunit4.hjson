@@ -205,30 +205,21 @@ weapons: [
                 sprite: large-bomb
                 width: 30
                 height: 30
-
                 range: 30
-
                 backColor: 98ffa9
                 frontColor: ffffff
                 mixColorTo: ffffff
-
                 despawnShake: 4
-
                 collidesAir: false
-
                 lifetime: 70
-
                 despawnEffect: greenBomb
                 hitEffect: massiveExplosion
                 keepVelocity: false
                 spin: 2
-
                 shrinkX: 0.7
                 shrinkY: 0.7
-
                 speed: 3
                 collides: false
-
                 splashDamage: 240
                 splashDamageRadius: 115
             }
