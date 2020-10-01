@@ -214,7 +214,6 @@ weapons: [
                 mixColorTo: ffffff
 
                 shootCone: 180
-                ejectEffect: none
                 despawnShake: 4
 
                 collidesAir: false
