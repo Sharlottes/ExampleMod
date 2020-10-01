@@ -9,7 +9,7 @@ weapons: [
         shootY: 5
         x: 9
         y: 2
-        reload: 38
+        reload: 30
         shots: 2
         inaccuracy: 35
         shotDelay: 0.5
@@ -30,9 +30,9 @@ weapons: [
         top: false
         shake: 2
         shootY: 4
-        x: 7
+        x: 6
         y: -2
-        reload: 50
+        reload: 90
         recoil: 4
         shootSound: laser
         bullet: {

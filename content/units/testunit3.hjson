@@ -37,7 +37,7 @@ weapons: [
         reload: 30
         recoil: 1
         shootSound: laser
-        x: 11
+        x: 10
         y: -5
         bullet: {
             type: LaserBulletType
@@ -98,7 +98,7 @@ weapons: [
         }
     },
     {
-        name: testbeam2
+        name: testrailgun1
         top: true
         shake: 5
         mirror: false
