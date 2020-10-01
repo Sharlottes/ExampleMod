@@ -215,7 +215,6 @@ weapons: [
 
                 shootCone: 180
                 ejectEffect: none
-                shootSound: none
                 despawnShake: 4
 
                 collidesAir: false
