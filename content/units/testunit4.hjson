@@ -183,7 +183,8 @@ weapons: [
             trailSpacing: 20
             damage: 1500
             tileDamageMultiplier: 0.75
-            speed: 500
+            speed: 750
+            lifetime: 150
             hitShake: 6
             shootEffect: greenLaserCharge
             hitEffect: healWave
