@@ -161,5 +161,35 @@ weapons: [
                 incendChance: 1
             }
         }
+    },
+    {
+        name: testpointgun1
+        mirror: true
+        top: true
+        rotateSpeed: 2.5
+        rotate: true
+        reload: 180
+        recoil: 5
+        shootShake: 4
+        cooldownTime: 0.009
+        shots: 1
+        shootCone: 2
+        shootSound: shootBig
+        firstShotDelay: 80
+        x: 17
+        y: -8
+        bullet: {
+            type: PointBulletType
+            trailSpacing: 20
+            damage: 1500
+            tileDamageMultiplier: 0.75
+            speed: 500
+            hitShake: 6
+            shootEffect: greenLaserCharge
+            hitEffect: healWave
+            smokeEffect: smokeCloud
+            trailEffect: Effect
+            despawnEffect: greenBomb
+        }
     }
 ]
