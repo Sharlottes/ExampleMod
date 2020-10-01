@@ -108,7 +108,7 @@ weapons: [
         alternate: false
         rotate: true
         rotateSpeed: 5
-        reload: 270
+        reload: 300
         shots: 1
         recoil: 8
         x: 0
