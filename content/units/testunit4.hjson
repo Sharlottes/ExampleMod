@@ -17,7 +17,7 @@ buildSpeed: 2.5
 weapons: [
     {
         name: testshotgun1
-        reload: 38
+        reload: 40
         shootY: 2.5
         top: true
         shake: 2.2
@@ -43,7 +43,7 @@ weapons: [
     },
     {
         name: testmissile1
-        reload: 40
+        reload: 90
         rotate: true
         top: true
         shake: 1
