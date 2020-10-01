@@ -175,6 +175,8 @@ weapons: [
         shots: 1
         shootCone: 2
         shootSound: laser
+        shootStatus: unmoving
+        shootStatusDuration: 120
         firstShotDelay: 80
         x: 17
         y: -8
