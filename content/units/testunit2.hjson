@@ -4,7 +4,7 @@ health: 1000
 weapons: [
     {
         name: testlightning1
-        top: false
+        top: true
         shake: 2.2
         shootY: 5
         x: 9
@@ -27,7 +27,7 @@ weapons: [
     },
     {
         name: testbeam1
-        top: false
+        top: true
         shake: 2
         shootY: 4
         x: 6

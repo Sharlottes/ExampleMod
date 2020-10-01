@@ -18,7 +18,7 @@ weapons: [
         name: testshotgun1
         reload: 38
         shootY: 2.5
-        top: false
+        top: true
         shake: 2.2
         shots: 3
         inaccuracy: 35
@@ -44,6 +44,7 @@ weapons: [
         name: testmissile1
         reload: 40
         rotate: true
+        top: true
         shake: 1
         shots: 2
         inaccuracy: 5

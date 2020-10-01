@@ -7,7 +7,7 @@ weapons: [
         reload: 8
         x: 9
         y: 2
-        top: false
+        top: true
         ejectEffect: shellEjectSmall
         bullet: standardCopper
     },
@@ -24,7 +24,7 @@ weapons: [
         y: -5
         rotate: true
         rotateSpeed: 10
-        top: false
+        top: true
         ejectEffect: shellEjectSmall
         bullet: artilleryExplosive
         alternate: false
