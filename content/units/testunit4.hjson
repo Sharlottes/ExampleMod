@@ -60,7 +60,7 @@ weapons: [
             height: 8
             shrinkY: 0
             drag: -0.003
-            homingRange: 60
+            homingRange: 180
             keepVelocity: false
             splashDamageRadius: 25
             splashDamage: 10
