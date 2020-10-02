@@ -7,7 +7,7 @@ requirements: [
   lead/30
 ]
 
-displaySize: 308
+displaySize: 256
 size: 10
 
 category: logic
