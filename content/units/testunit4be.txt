@@ -29,7 +29,6 @@ weapons: [
         recoil: 2.5
         x: 20
         y: 0
-        rotate: true
         shootSound: spark
         bullet: {
             type: LightningBulletType
