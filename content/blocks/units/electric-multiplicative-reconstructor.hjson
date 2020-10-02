@@ -1,0 +1,47 @@
+type: Reconstructor
+name: electric T3 reconstructor
+
+health: 500
+size: 3
+itemCapacity: 30
+liquidCapacity: 50
+constructTime: 300
+
+requirements: [
+    silicon/10
+    copper/5
+    lead/5
+]
+
+upgrades: [
+    [fortress, electricfortress]
+    [heavyfortress, electricfortress]
+]
+
+consumes: {
+    items: {
+        items: [
+            {
+                item: copper
+                amount: 3
+            },
+            {
+                item: lead
+                amount: 5
+            },
+            silicon/10
+        ]
+    }
+    liquid: {
+        liquid: water
+        amount: 0.5
+        timePeriod: 60
+    }
+    power: {
+        usage: 5
+        capacity: 500
+        buffered: false
+    }
+}
+category: units
+

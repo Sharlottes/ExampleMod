@@ -1,8 +1,10 @@
-type: UnitFactory
-name: heavy reconstructor
+type: Reconstructor
+name: heavy T2 reconstructor
 
 health: 500
 size: 3
+itemCapacity: 20
+constructTime: 120
 
 requirements: [
     silicon/10
@@ -12,10 +14,7 @@ requirements: [
 
 upgrades: [
     [dagger, heavydagger],
-    [electricdagger, heavydagger],
-    [fortress, heavyfortress],
-    [electricfortress, heavyfortress],
-    [heavydagger, heavyfortress]
+    [electricdagger, heavydagger]
 ]
 
 consumes: {
@@ -28,16 +27,12 @@ consumes: {
             {
                 item: lead
                 amount: 5
-            }
+            },
+            silicon/10
         ]
     }
-    liquid: {
-        liquid: water
-        amount: 10
-        timePeriod: 60
-    }
     power: {
-        usage: 100
+        usage: 2
         capacity: 500
         buffered: false
     }

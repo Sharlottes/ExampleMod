@@ -1,0 +1,40 @@
+type: Reconstructor
+name: electric T2 reconstructor
+
+health: 500
+size: 3
+itemCapacity: 20
+constructTime: 120
+
+requirements: [
+silicon/10
+copper/5
+lead/5
+]
+
+upgrades: [
+    [dagger, electricdagger],
+    [heavydagger, electricdagger]
+]
+
+consumes: {
+    items: {
+        items: [
+            {
+                item: copper
+                amount: 3
+            },
+            {
+                item: lead
+                amount: 5
+            },
+            silicon/10
+        ]
+    }
+    power: {
+        usage: 2
+        capacity: 500
+        buffered: false
+    }
+}
+category: units

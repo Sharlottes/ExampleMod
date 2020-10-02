@@ -1,23 +1,21 @@
 type: Reconstructor
-name: electric reconstructor
+name: heavy T3 reconstructor
 
 health: 500
 size: 3
-
-constructTime: 60
+itemCapacity: 30
+liquidCapacity: 50
+constructTime: 300
 
 requirements: [
-silicon/10
-copper/5
-lead/5
+    silicon/10
+    copper/5
+    lead/5
 ]
 
 upgrades: [
-    [dagger, electricdagger],
-    [heavydagger, electricdagger],
-    [fortress, electricfortress],
-    [heavyfortress, electricfortress],
-    [electricdagger, electricfortress]
+    [fortress, heavyfortress]
+    [electricfortress, heavyfortress]
 ]
 
 consumes: {
@@ -30,18 +28,20 @@ consumes: {
             {
                 item: lead
                 amount: 5
-            }
+            },
+            silicon/10
         ]
     }
     liquid: {
         liquid: water
-        amount: 10
+        amount: 0.5
         timePeriod: 60
     }
     power: {
-        usage: 100
+        usage: 5
         capacity: 500
         buffered: false
     }
 }
 category: units
+
