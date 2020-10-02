@@ -181,7 +181,7 @@ weapons: [
         x: 17
         y: -8
         bullet: {
-            type: RailRBulletType
+            type: RailBulletType
 
             damage: 1500
             tileDamageMultiplier: 0.75
