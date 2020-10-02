@@ -6,6 +6,6 @@ requirements: [
         titanium/20
 ]
 
-conOverdrive: false
+canOverdrive: false
 
 category: distribution
