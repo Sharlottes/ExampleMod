@@ -1,0 +1,11 @@
+type: PayloadRouter
+
+requirements: [
+  graphite/40
+  copper/50
+  titanium/25
+]
+
+conOverdrive: false
+
+category: distribution

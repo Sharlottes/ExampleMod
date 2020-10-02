@@ -1,0 +1,11 @@
+type: PayloadConveyor
+
+requirements: [
+        graphite/30
+        copper/50
+        titanium/20
+]
+
+conOverdrive: false
+
+category: distribution
