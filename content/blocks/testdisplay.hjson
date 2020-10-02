@@ -8,6 +8,6 @@ requirements: [
 ]
 
 displaySize: 256
-size: 10
+size: 8
 
 category: logic
