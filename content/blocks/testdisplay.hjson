@@ -1,0 +1,13 @@
+type: LogicDisplay
+name: test display
+
+requirements: [
+  silicon/10
+  titanium/15
+  lead/30
+]
+
+displaySize: 344
+
+
+category: logic

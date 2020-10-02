@@ -1,11 +1,11 @@
 type: MechUnit
-name: heavydagger
+name: heavy dagger
 speed: 0.5
 health: 250
 weapons: [
     {
         name: heavy-small-gun1
-        reload: 7
+        reload: 9
         x: 4
         y: 2
         top: false
@@ -22,7 +22,7 @@ weapons: [
             inaccuracy: 3
             lifetime: 60
             sprite: bullet
-            incendAmount: 3
+            incendAmount: 2
             incendSpread: 4
             splashDamageRadius: 12
             splashDamage: 4

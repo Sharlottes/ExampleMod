@@ -1,5 +1,5 @@
 type: MechUnit
-name: heavyfortress
+name: heavy fortress
 speed: 0.5
 health: 500
 range: 80
