@@ -14,7 +14,8 @@ lead/5
 
 upgrades: [
     [dagger, electricdagger],
-    [heavydagger, electricdagger]
+    [heavydagger, electricdagger],
+    [electricdagger, electricfortress]
 ]
 
 consumes: {
