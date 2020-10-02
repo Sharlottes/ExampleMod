@@ -1,0 +1,29 @@
+type: MechUnit
+name: electric dagger
+speed: 0.4
+health: 300
+weapons: [
+    {
+        name: electric-small-gun1
+        top: false
+        x: 4
+        y: 2
+        reload: 15
+        bullet: {
+            type: BasicBulletType
+            damage: 15
+            speed: 4.25
+            width: 6
+            height: 8
+            frontColor: f3e979
+            backColor: f3e97966
+            lifetime: 80
+            sprite: bullet
+            lightningColor: f3e979
+            lightning: 2
+            lightningLength: 5
+            lightningLengthRand: 7
+            lightningDamage: 5
+        }
+    }
+]

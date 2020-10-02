@@ -19,6 +19,14 @@ plans: [
         time: 100
     },
     {
+        unit: electricdagger
+        requirements: [
+            silicon/1
+            lead/3
+        ]
+        time: 100
+    },
+    {
         unit: heavyfortress
         requirements: [
             copper/1
