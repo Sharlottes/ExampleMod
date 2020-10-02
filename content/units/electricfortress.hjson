@@ -4,7 +4,7 @@ health: 1000
 range: 80
 weapons: [
     {
-        name: testlightning1
+        name: electric-small-shotgun1
         top: true
         shake: 2.2
         shootY: 5
@@ -27,7 +27,7 @@ weapons: [
         }
     },
     {
-        name: testbeam1
+        name: electric-middle-laser1
         top: true
         shake: 2
         shootY: 4

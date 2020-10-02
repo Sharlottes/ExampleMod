@@ -12,36 +12,26 @@ requirements: [
 
 plans: [
     {
-        unit: testunit1
+        unit: heavydagger
+        requirements: [
+            silicon/1
+        ]
+        time: 100
+    },
+    {
+        unit: heavyfortress
         requirements: [
             copper/1
         ]
         time: 100
     },
     {
-        unit: testunit2
+        unit: electricfortress
         requirements: [
             copper/3
             silicon/5
         ]
         time: 120
-    },
-    {
-        unit: testunit3
-        requirements: [
-            copper/3
-            silicon/5
-            lead/10
-            titanium/15
-        ]
-        time: 150
-    },
-    {
-        unit: testunit4
-        requirements: [
-            lead/10
-        ]
-        time: 100
     }
 ]
 

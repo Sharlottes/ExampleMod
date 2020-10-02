@@ -1,0 +1,31 @@
+type: MechUnit
+name: heavydagger
+speed: 0.5
+health: 250
+weapons: [
+    {
+        name: heavy-small-gun1
+        reload: 7
+        x: 4
+        y: 2
+        top: false
+        ejectEffect: shellEjectSmall
+        bullet: {
+            type: BasicBulletType
+            damage: 11
+            speed: 3.2
+            width: 10
+            height: 12
+            frontColor: f8ad42
+            backColor: f68021
+            status: burning
+            inaccuracy: 3
+            lifetime: 60
+            sprite: bullet
+            incendAmount: 3
+            incendSpread: 4
+            splashDamageRadius: 12
+            splashDamage: 4
+        }
+    }
+]
