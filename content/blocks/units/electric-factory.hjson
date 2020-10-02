@@ -1,0 +1,32 @@
+type: UnitFactory
+name: test
+
+health: 500
+size: 3
+
+requirements: [
+    silicon/10
+    copper/5
+    lead/5
+]
+
+plans: [
+    {
+        unit: electricdagger
+        requirements: [
+            silicon/1
+            lead/3
+        ]
+        time: 100
+    },
+    {
+        unit: electricfortress
+        requirements: [
+            copper/3
+            silicon/5
+        ]
+        time: 120
+    }
+]
+
+category: units
