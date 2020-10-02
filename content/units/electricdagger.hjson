@@ -17,7 +17,7 @@ weapons: [
             height: 8
             frontColor: f3e979
             backColor: f3e97966
-            lifetime: 80
+            lifetime: 50
             sprite: bullet
             lightningColor: f3e979
             lightning: 2
