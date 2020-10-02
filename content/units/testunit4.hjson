@@ -229,10 +229,11 @@ weapons: [
 ]
 abilities: [
     {
-        abilities: UnitSpawnAbility
-        type: dagger
-        spawnX: 0
-        spawnY: -5
+        type: UnitSpawnAbility
+        radius: 90
+        regen: 0.3
+        max: 750
+        ccooldown: 480
     }
 
 ]
