@@ -227,14 +227,4 @@ weapons: [
         }
     }
 ]
-abilities: [
-    {
-        type: UnitSpawnAbility
-        radius: 90
-        regen: 0.3
-        max: 750
-        ccooldown: 480
-    }
-
-]
 
