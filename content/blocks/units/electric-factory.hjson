@@ -18,14 +18,6 @@ plans: [
             lead/3
         ]
         time: 100
-    },
-    {
-        unit: electricfortress
-        requirements: [
-            copper/3
-            silicon/5
-        ]
-        time: 120
     }
 ]
 

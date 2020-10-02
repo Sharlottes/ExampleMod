@@ -17,13 +17,6 @@ plans: [
             silicon/1
         ]
         time: 100
-    },
-    {
-        unit: heavyfortress
-        requirements: [
-            copper/1
-        ]
-        time: 100
     }
 ]
 
