@@ -13,8 +13,9 @@ requirements: [
 ]
 
 upgrades: [
-    [dagger, heavydagger],
-    [electricdagger, heavydagger]
+    [dagger, heavyfortress],
+    [heavydagger, heavyfortress],
+    [electricdagger, heavyfortress]
 ]
 
 consumes: {
