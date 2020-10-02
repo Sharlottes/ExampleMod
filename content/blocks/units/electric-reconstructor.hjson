@@ -21,17 +21,18 @@ upgrades: [
 ]
 
 consumes: {
-    items: [
-        {
-            item: copper
-            amount: 3
-        },
-        {
-            item: lead
-            amount: 5
-        },
-        silicon/10
-    ]
+    items: {
+        items: [
+            {
+                item: copper
+                amount: 3
+            },
+            {
+                item: lead
+                amount: 5
+            }
+        ]
+    }
     liquid: {
         liquid: water
         amount: 10
