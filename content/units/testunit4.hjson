@@ -229,7 +229,7 @@ weapons: [
 ]
 abilities: [
     {
-        type: UnitSpawnAbility
+        depression: UnitSpawnAbility
         type: dagger
         spawnX: 0
         spawnY: -5
