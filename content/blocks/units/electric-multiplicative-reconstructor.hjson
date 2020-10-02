@@ -2,7 +2,7 @@ type: Reconstructor
 name: electric T3 reconstructor
 
 health: 500
-size: 3
+size: 5
 itemCapacity: 30
 liquidCapacity: 50
 constructTime: 300
