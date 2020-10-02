@@ -161,6 +161,70 @@ weapons: [
                 incendChance: 1
             }
         }
+    },
+    {
+        name: testpointgun1
+        mirror: true
+        top: true
+        rotateSpeed: 2.5
+        rotate: true
+        reload: 180
+        recoil: 5
+        shake: 4
+        cooldownTime: 0.009
+        shots: 1
+        shootCone: 2
+        shootSound: laser
+        shootStatus: unmoving
+        shootStatusDuration: 120
+        firstShotDelay: 80
+        x: 17
+        y: -8
+        bullet: {
+            type: PointBulletType
+            trailSpacing: 20
+            damage: 1500
+            tileDamageMultiplier: 0.75
+            speed: 750
+            lifetime: 150
+            hitShake: 6
+            shootEffect: greenLaserCharge
+            hitEffect: healWave
+            hitColor: 98ffa9
+            smokeEffect: smokeCloud
+            trailEffect: heal
+            despawnEffect: greenBomb
+            splashDamageRadius: 0
+            splashDamage: 500
+            fragBullets: 5
+            fragLifeMin: 0.3
+            fragVelocityMin: 0.15
+            fragVelocityMax: 0.5
+            fragBullet: {
+                type: BasicBulletType
+                sprite: large-bomb
+                width: 30
+                height: 30
+
+                range: 30
+                backColor: 98ffa9
+                frontColor: ffffff
+                mixColorTo: ffffff
+                despawnShake: 4
+                collidesAir: false
+                lifetime: 70
+                despawnEffect: greenBomb
+                hitEffect: massiveExplosion
+                keepVelocity: false
+                spin: 2
+                shrinkX: 0.7
+                shrinkY: 0.7
+                speed: 3
+                collides: false
+                splashDamage: 240
+                splashDamageRadius: 115
+            }
+        }
     }
 ]
 
