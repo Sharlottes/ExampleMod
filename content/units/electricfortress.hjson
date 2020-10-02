@@ -1,4 +1,5 @@
 type: MechUnit
+name: electricfortress
 speed: 0.3
 health: 1000
 range: 80
