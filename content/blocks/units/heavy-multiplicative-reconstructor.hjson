@@ -1,5 +1,4 @@
 type: Reconstructor
-name: heavy T3 reconstructor
 
 health: 500
 size: 5
@@ -14,9 +13,7 @@ requirements: [
 ]
 
 upgrades: [
-    [fortress, heavyfortress],
-    [electricfortress, heavyfortress],
-    [heavydagger, heavyfortress]
+    [heavymace, heavyfortress]
 ]
 
 consumes: {

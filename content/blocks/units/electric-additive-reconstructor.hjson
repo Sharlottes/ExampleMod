@@ -1,5 +1,4 @@
 type: Reconstructor
-name: electric T2 reconstructor
 
 health: 500
 size: 3
@@ -13,9 +12,7 @@ lead/5
 ]
 
 upgrades: [
-    [dagger, electricdagger],
-    [heavydagger, electricdagger],
-    [electricdagger, electricfortress]
+    [electricdagger, electricmace]
 ]
 
 consumes: {

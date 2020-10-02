@@ -1,5 +1,4 @@
 type: Reconstructor
-name: heavy T2 reconstructor
 
 health: 500
 size: 3
@@ -13,9 +12,7 @@ requirements: [
 ]
 
 upgrades: [
-    [dagger, heavydagger],
-    [electricdagger, heavydagger],
-    [heavydagger, heavyfortress]
+    [heavydagger, heavymace]
 ]
 
 consumes: {

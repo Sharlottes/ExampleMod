@@ -1,5 +1,4 @@
 type: Reconstructor
-name: electric T3 reconstructor
 
 health: 500
 size: 5
@@ -14,10 +13,7 @@ requirements: [
 ]
 
 upgrades: [
-    [fortress, electricfortress],
-    [heavyfortress, electricfortress],
-    [electricdagger, electricfortress]
-
+    [electricmace, electricfortress]
 ]
 
 consumes: {
