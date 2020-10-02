@@ -181,8 +181,8 @@ weapons: [
         x: 17
         y: -8
         bullet: {
-            type: PointBulletType
-            trailSpacing: 20
+            type: RailRBulletType
+
             damage: 1500
             tileDamageMultiplier: 0.75
             speed: 750
