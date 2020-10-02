@@ -1,9 +1,10 @@
 type: PayloadRouter
 
+moveTime: 40
 requirements: [
-  graphite/40
-  copper/50
-  titanium/25
+    graphite/40
+    copper/50
+    titanium/25
 ]
 
 canOverdrive: false
