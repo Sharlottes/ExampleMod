@@ -1,5 +1,5 @@
 type: UnitFactory
-name: test
+name: electric factory
 
 health: 500
 size: 3

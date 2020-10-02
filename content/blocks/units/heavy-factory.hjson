@@ -1,5 +1,5 @@
 type: UnitFactory
-name: test
+name: heavy factor
 
 health: 500
 size: 3

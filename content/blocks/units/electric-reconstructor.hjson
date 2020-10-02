@@ -1,0 +1,46 @@
+type: Reconstructor
+name: electric reconstructor
+
+health: 500
+size: 3
+
+constructTime: 60
+
+requirements: [
+silicon/10
+copper/5
+lead/5
+]
+
+upgrades: [
+    [dagger, electricdagger],
+    [heavydagger, electricdagger],
+    [fortress, electricfortress],
+    [heavyfortress, electricfortress],
+    [electricdagger, electricfortress]
+]
+
+consumes: {
+    items: [
+        {
+            item: copper
+            amount: 3
+        },
+        {
+            item: lead
+            amount: 5
+        },
+        silicon/10
+    ]
+    liquid: {
+        liquid: water
+        amount: 10
+        timePeriod: 60
+    }
+    power: {
+        usage: 100
+        capacity: 500
+        buffered: false
+    }
+}
+category: units
