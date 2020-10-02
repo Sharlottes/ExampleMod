@@ -1,7 +1,6 @@
 type: MechUnit
-name: electric dagger
-speed: 0.4
-health: 300
+speed: 0.45
+health: 250
 weapons: [
     {
         name: electric-small-gun1

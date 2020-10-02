@@ -1,7 +1,8 @@
 type: MechUnit
 name: heavy dagger
-speed: 0.5
-health: 250
+speed: 0.45
+health: 300
+armor: 2
 weapons: [
     {
         name: heavy-small-gun1

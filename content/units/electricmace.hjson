@@ -1,0 +1,29 @@
+type: MechUnit
+speed: 0.45
+health: 300
+range: 48
+armor: 3
+weapons: [
+    {
+        name: electric-small-shotgun1
+        top: true
+        shake: 1.5
+        shootY: 5
+        reload: 45
+        shots: 2
+        inaccuracy: 35
+        shotDelay: 0.75
+        spacing: 0
+        recoil: 1.5
+        ejectEffect: none
+        shootSound: spark
+        bullet: {
+            type: LightningBulletType
+            damage: 15
+            lightningLength: 8
+            lightningLengthRand: 7
+            lightningColor: f3e979
+            lightning: 3
+        }
+    }
+]

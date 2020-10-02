@@ -1,8 +1,8 @@
 type: MechUnit
-name: electric fortress
 speed: 0.3
 health: 1000
 range: 120
+rotateSpeed: 2.85
 weapons: [
     {
         name: electric-small-shotgun1

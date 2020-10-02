@@ -1,8 +1,8 @@
 type: MechUnit
-name: heavy fortress
 speed: 0.5
 health: 500
 range: 80
+rotateSpeed: 2.7
 weapons: [
     {
         name: heavy-middle-gun1
@@ -12,14 +12,13 @@ weapons: [
         top: true
         ejectEffect: shellEjectSmall
         bullet: standardIncendiary
-},
+    },
     {
-        name: heavy-middile-artillery1
+        name: heavy-middle-artillery1
         reload: 60
         shots: 2
         spacing: 5
         shake: 2
-        xRand: 3
         inaccuracy: 10
         velocityRnd: 0.3
         x: 0
