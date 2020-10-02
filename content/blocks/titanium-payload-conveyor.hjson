@@ -1,6 +1,7 @@
 type: PayloadConveyor
 
 moveTime: 40
+moveForce: 120
 requirements: [
         graphite/30
         copper/50

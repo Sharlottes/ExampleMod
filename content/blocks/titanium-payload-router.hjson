@@ -1,6 +1,7 @@
 type: PayloadRouter
 
 moveTime: 40
+moveForce: 120
 requirements: [
     graphite/40
     copper/50
