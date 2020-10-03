@@ -29,4 +29,4 @@ consumes: {
     power: 1.5
 }
 
-research: commandCenter
+research: command-center
