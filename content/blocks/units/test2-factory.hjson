@@ -29,7 +29,7 @@ plans: [
         time: 100
     },
     {
-        unit: testunit4
+        unit: testunit1
         requirements: [
             titanium/10
         ]
