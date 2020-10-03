@@ -23,7 +23,6 @@ weapons: [
         reload: 110
         rotate: true
         rotateSpeed: 1.4
-        shootY: 15
         recoil: 12
         shake: 10
         cooldownTime: 120
@@ -50,7 +49,7 @@ weapons: [
 
             splashDamageRadius: 40
             splashDamage: 500
-
+            colors: [98ffa933, 98ffa97f, 98ffa9, 98ffa9ff, ffffff]
             fragBullets: 10
             fragLifeMin: 0.3
             fragVelocityMin: 0.1
