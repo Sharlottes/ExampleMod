@@ -14,7 +14,7 @@ consumes: {
         liquid: cryofluid
         amount: 0.08
     }
-    power: 5
+    power: 50
 }
 
 instructionsPerTick: 40

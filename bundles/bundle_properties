@@ -8,6 +8,7 @@ block.testmod-spored-factory.name = spored factory
 block.testmod-spored-additive-reconstructor.name = spored T2 reconstructor
 block.testmod-spored-multiplicative-reconstructor.name = spored T3 reconstructor
 block.testmod-testdisplay.name =  test display
+block.testmod-power-processor.name = power processor
 block.testmod-floating-conveyor.name = floating conveyor
 block.testmod-titanium-payload-conveyor.name = titanium payload conveyor
 block.testmod-titanium-payload-router.name = titanium payload router
