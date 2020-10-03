@@ -23,7 +23,7 @@ consumes: {
                 amount: 40
             },
             {
-                item: graphte
+                item: graphite
                 amount: 40
             },
             silicon/30
