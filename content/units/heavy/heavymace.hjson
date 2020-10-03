@@ -3,6 +3,7 @@ speed: 0.4
 health: 600
 armor: 6
 targetAir: false
+range: 40
 weapons: [
     {
         name: heavy-middle-gun1
