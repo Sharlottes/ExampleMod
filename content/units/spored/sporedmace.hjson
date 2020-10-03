@@ -5,36 +5,23 @@ armor: 6
 targetAir: false
 weapons: [
     {
-        name: heavy-middle-gun1
-        reload: 75
+        name: spored-small-beam1
+        reload: 9
         top: false
-        ejectEffect: shellEjectSmall
-        shake: 1.25
-        recoil: 2
-        spacing: 5
-        inaccuracy: 10
-        velocityRnd: 0.3
+        shots: 3
+        spacing: 2
         alternate: true
         mirror: true
-        shootSound: artillery
         bullet: {
-            type: ArtilleryBulletType
-            damage: 8
-            speed: 2
-            width: 14
-            height: 14
-            frontColor: fff8e8
-            backColor: f9c27a
-            collides: true
-            collidesTiles: true
-            lifetime: 110
-            splashDamageRadius: 24
-            splashDamage: 38
-            homingRange: 40
-            homingPower: 1
-            trailColor: f9c27a
-            hitEffect: blastExplosion
-            despawnEffect: blastExplosion
+            type: SapBulletType
+            sapStrength: 0.6
+            length: 40
+            damage: 25
+            width: 0.4
+            lifetime: 30
+            shootEffect: shootSmall
+            hitColor: bf92f9
+            color: bf92f9
         }
     }
 ]
