@@ -1,0 +1,26 @@
+type: LogicBlock
+
+requirements: [
+    lead: 1000
+    silicon: 350
+    metaglass: 300
+    graphite: 300
+    thorium: 400
+    surgealloy: 150
+]
+
+consumes: {
+    liquid: {
+        liquid: cryofluid
+        amount: 0.08
+    }
+    power: 5
+}
+
+instructionsPerTick: 40
+range: 800
+size: 3
+
+hasLiquids: true
+hasPower: true
+category: logic
