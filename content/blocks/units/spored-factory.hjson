@@ -1,0 +1,25 @@
+type: UnitFactory
+
+health: 550
+size: 3
+
+requirements: [
+    silicon/8
+    copper/5
+    lead/2
+    spore-pod/3
+]
+
+plans: [
+    {
+        unit: sporeddagger
+        requirements: [
+            silicon/1
+            lead/3
+            spore-pod/1
+        ]
+        time: 100
+    }
+]
+
+category: units
