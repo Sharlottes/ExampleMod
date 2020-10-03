@@ -50,7 +50,7 @@ weapons: [
 
             splashDamageRadius: 40
             splashDamage: 500
-            colors: [98ffa933, 98ffa97f, 98ffa9, 98ffa9ff, ffffff]
+            colors: [98ffa933, 98ffa97f, 98ffa9ff, ffffff]
 
             fragBullets: 10
             fragLifeMin: 0.3
