@@ -20,7 +20,7 @@ weapons: [
         mirror: false
         top: false
         shake: 4
-        shootY: 13
+        shootY: 20
         x: 0
         y: 0
 
@@ -56,8 +56,8 @@ weapons: [
     },
     {
         name: testrailgun2
-        x: 0
-        y: -4
+        x: 15
+        y: 0
         reload: 110
         rotate: true
         rotateSpeed: 1.4
