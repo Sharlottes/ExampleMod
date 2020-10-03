@@ -32,7 +32,7 @@ weapons: [
         firstShotDelay: 90
         shootStatus: slow
         shootStatusDuration: 180
-
+        shootY: -7
         bullet: {
             type: ContinuousLaserBulletType
             length: 160
