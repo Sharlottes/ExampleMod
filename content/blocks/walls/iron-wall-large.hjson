@@ -5,6 +5,6 @@ health: 1400
 requirements: [
   iron/24
 ]
-
+size: 2
 solid: false
 category: defense
