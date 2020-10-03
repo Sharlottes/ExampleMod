@@ -27,6 +27,13 @@ plans: [
             lead/10
         ]
         time: 100
+    },
+    {
+        unit: testunit4
+        requirements: [
+            titanium/10
+        ]
+        time: 100
     }
 ]
 
