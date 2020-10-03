@@ -11,7 +11,7 @@ requirements: [
     silicon/1000
     titanium/700
     thorium/1400
-    spore-pod/250
+    spore-pod/240
 ]
 
 upgrades: [
