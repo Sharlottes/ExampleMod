@@ -19,15 +19,12 @@ weapons: [
     {
         name: test
         x: 0
-        y: -20
-        firstShotDelay: 180
+        y: -12
         shootY: 10
         recoil: 6
         shake: 10
         rotate: false
         mirror: false
-        shootStatus: unmoving
-        shootStatusDuration: 120
         bullet: {
             type: RailBulletType
             damage: 2000
@@ -37,7 +34,7 @@ weapons: [
             hitShake: 6
             hitColor: 98ffa9
             hitEffect: healWave
-            shootEffect: greenLaserCharge
+            shootEffect: massiveExplosion
             smokeEffect: smokeCloud
             despawnEffect: greenBomb
             trailEffect: greenBomb
