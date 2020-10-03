@@ -10,6 +10,7 @@ weapons: [
         y: 2
         top: false
         shots: 2
+        spacing: 2
         ejectEffect: shellEjectSmall
         bullet: {
             type: BasicBulletType

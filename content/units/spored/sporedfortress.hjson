@@ -11,6 +11,7 @@ weapons: [
         y: 2
         top: false
         shots: 4
+        spacing: 3
         ejectEffect: shellEjectSmall
         bullet: {
             type: BasicBulletType
@@ -27,22 +28,26 @@ weapons: [
         }
     },
     {
-        name: heavy-middle-artillery1
-        reload: 60
-        shots: 2
-        spacing: 5
-        shake: 2
-        inaccuracy: 10
-        velocityRnd: 0.3
-        x: 0
-        y: -5
-        rotate: true
-        rotateSpeed: 10
-        top: true
+        name: spored-small-gun1
+        reload: 15
+        x: 7
+        y: 1
+        top: false
+        shots: 4
+        spacing: 3
         ejectEffect: shellEjectSmall
-        bullet: artilleryExplosive
-        alternate: false
-        mirror: false
-        shootSound: artillery
+        bullet: {
+            type: BasicBulletType
+            damage: 14
+            speed: 3
+            width: 6
+            height: 16
+            frontColor: bf92f9
+            backColor: 6d56bf
+            status: sapped
+            inaccuracy: 5
+            lifetime: 60
+            sprite: bullet
+        }
     }
 ]
