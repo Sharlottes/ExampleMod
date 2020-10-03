@@ -6,7 +6,7 @@ requirements: [
     metaglass/300
     graphite/300
     thorium/400
-    surgealloy/150
+    surge-alloy/150
 ]
 
 consumes: {
