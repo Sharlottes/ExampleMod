@@ -17,6 +17,7 @@ destructibleWreck: false
 
 weapons: [
     {
+        name: testlaserr
         mirror: false
         top: false
         shake: 4

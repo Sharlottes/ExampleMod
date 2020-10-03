@@ -1,0 +1,31 @@
+type: GenericCrafter
+
+health: 380
+size: 3
+
+hasItems: true
+hasPower: true
+itemCapacity: 20
+
+requirements: [
+  copper/125
+  graphite/80
+  titanium/40
+]
+
+consumes: {
+  power: 0.45
+  items: {
+    items: [
+      sand/3
+      coal/2
+      scrap/3
+    ]
+  }
+}
+outputItem: pyratite/2
+
+craftTime: 39.6
+craftEffect: melting
+
+category: crafting

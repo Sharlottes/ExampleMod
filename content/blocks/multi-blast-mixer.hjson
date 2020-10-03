@@ -1,0 +1,30 @@
+type: GenericCrafter
+
+health: 380
+size: 3
+
+hasItems: true
+hasPower: true
+itemCapacity: 20
+
+requirements: [
+  lead/130
+  titanium/40
+  thorium/25
+]
+
+consumes: {
+  power: 0.6
+  items: {
+    items: [
+      pyratite/2
+      spore-pod/3
+    ]
+  }
+}
+outputItem: blast-compound/2
+
+craftTime: 40
+craftEffect: blastExplosion
+
+category: crafting
