@@ -19,34 +19,38 @@ weapons: [
     {
         name: test22
         x: 0
-        y: -4
+        y: -15
         reload: 110
         rotate: true
         rotateSpeed: 1.4
         shootY: 15
         recoil: 12
         shake: 10
-        occlusion: 50
-        cooldownTime: 90
+        cooldownTime: 120
         mirror: false
+        shootSound: laser
+        continuous: true
+        firstShotDelay: 90
+        shootStatus: slow
+        shootStatusDuration: 180
         bullet: {
-            type: RailBulletType
+            type: ContinuousLaserBulletType
+            length: 160
+            drawSize: 420
             damage: 2000
             speed: 70
-            lifetime: 8
+            lifetime: 160
             hitShake: 6
+            shake: 2
             hitColor: 98ffa9
             hitEffect: healWave
-            pierceEffect: hitMeltHeal
-            shootEffect: massiveExplosion
+            shootEffect: greenLaserCharge
             smokeEffect: smokeCloud
             despawnEffect: greenBomb
-            trailEffect: greenBomb
-            trailColor: 98ffa9
-            trailChance: 0.4
-            trailParam: 6
-            splashDamageRadius: 0
+
+            splashDamageRadius: 40
             splashDamage: 500
+
             fragBullets: 10
             fragLifeMin: 0.3
             fragVelocityMin: 0.1
