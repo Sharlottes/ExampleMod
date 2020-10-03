@@ -1,0 +1,11 @@
+type: Wall
+
+health: 350
+
+requirements: [
+  iron/6
+]
+
+soild: false
+category: defense
+
