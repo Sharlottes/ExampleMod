@@ -7,9 +7,11 @@ liquidCapacity: 50
 constructTime: 300
 
 requirements: [
-    silicon/10
-    copper/5
-    lead/5
+    lead/1300
+    silicon/900
+    titanium/600
+    thorium/1300
+    graphite/500
 ]
 
 upgrades: [
@@ -20,14 +22,14 @@ consumes: {
     items: {
         items: [
             {
-                item: copper
-                amount: 3
+                item: titanium
+                amount: 180
             },
             {
-                item: lead
-                amount: 5
+                item: graphite
+                amount: 80
             },
-            silicon/10
+            silicon/220
         ]
     }
     liquid: {
@@ -35,11 +37,7 @@ consumes: {
         amount: 0.5
         timePeriod: 60
     }
-    power: {
-        usage: 5
-        capacity: 500
-        buffered: false
-    }
+    power: 6.5
 }
 category: units
-
+research: heavy-additive-reconstructor

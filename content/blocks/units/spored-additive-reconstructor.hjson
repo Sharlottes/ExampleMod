@@ -3,12 +3,12 @@ type: Reconstructor
 health: 500
 size: 3
 itemCapacity: 20
-constructTime: 120
+constructTime: 800
 
 requirements: [
-    silicon/10
-    copper/5
-    lead/5
+    copper/320
+    lead/240
+    silicon/180
 ]
 
 upgrades: [
@@ -19,21 +19,17 @@ consumes: {
     items: {
         items: [
             {
-                item: copper
-                amount: 3
+                item: lead
+                amount: 45
             },
             {
-                item: lead
-                amount: 5
+                item: spore-pod
+                amount: 20
             },
-            silicon/10
+            silicon/35
         ]
     }
-    power: {
-        usage: 2
-        capacity: 500
-        buffered: false
-    }
+    power: 2
 }
 category: units
-
+research: spored-factory

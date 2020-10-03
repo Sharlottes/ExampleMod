@@ -3,12 +3,12 @@ type: Reconstructor
 health: 500
 size: 3
 itemCapacity: 20
-constructTime: 120
+constructTime: 700
 
 requirements: [
-    silicon/10
-    copper/5
-    lead/5
+    copper/320
+    lead/240
+    silicon/180
 ]
 
 upgrades: [
@@ -19,21 +19,18 @@ consumes: {
     items: {
         items: [
             {
-                item: copper
-                amount: 3
+                item: lead
+                amount: 40
             },
             {
-                item: lead
-                amount: 5
+                item: graphte
+                amount: 40
             },
-            silicon/10
+            silicon/30
         ]
     }
-    power: {
-        usage: 2
-        capacity: 500
-        buffered: false
-    }
+    power: 2.5
 }
-category: units
 
+category: units
+research: heavy-factory

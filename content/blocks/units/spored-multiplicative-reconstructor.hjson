@@ -7,9 +7,11 @@ liquidCapacity: 50
 constructTime: 300
 
 requirements: [
-    silicon/10
-    copper/5
-    lead/5
+    lead/1400
+    silicon/1000
+    titanium/700
+    thorium/1400
+    spore-pod/250
 ]
 
 upgrades: [
@@ -20,14 +22,14 @@ consumes: {
     items: {
         items: [
             {
-                item: copper
-                amount: 3
+                item: titanium
+                amount: 190
             },
             {
-                item: lead
-                amount: 5
+                item: spore-pod
+                amount: 50
             },
-            silicon/10
+            silicon/250
         ]
     }
     liquid: {
@@ -35,11 +37,7 @@ consumes: {
         amount: 0.5
         timePeriod: 60
     }
-    power: {
-        usage: 5
-        capacity: 500
-        buffered: false
-    }
+    power: 6
 }
 category: units
-
+research: spored-additive-reconstructor

@@ -2,22 +2,30 @@ type: UnitFactory
 
 health: 500
 size: 3
+itemCapacity: 30
 
 requirements: [
-    silicon/10
-    copper/5
-    lead/5
+    copper/100
+    lead/250
+    silicon/200
+    metaglass/140
 ]
 
 plans: [
     {
         unit: electricdagger
         requirements: [
-            silicon/1
-            lead/3
+            silicon/20
+            lead/20
         ]
-        time: 100
+        time: 1200
     }
 ]
 
 category: units
+
+consumes: {
+    power: 2.5
+}
+
+research: commandCenter

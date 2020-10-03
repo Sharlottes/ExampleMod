@@ -2,13 +2,13 @@ type: Reconstructor
 
 health: 500
 size: 3
-itemCapacity: 20
-constructTime: 120
+itemCapacity: 50
+constructTime: 900
 
 requirements: [
-silicon/10
-copper/5
-lead/5
+    copper/350
+    lead/260
+    silicon/200
 ]
 
 upgrades: [
@@ -19,20 +19,18 @@ consumes: {
     items: {
         items: [
             {
-                item: copper
-                amount: 3
+                item: lead
+                amount: 50
             },
             {
-                item: lead
-                amount: 5
+                item: metaglass
+                amount: 50
             },
-            silicon/10
+            silicon/40
         ]
     }
-    power: {
-        usage: 2
-        capacity: 500
-        buffered: false
-    }
+    power: 3
 }
+
 category: units
+research: electric-factory
