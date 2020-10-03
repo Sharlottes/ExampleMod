@@ -1,12 +1,12 @@
 type: LogicBlock
 
 requirements: [
-    lead: 1000
-    silicon: 350
-    metaglass: 300
-    graphite: 300
-    thorium: 400
-    surgealloy: 150
+    lead/1000
+    silicon/350
+    metaglass/300
+    graphite/300
+    thorium/400
+    surgealloy/150
 ]
 
 consumes: {
