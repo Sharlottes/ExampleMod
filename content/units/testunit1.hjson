@@ -9,7 +9,7 @@ lowAltitude: true
 flying: true
 engineOffset: 4
 rotateShooting: flase
-hitSize: 56
+hitSize: 48
 engineSize: 7.5
 payloadCapacity: 1000
 buildSpeed: 5
@@ -22,7 +22,7 @@ weapons: [
         shake: 4
         shootY: 20
         x: 0
-        y: 0
+        y: 5
 
         firstShotDelay: 99
 
@@ -47,8 +47,6 @@ weapons: [
             incendChance: 0.05
             incendSpread: 5
             incendAmount: 1
-
-            colors: [98ffa933, 98ffa97f, 98ffa9ff, ffffff]
         }
 
         shootStatus: slow
@@ -70,8 +68,8 @@ weapons: [
         bullet: {
             type: RailBulletType
             damage: 2000
-            speed: 70
-            lifetime: 8
+            speed: 50
+            lifetime: 6
             hitShake: 6
             hitColor: 98ffa9
             hitEffect: healWave
