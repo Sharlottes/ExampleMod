@@ -11,7 +11,7 @@ displayedSpeed: 9
 requirements: [
   copper/3
   graphite/2
-  pet/1
+  metaglass/1
 ]
 
 category: distribution
