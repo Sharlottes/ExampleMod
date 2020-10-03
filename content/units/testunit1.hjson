@@ -32,6 +32,7 @@ weapons: [
         firstShotDelay: 90
         shootStatus: slow
         shootStatusDuration: 180
+
         bullet: {
             type: ContinuousLaserBulletType
             length: 160
@@ -50,6 +51,7 @@ weapons: [
             splashDamageRadius: 40
             splashDamage: 500
             colors: [98ffa933, 98ffa97f, 98ffa9, 98ffa9ff, ffffff]
+
             fragBullets: 10
             fragLifeMin: 0.3
             fragVelocityMin: 0.1
