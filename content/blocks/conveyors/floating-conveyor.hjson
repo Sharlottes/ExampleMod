@@ -1,0 +1,20 @@
+type: Conveyor
+
+health: 250
+
+hasItems: true
+itemCapacity: 4
+
+speed: 0.06
+displayedSpeed: 9
+
+requirements: [
+  copper/3
+  graphite/2
+  pet/1
+]
+
+category: distribution
+
+requiresWater: true
+placeableLiquid: true

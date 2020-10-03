@@ -10,7 +10,7 @@ lowAltitude: true
 flying: true
 engineOffset: 10.5
 rotateShooting: flase
-hitSize: 15
+hitSize: 32
 engineSize: 3
 payloadCapacity: 500
 buildSpeed: 2.5
