@@ -7,9 +7,9 @@ accel: 0.05
 drag: 0.045
 lowAltitude: true
 flying: true
-engineOffset: 15
+engineOffset: 4
 rotateShooting: flase
-hitSize: 64
+hitSize: 56
 engineSize: 7.5
 payloadCapacity: 1000
 buildSpeed: 5
@@ -17,7 +17,7 @@ destructibleWreck: false
 
 weapons: [
     {
-        name: test
+        name: test22
         x: 0
         y: -12
         shootY: 10
@@ -28,7 +28,6 @@ weapons: [
         bullet: {
             type: RailBulletType
             damage: 2000
-            tileDamageMultiplier: 0.75
             speed: 750
             lifetime: 150
             hitShake: 6
