@@ -1,6 +1,6 @@
 type: MechUnit
 speed: 0.3
-health: 1000
+health: 500
 range: 120
 rotateSpeed: 2.85
 weapons: [

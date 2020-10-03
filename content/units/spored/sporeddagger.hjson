@@ -4,7 +4,7 @@ health: 300
 armor: 1
 weapons: [
     {
-        name: heavy-small-gun1
+        name: spored-small-gun1
         reload: 15
         x: 4
         y: 2

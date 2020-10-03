@@ -1,17 +1,30 @@
 type: MechUnit
-speed: 0.5
-health: 500
+speed: 0.4
+health: 550
 range: 80
 rotateSpeed: 2.7
 weapons: [
     {
-        name: heavy-middle-gun1
-        reload: 8
+        name: spored-small-gun1
+        reload: 10
         x: 9
         y: 2
-        top: true
+        top: false
+        shots: 4
         ejectEffect: shellEjectSmall
-        bullet: standardIncendiary
+        bullet: {
+            type: BasicBulletType
+            damage: 14
+            speed: 3
+            width: 6
+            height: 16
+            frontColor: bf92f9
+            backColor: 6d56bf
+            status: sapped
+            inaccuracy: 5
+            lifetime: 60
+            sprite: bullet
+        }
     },
     {
         name: heavy-middle-artillery1
