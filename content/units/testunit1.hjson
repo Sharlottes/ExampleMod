@@ -19,20 +19,25 @@ weapons: [
     {
         name: test22
         x: 0
-        y: -12
-        shootY: 10
-        recoil: 6
+        y: -4
+        reload: 110
+        rotate: true
+        rotateSpeed: 1.4
+        shootY: 15
+        recoil: 12
         shake: 10
-        rotate: false
+        occlusion: 50
+        cooldownTime: 90
         mirror: false
         bullet: {
             type: RailBulletType
             damage: 2000
-            speed: 750
-            lifetime: 150
+            speed: 70
+            lifetime: 8
             hitShake: 6
             hitColor: 98ffa9
             hitEffect: healWave
+            pierceEffect: hitMeltHeal
             shootEffect: massiveExplosion
             smokeEffect: smokeCloud
             despawnEffect: greenBomb
