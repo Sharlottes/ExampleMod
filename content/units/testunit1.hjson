@@ -17,40 +17,70 @@ destructibleWreck: false
 
 weapons: [
     {
-        name: test22
+        mirror: false
+        top: false
+        shake: 4
+        shootY: 13
         x: 0
-        y: -15
+        y: 0
+
+        firstShotDelay: 99
+
+        reload: 320
+        recoil: 0
+        shootSound: laser
+        continuous: true
+        cooldownTime: 200
+
+        bullet: {
+            type: ContinuousLaserBulletType
+            length: 150
+            hitEffect: hitMeltHeal
+            drawSize: 420
+            lifetime: 160
+            shake: 1
+            despawnEffect: smokeCloud
+            smokeEffect: none
+
+            shootEffect: greenLaserChargeSmall
+
+            incendChance: 0.05
+            incendSpread: 5
+            incendAmount: 1
+
+            colors: [98ffa933, 98ffa97f, 98ffa9ff, ffffff]
+        }
+
+        shootStatus: slow
+        shootStatusDuration: 180
+    },
+    {
+        name: testrailgun2
+        x: 0
+        y: -4
         reload: 110
         rotate: true
         rotateSpeed: 1.4
+        shootY: 15
         recoil: 12
         shake: 10
-        cooldownTime: 120
-        mirror: false
-        shootSound: laser
-        continuous: true
-        firstShotDelay: 90
-        shootStatus: slow
-        shootStatusDuration: 180
-        shootY: -7
+        occlusion: 50
+        cooldownTime: 30
+        mirror: true
         bullet: {
-            type: ContinuousLaserBulletType
-            length: 160
-            drawSize: 420
+            type: RailBulletType
             damage: 2000
             speed: 70
-            lifetime: 160
+            lifetime: 8
             hitShake: 6
-            shake: 2
             hitColor: 98ffa9
             hitEffect: healWave
-            shootEffect: greenLaserCharge
+            shootEffect: massiveExplosion
             smokeEffect: smokeCloud
             despawnEffect: greenBomb
 
             splashDamageRadius: 40
             splashDamage: 500
-            colors: [98ffa933, 98ffa97f, 98ffa9ff, ffffff]
 
             fragBullets: 10
             fragLifeMin: 0.3
