@@ -19,7 +19,7 @@ block.testmod-multi-blast-mixer.name = multi blast mixer
 block.testmod-multi-pyratite-mixer.name = multi pyratite mixer
 block.testmod-multi-cultivator.name = multi cultivator
 
-block.testmod-titanium-launchpad.name = titanium launchpad
+block.testmod-titaniumlaunchpad.name = titanium launchpad
 
 block.testmod-iron-wall.name = iron wall
 block.testmod-iron-wall-large.name = large iron wall

@@ -2,9 +2,8 @@ type: LaunchPad
 
 size: 5
 itemCapacity: 500
-liquidCapacity: 50
 hasPower: true
-hasLiquids: true
+
 
 requirements: [
     titanium/500
@@ -14,11 +13,7 @@ requirements: [
     graphite/350
 ]
 consumes: {
-    liquid: {
-        liquid: cryofluid
-        amount: 0.5
-    }
-    power: 5
+    power: 10
 }
 
 lightColor: 87ceeb
