@@ -1,6 +1,6 @@
-const spawnUnit = Vars.content.getByName(ContentType.unit, "testmod-electricdagger");
-
+const spawnUnit = Vars.content.getByName(ContentType.unit, "testmod-electric-dagger");
 const testunit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
+
 EntityMapping.nameMap.put("testunit4", testunit4Entity);
 const testunit4 = extendContent(UnitType, "testunit4", {});
 

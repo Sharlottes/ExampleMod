@@ -15,7 +15,8 @@ requirements: [
 ]
 
 upgrades: [
-    [sporedmace, sporedfortress]
+    [sporedmace, sporedfortress],
+    [elect]
 ]
 
 consumes: {
