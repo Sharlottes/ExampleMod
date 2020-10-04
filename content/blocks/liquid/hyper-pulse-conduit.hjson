@@ -1,0 +1,19 @@
+type: Conduit
+
+liquidCapacity: 25
+liquidPressure: 1.25
+leakResistance: 1.75
+health: 150
+
+requirements: [
+titanium/4
+metaglass/2
+lead/2
+]
+
+consumes: {
+power: 0.5
+}
+
+category: liquid
+research: pulse-conduit
