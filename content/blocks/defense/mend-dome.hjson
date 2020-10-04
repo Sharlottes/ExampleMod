@@ -1,0 +1,46 @@
+type: MendProjector
+
+requirements: [
+    lead/250
+    titanium/100
+    silicon/150
+    plastanium/100
+    phase-fabric/150
+]
+
+size: 3
+reload: 240
+range: 160
+healPercent: 25
+hasBoost: false
+useTime: 90
+health: 800
+
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 15
+liquidCapacity: 20
+
+consumes: {
+    items: {
+        items: [
+            {
+                item: silicon
+                amount: 2
+            },
+            {
+                item: phase-fabric
+                amount: 1
+            }
+        ]
+    }
+    liquid: {
+        liquid: cryofluid
+        amount: 0.2
+    }
+    power: 12
+}
+
+category: effect
+research: mend-projector

@@ -4,7 +4,6 @@ size: 5
 itemCapacity: 500
 hasPower: true
 
-
 requirements: [
     titanium/500
     silicon/300
@@ -12,12 +11,13 @@ requirements: [
     plastanium/160
     graphite/350
 ]
+
 consumes: {
     power: 10
 }
 
 lightColor: 87ceeb
-buildVisibility: shown
+buildVisibility: hidden
 category: effect
 
 research: launch-pad
