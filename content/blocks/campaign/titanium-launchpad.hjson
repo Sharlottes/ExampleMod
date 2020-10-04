@@ -1,8 +1,8 @@
 type: LaunchPad
 
-size: 4
+size: 5
 itemCapacity: 500
-liquidCapacity: 1
+liquidCapacity: 50
 hasPower: true
 hasLiquids: true
 
