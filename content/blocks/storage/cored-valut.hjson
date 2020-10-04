@@ -16,7 +16,7 @@ ammoAmount: 7
 
 buildVisibility: shown
 category: effect
-research: coreShard
+research: core-shard
 
 unitType: mega
 unitCapModifier: 12
