@@ -16,14 +16,6 @@ requirements: [
     thorium/120
 ]
 consumes: {
-    items: {
-        items: [
-            {
-                item: scrap
-                amount: 2
-            }
-        ]
-    }
     liquid: {
         liquid: cryofluid
         amount: 0.3
@@ -38,7 +30,7 @@ rotateSpeed: 2.25
 liquidBoostIntensity: 2.0
 drawRim: true
 heatColor: 87ceeb
-drillTime: 240
+drillTime: 180
 tier: 6
 updateEffect: pulverizeMedium
 drillEffect: mineBig
