@@ -21,7 +21,6 @@ consumes: {
     power: 5
 }
 
-launchTime: 900
 lightColor: 87ceeb
 buildVisibility: shown
 category: effect
