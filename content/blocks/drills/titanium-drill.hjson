@@ -16,12 +16,14 @@ requirements: [
     thorium/120
 ]
 consumes: {
-    item: [
-        {
-            item: scrap
-            amount: 2
-        }
-    ]
+    items: {
+        items: [
+            {
+                item: scrap
+                amount: 2
+            }
+        ]
+    }
     liquid: {
         liquid: cryofluid
         amount: 0.3
