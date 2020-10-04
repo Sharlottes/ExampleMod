@@ -1,4 +1,4 @@
-const spawnUnit = (Vars.content.getByName(ContentType.unit, "testmod-electricdagger"));
+const spawnUnit = Vars.content.getByName(ContentType.unit, "testmod-electricdagger");
 
 const testunit4 = extendContent(UnitType, "testunit4", {
     load() {
