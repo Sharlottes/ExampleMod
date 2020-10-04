@@ -12,7 +12,6 @@ size: 3
 reload: 240
 range: 160
 healPercent: 25
-hasBoost: false
 useTime: 90
 health: 800
 

@@ -40,7 +40,7 @@ drawRim: true
 heatColor: 87ceeb
 drillTime: 240
 tier: 6
-updateEffect:
+updateEffect: pulverizeMedium
 drillEffect: mineBig
 
 category: production
