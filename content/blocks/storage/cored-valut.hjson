@@ -5,9 +5,9 @@ health: 2000
 itemCapacity: 6500
 
 requirements: [
-    copper: 2500
-    lead: 1500
-    silicon: 500
+    copper/2500
+    lead/1500
+    silicon/500
 ]
 
 resupplyRate: 8
