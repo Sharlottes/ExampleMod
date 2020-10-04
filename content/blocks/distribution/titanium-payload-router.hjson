@@ -11,3 +11,4 @@ requirements: [
 canOverdrive: false
 
 category: distribution
+research: payload-router

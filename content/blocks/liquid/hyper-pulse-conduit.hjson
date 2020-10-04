@@ -4,6 +4,7 @@ liquidCapacity: 25
 liquidPressure: 1.25
 leakResistance: 1.75
 health: 150
+displayFlow: true
 
 requirements: [
 titanium/4

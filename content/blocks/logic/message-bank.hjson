@@ -1,0 +1,16 @@
+type: MessageBlock
+
+size: 2
+
+requirements: [
+    graphite/100
+    silicon/100
+    phasefabric/25
+    thorium/5
+]
+
+maxTextLength: 500
+maxNewlines: 50
+
+category: logic
+research: message

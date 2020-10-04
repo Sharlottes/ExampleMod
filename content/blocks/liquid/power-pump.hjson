@@ -17,14 +17,6 @@ requirements: [
 ]
 
 consumes: {
-    items: {
-        items: [
-            {
-                item: coal
-                amount: 2
-            }
-        ]
-    }
     power: 3.5
 }
 pumpAmount: 0.3

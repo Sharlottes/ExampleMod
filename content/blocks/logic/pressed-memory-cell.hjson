@@ -1,0 +1,16 @@
+type: MemoryBlock
+
+size: 2
+
+requirements: [
+    graphite/50
+    lead/30
+    silicon/40
+]
+
+memoryCapacity: 256
+
+category: logic
+research: message
+
+solid: false
