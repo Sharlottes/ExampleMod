@@ -8,7 +8,7 @@ requirements: [
     silicon/50
     lead/50
 ]
-speed: 14
+speed: 5
 
 category: effect
 research: unloader

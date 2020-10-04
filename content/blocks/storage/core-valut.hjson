@@ -14,6 +14,7 @@ resupplyRate: 8
 resupplyRange: 120
 ammoAmount: 7
 
+buildPlaceability: always
 buildVisibility: shown
 category: effect
 research: core-shard
