@@ -10,6 +10,7 @@ block.testmod-titanium-drill.name = titanium drill
 
 block.testmod-hyper-pulse-conduit.name = hyper pulse conduit
 block.testmod-plated-hyper-conduit.name = plated hyper conduit
+block.testmod-power-pump.name = power pump
 
 block.testmod-testdisplay.name =  test display
 block.testmod-power-processor.name = power processor

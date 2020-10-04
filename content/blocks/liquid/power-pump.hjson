@@ -1,0 +1,32 @@
+type: Pump
+
+size: 3
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 16
+liquidCapacity: 100
+
+requirements: [
+    copper/150
+    metaglass/300
+    silicon/100
+    titanium/120
+    thorium/80
+    surge-alloy/40
+]
+
+consumes: {
+    items: {
+        items: [
+            {
+                item: coal
+                amount: 2
+            }
+        ]
+    }
+    power: 3.5
+}
+pumpAmount: 0.3
+category: liquid
+research: thermal-pump

@@ -12,9 +12,5 @@ requirements: [
     plastanium/2
 ]
 
-consumes: {
-    power: 0.5
-}
-
 category: liquid
 research: plated-conduit
