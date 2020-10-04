@@ -20,6 +20,7 @@ consumes: {
 instructionsPerTick: 40
 range: 800
 size: 3
+health: 600
 
 hasLiquids: true
 hasPower: true

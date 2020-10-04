@@ -21,6 +21,9 @@ block.testmod-multi-blast-mixer.name = multi blast mixer
 block.testmod-multi-pyratite-mixer.name = multi pyratite mixer
 block.testmod-multi-cultivator.name = multi cultivator
 
+block.testmod-cored-valut.name = cored valut
+block.testmod-titanium-unloader.name = titanium unloader
+
 block.testmod-electric-factory.name =  electric factory
 block.testmod-electric-additive-reconstructor.name = electric T2 reconstructor
 block.testmod-electric-multiplicative-reconstructor.name = electric T3 reconstructor

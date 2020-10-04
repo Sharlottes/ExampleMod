@@ -8,5 +8,7 @@ requirements: [
 
 displaySize: 256
 size: 8
+health: 400
 
 category: logic
+research: large-logic-display

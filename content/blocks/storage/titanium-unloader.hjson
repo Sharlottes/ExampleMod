@@ -1,0 +1,15 @@
+type: Unloader
+
+size: 1
+health: 400
+
+requirements: [
+    titanium: 100
+    silicon: 50
+    lead: 50
+]
+speed: 14
+
+category: effect
+research: unloader
+group: transportation

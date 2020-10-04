@@ -1,6 +1,7 @@
 type: MessageBlock
 
 size: 2
+health: 400
 
 requirements: [
     graphite/100

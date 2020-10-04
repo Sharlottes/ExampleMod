@@ -1,6 +1,6 @@
 type: MemoryBlock
 
-size: 2
+health: 200
 
 requirements: [
     graphite/50
