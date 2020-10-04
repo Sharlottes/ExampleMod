@@ -1,0 +1,29 @@
+type: LaunchPad
+
+size: 4
+itemCapacity: 500
+liquidCapacity: 1
+hasPower: true
+hasLiquid: true
+
+requirements: [
+    titanium/500
+    silicon/300
+    lead/500
+    plastanium/160
+    graphite/350
+]
+consumes: {
+    liquid: {
+        liquid: cryofluid
+        amount: 0.5
+    }
+    power: 5
+}
+
+launchTime: 900
+lightColor: 87ceeb
+buildVisibility: shown
+category: effect
+
+research: launch-pad-large
