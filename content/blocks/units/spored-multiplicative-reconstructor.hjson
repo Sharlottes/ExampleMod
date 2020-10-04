@@ -16,7 +16,7 @@ requirements: [
 
 upgrades: [
     [sporedmace, sporedfortress],
-    [elect]
+    [electricdagger, testunit4]
 ]
 
 consumes: {
