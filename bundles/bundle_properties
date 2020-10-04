@@ -1,3 +1,19 @@
+block.testmod-titaniumlaunchpad.name = titanium launchpad
+
+block.testmod-mend-dome.name = mend dome
+
+block.testmod-floating-conveyor.name = floating conveyor
+block.testmod-titanium-payload-conveyor.name = titanium payload conveyor
+block.testmod-titanium-payload-router.name = titanium payload router
+
+block.testmod-titanium-drill.name = titanium drill
+block.testmod-testdisplay.name =  test display
+block.testmod-power-processor.name = power processor
+
+block.testmod-multi-blast-mixer.name = multi blast mixer
+block.testmod-multi-pyratite-mixer.name = multi pyratite mixer
+block.testmod-multi-cultivator.name = multi cultivator
+
 block.testmod-electric-factory.name =  electric factory
 block.testmod-electric-additive-reconstructor.name = electric T2 reconstructor
 block.testmod-electric-multiplicative-reconstructor.name = electric T3 reconstructor
@@ -7,19 +23,6 @@ block.testmod-heavy-multiplicative-reconstructor.name = heavy T3 reconstructor
 block.testmod-spored-factory.name = spored factory
 block.testmod-spored-additive-reconstructor.name = spored T2 reconstructor
 block.testmod-spored-multiplicative-reconstructor.name = spored T3 reconstructor
-
-block.testmod-testdisplay.name =  test display
-block.testmod-power-processor.name = power processor
-
-block.testmod-floating-conveyor.name = floating conveyor
-block.testmod-titanium-payload-conveyor.name = titanium payload conveyor
-block.testmod-titanium-payload-router.name = titanium payload router
-
-block.testmod-multi-blast-mixer.name = multi blast mixer
-block.testmod-multi-pyratite-mixer.name = multi pyratite mixer
-block.testmod-multi-cultivator.name = multi cultivator
-
-block.testmod-titaniumlaunchpad.name = titanium launchpad
 
 block.testmod-iron-wall.name = iron wall
 block.testmod-iron-wall-large.name = large iron wall
