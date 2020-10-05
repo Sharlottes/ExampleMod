@@ -49,5 +49,5 @@ const healIn = new Effect (60, e => {
 const UnitSpawn1 = new UnitSpawnAbility;
 UnitSpawn1.spawnEffect = mendSpawn;
 
-const healField1 = new HealFieldAbility;
-healField1.healEffect = healIn;
+//const healField1 = new HealFieldAbility;
+//healField1.healEffect = healIn;
