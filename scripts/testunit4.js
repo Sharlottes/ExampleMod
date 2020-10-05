@@ -69,6 +69,18 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0));
 
-    //etc.
-print(healIn);
+//로그 확인
+
+    //어빌리티
+print(healColor);
+print(spawnUnit);
+print(spawnUnit2);
+print(spawnUnit3);
+print(UnitSpawn1);
+print(healField1);
+    //엔티티
+print(testunit4Entity);
+print(testunit4);
+    //그래픽 효과
 print(mendSpawn);
+print(healIn);
