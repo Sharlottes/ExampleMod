@@ -20,12 +20,12 @@ const mendSpawn = new Effect(120, e => {
 const healIn = new Effect (60, e => {
     Draw.color(e.color);
 
-    e.scaled(8f, e2 -> {
-        Draw.stroke(e2.fout() * 4f);
+    e.scaled(8, e2 -> {
+        Draw.stroke(e2.fout() * 4);
         Lines.circle(e2.x, e2.y, 4 + e2.fin() * 27);
     });
 
-    Draw.stroke(e.fout() * 2f);
+    Draw.stroke(e.fout() * 2);
 
     Angles.randLenVectors(e.id, 30, 4f + 40f * e.fin(), (x, y) -> {
         Draw.lineAngle(e.x + x, e.y + y, Mathf.angle(x, y), e.fin() * 4 + 1);
