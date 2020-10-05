@@ -17,6 +17,11 @@ testUnit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, 7));
 testUnit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
 testUnit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, -7));
 testUnit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, -7));
+testunit4.constructor = () => {
+    const unit = extend(BuilderMinerPayloadUnit, {});
+
+    return unit;
+};
 
 forceField1.spawnEffect = fx.mendSpawn;
 healField1.healEffect = fx.healIn;
