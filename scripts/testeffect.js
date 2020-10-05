@@ -27,7 +27,7 @@ const healIn = new Effect (60, e => {
 
     Draw.stroke(e.fout() * 2);
 
-    Angles.randLenVectors(e.id, 30, 4 + 40 * e.fin(), (x, y) -> {
+    Angles.randLenVectors(e.id, 30, 4 + 40 * e.fin(), (x, y) => {
         Draw.lineAngle(e.x + x, e.y + y, Mathf.angle(x, y), e.fin() * 4 + 1);
     });
 });
