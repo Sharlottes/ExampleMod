@@ -8,8 +8,8 @@ EntityMapping.nameMap.put("testunit4", testUnit4Entity);
 
 
 const testUnit4 = extendContent(UnitType, "testunit4", {});
-const forceField1 = extendContent(Ability, "ForceFieldAbility", {});
-const healField1 = extendContent(Ability, "HealFieldAbility", {});
+const forceField1 = extendContent(ForceFieldAbility, "ForceFieldAbility", {});
+const healField1 = extendContent(HealFieldAbility, "HealFieldAbility", {});
 
 testUnit4.abilities.add(new HealFieldAbility(3, 2 * 60, 10 * 8));
 testUnit4.abilities.add(new ForceFieldAbility(96, 0.5, 550, 2 * 60));
