@@ -67,3 +67,4 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, -7));
     //그래픽 효과
 UnitSpawn1.spawnEffect = mendSpawn;
 healField1.healEffect = healIn;
+healField1.activeEffect = healIn;
