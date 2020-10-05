@@ -4,8 +4,9 @@ const spawnUnit2 = Vars.content.getByName(ContentType.unit, "dagger");
 
 const testUnit4 = extendContent(UnitType, "testunit4", {});
 const testUnit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
-testunit4.constructor = () => extend(BuilderMinerPayloadUnit, {});
+EntityMapping.nameMap.put("testunit4", testUnit4);
 EntityMapping.nameMap.put("testunit4", testUnit4Entity);
+testunit4.constructor = () => extend(BuilderMinerPayloadUnit, {});
 
 const forceField1 = extend(ForceFieldAbility, {});
 const healField1 = extend(HealFieldAbility, {});
