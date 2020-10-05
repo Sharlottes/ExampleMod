@@ -29,7 +29,7 @@ const healIn = new Effect (60, e => {
 
     Angles.randLenVectors(e.id, 30, 4f + 40f * e.fin(), (x, y) -> {
         Draw.lineAngle(e.x + x, e.y + y, Mathf.angle(x, y), e.fin() * 4 + 1);
+    });
 });
-
 mendSpawn.at(0, 0, healColor);
 healIn.at(0, 0, healColor);
