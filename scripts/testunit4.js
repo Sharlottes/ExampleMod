@@ -12,7 +12,7 @@ const testunit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
 EntityMapping.nameMap.put("testunit4", testunit4Entity);
 const testunit4 = extendContent(UnitType, "testunit4", {});
 //그래픽 효과
-const mendSpawn = new Effect (120, e => {
+const mendSpawn = new Effect (120, e => { //유닛 소환 그래픽 효과
     if(!(e.data instanceof UnitType)) {
         return;
     }
@@ -24,11 +24,9 @@ const mendSpawn = new Effect (120, e => {
     var unit = e.data();
     var region = unit.icon(Cicon.full);
 
-    Draw.rect(region, e.x, e.y,
-        region.width * Draw.scl * scl, region.height * Draw.scl * scl, 180);
-
+    Draw.rect(region, e.x, e.y, region.width * Draw.scl * scl, region.height * Draw.scl * scl, 180);
 });
-const healIn = new Effect (60, e => {
+const healIn = new Effect (60, 50, e => { //유닛 치료 그래픽 효과
     Draw.color(e.color);
 
     e.scaled(8, e2 => {
@@ -41,6 +39,19 @@ const healIn = new Effect (60, e => {
     Angles.randLenVectors(e.id, 30, 4 + 40 * e.fin(), (x, y) => {
         Draw.lineAngle(e.x + x, e.y + y, Mathf.angle(x, y), e.fin() * 4 + 1);
     });
+    Draw.color(Pal.heal);
+    Lines.stroke(e.fout() * 2f);
+    Lines.circle(e.x, e.y, 4f + e.finpow() * 65f);
+
+    Draw.color(Pal.heal);
+    for(int i = 0; i < 4; i++){
+        Drawf.tri(e.x, e.y, 6f, 100f * e.fout(), i*90);
+    };
+
+    Draw.color();
+    for(int i = 0; i < 4; i++){
+        Drawf.tri(e.x, e.y, 3f, 35f * e.fout(), i*90);
+    };
 });
 
 //실행문
