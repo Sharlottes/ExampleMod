@@ -1,6 +1,6 @@
 const testcolor = Color.valueOf("98ffa9");
 
-const testeffect = new Effect(10, e => {
+const testeffect = new Effect(120, e => {
     if(!(e.data instanceof UnitType)) {
         return;
     }
