@@ -78,6 +78,7 @@ print(spawnUnit2);
 print(spawnUnit3);
 print(UnitSpawn1);
 print(healField1);
+print(healField1.healEffect);
     //엔티티
 print(testunit4Entity);
 print(testunit4);
