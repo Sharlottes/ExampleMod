@@ -26,7 +26,7 @@ const mendSpawn = new Effect (120, e => { //유닛 소환 그래픽 효과
 
     Draw.rect(region, e.x, e.y, region.width * Draw.scl * scl, region.height * Draw.scl * scl, 180);
 });
-const healIn = new Effect (60, 50, e => { //유닛 치료 그래픽 효과
+const healIn = new Effect (60, e => { //유닛 치료 그래픽 효과
     Draw.color(e.color);
 
     e.scaled(8, e2 => {
