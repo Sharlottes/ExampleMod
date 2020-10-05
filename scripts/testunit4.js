@@ -6,7 +6,7 @@ const testunit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
 EntityMapping.nameMap.put("testunit4", testunit4Entity);
 
 const testunit4 = extendContent(UnitType, "testunit4", {});
-testunit4.constructor = EntityMapping.nameMap("testunit4");
+testunit4.constructor = EntityMapping.Map("testunit4");
 
 
 
