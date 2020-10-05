@@ -2,7 +2,7 @@ const fx = require("testeffect");
 const spawnUnit = Vars.content.getByName(ContentType.unit, "fortress");
 const spawnUnit2 = Vars.content.getByName(ContentType.unit, "dagger");
 
-const testUnit4 = extendContent(UnitType, "Testunit4", {});
+const testUnit4 = extendContent(UnitType, "testunit4", {});
 const testUnit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
 testunit4.constructor = () => extend(BuilderMinerPayloadUnit, {});
 EntityMapping.nameMap.put("testunit4", testUnit4Entity);
