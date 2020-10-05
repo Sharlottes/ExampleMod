@@ -67,3 +67,4 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, -7));
+testunit4.abilities.add(new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0));
