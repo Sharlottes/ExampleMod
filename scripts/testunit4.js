@@ -44,12 +44,12 @@ const healIn = new Effect (60, 50, e => { //유닛 치료 그래픽 효과
     Lines.circle(e.x, e.y, 4 + e.finpow() * 65);
 
     Draw.color(Pal.heal);
-    for(int i = 0; i < 4; i++){
+    for(int i = 0; i < 4; i++;){
         Drawf.tri(e.x, e.y, 6, 100 * e.fout(), i*90);
     };
 
     Draw.color();
-    for(int i = 0; i < 4; i++){
+    for(int i = 0; i < 4; i++;){
         Drawf.tri(e.x, e.y, 3, 35 * e.fout(), i*90);
     };
 });
