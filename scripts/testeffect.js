@@ -31,5 +31,3 @@ const healIn = new Effect (60, e => {
         Draw.lineAngle(e.x + x, e.y + y, Mathf.angle(x, y), e.fin() * 4 + 1);
     });
 });
-mendSpawn.at(0, 0, healColor);
-healIn.at(0, 0, healColor);
