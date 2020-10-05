@@ -4,6 +4,13 @@ const spawnUnit2 = Vars.content.getByName(ContentType.unit, "dagger");
 
 const testUnit4 = extendContent(UnitType, "Testunit4", {});
 const testUnit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
+
+testunit4.constructor = () => {
+    const unit = extend(BuilderMinerPayloadUnit, {});
+
+    return unit;
+};
+
 EntityMapping.nameMap.put("testunit4", testUnit4Entity);
 
 const forceField1 = extend(ForceFieldAbility, {});
@@ -15,11 +22,6 @@ testUnit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, 7));
 testUnit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
 testUnit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, -7));
 testUnit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, -7));
-testunit4.constructor = () => {
-    const unit = extend(BuilderMinerPayloadUnit, {});
-
-    return unit;
-};
 
 forceField1.spawnEffect = fx.mendSpawn;
 healField1.healEffect = fx.healIn;
