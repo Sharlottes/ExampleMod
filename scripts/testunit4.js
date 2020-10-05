@@ -56,6 +56,10 @@ const healIn = new Effect (60, 50, e => { //유닛 치료 그래픽 효과
 
 //실행문
 
+    //그래픽 효과
+UnitSpawn1.spawnEffect = mendSpawn;
+healField1.healEffect = healIn;
+
     //어빌리티
 testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 50, 2 * 60, 20 * 8));
 testunit4.abilities.add(new ForceFieldAbility(96, 0.5, 550, 2 * 60));
@@ -63,8 +67,3 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, -7));
-
-    //그래픽 효과
-UnitSpawn1.spawnEffect = mendSpawn;
-healField1.healEffect = healIn;
-healField1.activeEffect = healIn;
