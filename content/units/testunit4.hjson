@@ -2,7 +2,7 @@
 mineTier: 2
 health: 9000
 armor: 5
-speed: 1.8
+speed: 0.4
 accel: 0.06
 drag: 0.017
 range: 160
