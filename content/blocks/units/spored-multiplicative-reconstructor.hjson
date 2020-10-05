@@ -15,8 +15,7 @@ requirements: [
 ]
 
 upgrades: [
-    [sporedmace, sporedfortress],
-    [electricdagger, testunit4]
+    [sporedmace, sporedfortress]
 ]
 alwaysUnlocked: true
 consumes: {
