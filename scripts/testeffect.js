@@ -20,7 +20,7 @@ const mendSpawn = new Effect(120, e => {
 const healIn = new Effect (60, e => {
     Draw.color(e.color);
 
-    e.scaled(8, e2 -> {
+    e.scaled(8, e2 => {
         Draw.stroke(e2.fout() * 4);
         Lines.circle(e2.x, e2.y, 4 + e2.fin() * 27);
     });
