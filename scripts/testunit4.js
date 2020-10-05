@@ -1,20 +1,17 @@
-const healColor = Color.valueOf("98ffa9");
+//변수 정의
+
+//어빌리티
+const healColor = Color.valueOf("98ffa9");//효과 색
 const spawnUnit = Vars.content.getByName(ContentType.unit, "fortress");
 const spawnUnit2 = Vars.content.getByName(ContentType.unit, "dagger");
 const spawnUnit3 = Vars.content.getByName(ContentType.unit, "pulsar");
 const UnitSpawn1 = new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0);
 const healField1 = new HealFieldAbility(50, 2 * 60, 20 * 8);
+//엔티티
 const testunit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
-const testunit4 = extendContent(UnitType, "testunit4", {});
-
 EntityMapping.nameMap.put("testunit4", testunit4Entity);
-testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 50, 2 * 60, 20 * 8));
-testunit4.abilities.add(new ForceFieldAbility(96, 0.5, 550, 2 * 60));
-testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, 7));
-testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
-testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, -7));
-testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, -7));
-
+const testunit4 = extendContent(UnitType, "testunit4", {});
+//그래픽 효과
 const mendSpawn = new Effect (120, e => {
     if(!(e.data instanceof UnitType)) {
         return;
@@ -31,7 +28,6 @@ const mendSpawn = new Effect (120, e => {
         region.width * Draw.scl * scl, region.height * Draw.scl * scl, 180);
 
 });
-
 const healIn = new Effect (60, e => {
     Draw.color(e.color);
 
@@ -47,10 +43,16 @@ const healIn = new Effect (60, e => {
     });
 });
 
+//실행문
 
+//어빌리티
+testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 50, 2 * 60, 20 * 8));
+testunit4.abilities.add(new ForceFieldAbility(96, 0.5, 550, 2 * 60));
+testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, 7));
+testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
+testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, -7));
+testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, -7));
 
+//그래픽 효과
 UnitSpawn1.spawnEffect = mendSpawn;
-
-
-
-//healField1.healEffect = healIn;
+healField1.healEffect = healIn;
