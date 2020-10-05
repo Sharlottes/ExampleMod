@@ -1,17 +1,17 @@
 //변수 정의
 
-//어빌리티
+    //어빌리티
 const healColor = Color.valueOf("98ffa9");//효과 색
 const spawnUnit = Vars.content.getByName(ContentType.unit, "fortress");
 const spawnUnit2 = Vars.content.getByName(ContentType.unit, "dagger");
 const spawnUnit3 = Vars.content.getByName(ContentType.unit, "pulsar");
 const UnitSpawn1 = new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0);
 const healField1 = new HealFieldAbility(50, 2 * 60, 20 * 8);
-//엔티티
+    //엔티티
 const testunit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
 EntityMapping.nameMap.put("testunit4", testunit4Entity);
 const testunit4 = extendContent(UnitType, "testunit4", {});
-//그래픽 효과
+    //그래픽 효과
 const mendSpawn = new Effect (120, e => { //유닛 소환 그래픽 효과
     if(!(e.data instanceof UnitType)) {
         return;
@@ -44,19 +44,19 @@ const healIn = new Effect (60, 50, e => { //유닛 치료 그래픽 효과
     Lines.circle(e.x, e.y, 4 + e.finpow() * 65);
 
     Draw.color(Pal.heal);
-    for(int i = 0; i < 4; i++;){
+    for(i = 0; i < 4; i++){
         Drawf.tri(e.x, e.y, 6, 100 * e.fout(), i*90);
     };
 
     Draw.color();
-    for(int i = 0; i < 4; i++;){
+    for(i = 0; i < 4; i++){
         Drawf.tri(e.x, e.y, 3, 35 * e.fout(), i*90);
     };
 });
 
 //실행문
 
-//어빌리티
+    //어빌리티
 testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 50, 2 * 60, 20 * 8));
 testunit4.abilities.add(new ForceFieldAbility(96, 0.5, 550, 2 * 60));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, 7));
@@ -64,6 +64,6 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, -7));
 
-//그래픽 효과
+    //그래픽 효과
 UnitSpawn1.spawnEffect = mendSpawn;
 healField1.healEffect = healIn;
