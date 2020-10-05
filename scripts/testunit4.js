@@ -14,8 +14,8 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, -7));
 
-const forceField1 = new JavaAdapter(ForceFieldAbility);
-forceField1.spawnEffect = fx.mendSpawn;
+const UnitSpawn1 = new JavaAdapter(UnitSpawnAbility);
+UnitSpawn1.spawnEffect = fx.mendSpawn;
 
 const healField1 = new JavaAdapter(HealFieldAbility);
 healField1.healEffect = fx.healIn;
