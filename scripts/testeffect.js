@@ -1,4 +1,4 @@
-const testcolor = new Color("98ffa9ff");
+const testcolor = new Color("98ffa9");
 
 const testeffect = new Effect(10, e => {
     if(!(e.data instanceof UnitType)) {
