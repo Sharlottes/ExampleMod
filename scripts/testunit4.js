@@ -7,7 +7,7 @@ EntityMapping.nameMap.put("testunit4", testunit4Entity);
 
 const testunit4 = extendContent(UnitType, "testunit4", {});
 
-testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 3, 2 * 60, 10 * 8));
+testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 3, 2 * 60, 20 * 8));
 testunit4.abilities.add(new ForceFieldAbility(96, 0.5, 550, 2 * 60));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, 7));
@@ -18,7 +18,7 @@ const mendSpawn = new Effect (120, e => {
     if(!(e.data instanceof UnitType)) {
         return;
     }
-
+    Draw.color(healColor);
     Draw.alpha(e.fin());
 
     var scl = 1 + e.fout() * 2;
@@ -50,5 +50,6 @@ const UnitSpawn1 = extend(UnitSpawnAbility, {});
 //const UnitSpawn1 = new UnitSpawnAbility();
 UnitSpawn1.spawnEffect = mendSpawn;
 
+const healField1 = extend(HealFieldAbility, {});
 //const healField1 = new HealFieldAbility();
-//healField1.healEffect = healIn;
+healField1.healEffect = healIn;
