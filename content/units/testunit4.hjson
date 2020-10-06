@@ -15,4 +15,152 @@ engineSize: 3
 payloadCapacity: 500
 buildSpeed: 2.5
 
+weapons: [
+    {
+        name: testshotgun1
+        reload: 40
+        shootY: 2.5
+        top: true
+        shake: 2.2
+        shots: 3
+        inaccuracy: 35
+        shotDelay: 0.5
+        spacing: 0
+        ejectEffect: none
+        recoil: 2.5
+        x: 20
+        y: 0
+        shootSound: spark
+        bullet: {
+            type: LightningBulletType
+            damage: 20
+            lightningColor: 98ffa9
+            hitColor: 98ffa9
+            lightningLength: 9
+            lightningLengthRand: 7
+            shootEffect: shootHeal
+        }
+    },
+    {
+        name: testmissile1
+        reload: 30
+        rotate: true
+        top: true
+        shake: 1
+        shots: 2
+        inaccuracy: 5
+        velocityRnd: 0.2
+        x: 3
+        y: 4
+        shootSound: missile
+        bullet: {
+            type: MissileBulletType
+            damage: 35
+            speed: 3
+            width: 8
+            height: 8
+            shrinkY: 0
+            drag: -0.003
+            homingRange: 180
+            keepVelocity: false
+            splashDamageRadius: 25
+            splashDamage: 10
+            lifetime: 60
+            trailColor: 62ae7f
+            backColor: 62ae7f
+            frontColor: 98ffa9
+            mixColorFrom: 98ffa9
+            mixColorTo: db401c
+            hitEffect: healWave
+            despawnEffect: healWave
+            weaveScale: 6
+            weaveMag: 1
+            shootEffect: shootHeal
+            puddles: 8
+            puddleRange: 8
+            puddleAmount: 10
+            puddleLiquid: "oil"
+            fragBullets: 3
+            hitColor: 98ffa9
+            fragBullet: {
+                type: BombBulletType
+                width: 10
+                height: 14
+                hitEffect: explosion
+                damage: 30
+                hitColor: db401c
+                backColor: db401c
+                frontColor: db401c
+                speed: 2
+                splashDamageRadius: 24
+                splashDamage: 15
+                lightning: 2
+                lightningColor: db401c
+                lightningLength: 4
+            }
+        }
+    },
+    {
+        name: testmissile1
+        reload: 45
+        rotate: true
+        top: true
+        shake: 1
+        shots: 2
+        inaccuracy: 5
+        velocityRnd: 0.2
+        x: 5
+        y: 8
+        shootSound: missile
+        bullet: {
+            type: MissileBulletType
+            damage: 35
+            speed: 3
+            width: 8
+            height: 8
+            shrinkY: 0
+            drag: -0.003
+            homingRange: 180
+            keepVelocity: false
+            splashDamageRadius: 25
+            splashDamage: 10
+            lifetime: 60
+            trailColor: 62ae7f
+            backColor: 62ae7f
+            frontColor: 98ffa9
+            mixColorFrom: 98ffa9
+            mixColorTo: db401c
+            hitEffect: healWave
+            despawnEffect: healWave
+            weaveScale: 6
+            weaveMag: 1
+            shootEffect: shootHeal
+            puddles: 8
+            puddleRange: 8
+            puddleAmount: 10
+            puddleLiquid: "oil"
+            fragBullets: 3
+            hitColor: 98ffa9
+            fragBullet: {
+                type: BombBulletType
+                width: 10
+                height: 14
+                hitEffect: explosion
+                damage: 30
+                hitColor: db401c
+                backColor: db401c
+                frontColor: db401c
+                speed: 2
+                splashDamageRadius: 24
+                splashDamage: 15
+                lightning: 2
+                lightningColor: db401c
+                lightningLength: 4
+                incendAmount: 4
+                incendSpread: 15
+                incendChance: 1
+            }
+        }
+    }
+]
 
