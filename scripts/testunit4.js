@@ -143,7 +143,7 @@ testBullet1.weaveMag = 1;
 testBullet1.puddles = 8;
 testBullet1.puddleRange = 8;
 testBullet1.puddleAmount = 10;
-testBullet1.puddleLiquid = Liquid.oil;
+testBullet1.puddleLiquid = Liquids.oil;
 testBullet1.fragBullets = 3;
 testBullet1.fragBullet = testFragBullet1;
 
