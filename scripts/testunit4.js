@@ -1,7 +1,8 @@
 //변수 정의
 
     //어빌리티
-const healColor = Color.valueOf("98ffa9");//효과 색
+const healColor = Color.valueOf("98ffa9");
+const healerColor = Color.valueOf("db401c");
 const spawnUnit = Vars.content.getByName(ContentType.unit, "fortress");
 const spawnUnit2 = Vars.content.getByName(ContentType.unit, "dagger");
 const spawnUnit3 = Vars.content.getByName(ContentType.unit, "pulsar");
@@ -11,6 +12,14 @@ const healField1 = new HealFieldAbility(50, 2 * 60, 20 * 8);
 const testunit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
 EntityMapping.nameMap.put("testunit4", testunit4Entity);
 const testunit4 = extendContent(UnitType, "testunit4", {});
+    //탄환
+const testFragBullet1 = new BombBulletType(15, 24);
+const testBullet1 = new MissileBulletType(3, 35);
+const testBullet2 = new LightningBulletType();
+    //무기
+const testWeapon1 = new Weapon("testmissile1");
+const testWeapon2 = new Weapon("testmissile1");
+const testWeapon3 = new Weapon("testshotgun1");
     //그래픽 효과
 const mendSpawn = new Effect (120, e => { //유닛 소환 그래픽 효과
     if(!(e.data instanceof UnitType)) {
@@ -70,7 +79,95 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0));
+testunit4.weapons.add(new Weapon("testmissile1"));
+testunit4.weapons.add(new Weapon("testmissile1"));
+testunit3.weapons.add(new Weapon("testshotgun1"));
+    //무기
+testWeapon1.reload = 60;
+testWeapon1.shake = 1;
+testWeapon1.shots = 2;
+testWeapon1.inaccuracy = 5;
+testWeapon1.velocityRnd = 0.2;
+testWeapon1.x = 5;
+testWeapon1.y = 8;
+testWeapon1.rotate = true;
+testWeapon1.top = true;
+testWeapon1.shootSound = Sound.missile;
+testWeapon1.bullet = testBullet1;
 
+testWeapon2.reload = 45;
+testWeapon2.shake = 1;
+testWeapon2.shots = 2;
+testWeapon2.inaccuracy = 5;
+testWeapon2.velocityRnd = 0.2;
+testWeapon2.x = 3;
+testWeapon2.y = 4;
+testWeapon2.rotate = true;
+testWeapon2.top = true;
+testWeapon2.shootSound = Sound.missile;
+testWeapon2.bullet = testBullet1;
+
+testWeapon3.reload = 40;
+testWeapon3.shoot = 2.5;
+testWeapon3.shake = 2.2;
+testWeapon3.shots = 3;
+testWeapon3.inaccuracy = 35;
+testWeapon3.shotDelay = 0.5;
+testWeapon3.spacing = 0;
+testWeapon3.recoil = 2.5;
+testWeapon3.x = 20;
+testWeapon3.y = 0;
+testWeapon3.top = true;
+testWeapon3.ejectEffect = Fx.none;
+testWeapon3.shootSound = Sound.spark;
+testWeapon3.bullet = testBullet2;
+
+    //탄환
+testBullet1.drag = -0.003;
+testBullet1.homingRange = 20 * 8;
+testBullet1.keepVelocity = false;
+testBullet1.splashDamageRadius = 2.5 * 8;
+testBullet1.splashDamage = 10;
+testBullet1.lifetime = 60;
+testBullet1.trailColor = Color.valueOf("62ae7f");
+testBullet1.backColor = Color.valueOf("62ae7f");
+testBullet1.frontColor = healColor;
+testBullet1.mixColorFrom = healColor;
+testBullet1.mixColorTo = healerColor;
+testBullet1.hitColor = healColor;
+testBullet1.hitEffect = Fx.healWave;
+testBullet1.despawnEffect = Fx.healWave;
+testBullet1.shootEffect = Fx.shootHeal;
+testBullet1.weaveScale = 6;
+testBullet1.weaveMag = 1;
+testBullet1.puddles = 8;
+testBullet1.puddleRange = 8;
+testBullet1.puddleAmount = 10;
+testBullet1.puddleLiquid = Liquid.oil;
+testBullet1.fragBullets = 3;
+testBullet1.fragBullet = testFragBullet1;
+
+testBullet2.damage = 20;
+testBullet2.lightningLength = 9;
+testBullet2.lightningLengthRand = 7;
+testBullet2.shootEffect = Fx.shootHeal;
+testBullet2.lightningColor = healColor;
+testBullet2.hitColor = healColor;
+
+testFragBullet1.width = 10;
+testFragBullet1.height = 14;
+testFragBullet1.hitEffect = Fx.explosion;
+testFragBullet1.damage = 30;
+testFragBullet1.hitColor = healerColor;
+testFragBullet1.backColor = healerColor;
+testFragBullet1.frontColor = healerColor;
+testFragBullet1.speed = 2;
+testFragBullet1.lightning = 2;
+testFragBullet1.lightningColor = healerColor;
+testFragBullet1.lightningLength = 4;
+testFragBullet1.incendAmount = 4;
+testFragBullet1.incendSpread = 15;
+testFragBullet1.incendChance = 1;
 //로그 확인
 
     //어빌리티

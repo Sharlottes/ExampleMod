@@ -112,54 +112,6 @@ weapons: [
         y: 8
         shootSound: missile
         bullet: {
-            type: MissileBulletType
-            damage: 35
-            speed: 3
-            width: 8
-            height: 8
-            shrinkY: 0
-            drag: -0.003
-            homingRange: 180
-            keepVelocity: false
-            splashDamageRadius: 25
-            splashDamage: 10
-            lifetime: 60
-            trailColor: 62ae7f
-            backColor: 62ae7f
-            frontColor: 98ffa9
-            mixColorFrom: 98ffa9
-            mixColorTo: db401c
-            hitEffect: healWave
-            despawnEffect: healWave
-            weaveScale: 6
-            weaveMag: 1
-            shootEffect: shootHeal
-            puddles: 8
-            puddleRange: 8
-            puddleAmount: 10
-            puddleLiquid: "oil"
-            fragBullets: 3
-            hitColor: 98ffa9
-            fragBullet: {
-                type: BombBulletType
-                width: 10
-                height: 14
-                hitEffect: explosion
-                damage: 30
-                hitColor: db401c
-                backColor: db401c
-                frontColor: db401c
-                speed: 2
-                splashDamageRadius: 24
-                splashDamage: 15
-                lightning: 2
-                lightningColor: db401c
-                lightningLength: 4
-                incendAmount: 4
-                incendSpread: 15
-                incendChance: 1
-            }
-        }
     }
 ]
 
