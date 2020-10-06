@@ -83,7 +83,7 @@ testunit4.weapons.add(testWeapon1);
 testunit4.weapons.add(testWeapon2);
 testunit4.weapons.add(testWeapon3);
     //무기
-/*
+
 testWeapon1.reload = 60;
 testWeapon1.shake = 1;
 testWeapon1.shots = 2;
@@ -169,7 +169,7 @@ testFragBullet1.lightningLength = 4;
 testFragBullet1.incendAmount = 4;
 testFragBullet1.incendSpread = 15;
 testFragBullet1.incendChance = 1;
-*/
+
 
 //로그 확인
 
