@@ -92,7 +92,7 @@ testWeapon1.x = 5;
 testWeapon1.y = 8;
 testWeapon1.rotate = true;
 testWeapon1.top = true;
-testWeapon1.shootSound = sounds.missile;
+testWeapon1.shootSound = Sounds.missile;
 testWeapon1.bullet = testBullet1;
 
 testWeapon2.reload = 45;
@@ -104,7 +104,7 @@ testWeapon2.x = 3;
 testWeapon2.y = 4;
 testWeapon2.rotate = true;
 testWeapon2.top = true;
-testWeapon2.shootSound = sounds.missile;
+testWeapon2.shootSound = Sounds.missile;
 testWeapon2.bullet = testBullet1;
 
 testWeapon3.reload = 40;
@@ -119,7 +119,7 @@ testWeapon3.x = 20;
 testWeapon3.y = 0;
 testWeapon3.top = true;
 testWeapon3.ejectEffect = Fx.none;
-testWeapon3.shootSound = sounds.spark;
+testWeapon3.shootSound = Sounds.spark;
 testWeapon3.bullet = testBullet2;
 
     //탄환
