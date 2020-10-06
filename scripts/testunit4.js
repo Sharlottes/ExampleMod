@@ -17,9 +17,9 @@ const testFragBullet1 = new BombBulletType(15, 24);
 const testBullet1 = new MissileBulletType(3, 35);
 const testBullet2 = new LightningBulletType();
     //무기
-const testWeapon1 = new Weapon("testmissile1");
-const testWeapon2 = new Weapon("testmissile1");
-const testWeapon3 = new Weapon("testshotgun1");
+//const testWeapon1 = new Weapon("testmissile1");
+//const testWeapon2 = new Weapon("testmissile1");
+//const testWeapon3 = new Weapon("testshotgun1");
     //그래픽 효과
 const mendSpawn = new Effect (120, e => { //유닛 소환 그래픽 효과
     if(!(e.data instanceof UnitType)) {
@@ -79,9 +79,9 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0));
-testunit4.weapons.add(testWeapon1);
-testunit4.weapons.add(testWeapon2);
-testunit4.weapons.add(testWeapon3);
+//testunit4.weapons.add(testWeapon1);
+//testunit4.weapons.add(testWeapon2);
+//testunit4.weapons.add(testWeapon3);
     //무기
     /*
 testWeapon1.reload = 60;
@@ -182,6 +182,17 @@ print(healField1.healEffect);
     //엔티티
 print(testunit4Entity);
 print(testunit4);
+    //탄환
+print(testFragBullet1);
+print(testBullet1);
+print(testBullet2);
+    //무기
+//print(testWeapon1);
+//print(testWeapon2);
+//print(testWeapon3);
     //그래픽 효과
 print(mendSpawn);
 print(healIn);
+    //유닛
+print(testunit4.abilities);
+print(testunit4.weapons);
