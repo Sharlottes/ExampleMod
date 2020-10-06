@@ -118,6 +118,7 @@ testWeapon3.spacing = 0;
 testWeapon3.recoil = 2.5;
 testWeapon3.x = 20;
 testWeapon3.y = 0;
+testWeapon3.rotate = false;
 testWeapon3.top = true;
 testWeapon3.ejectEffect = Fx.none;
 testWeapon3.shootSound = Sounds.spark;
