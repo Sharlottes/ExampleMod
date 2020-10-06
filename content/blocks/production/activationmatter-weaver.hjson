@@ -1,4 +1,4 @@
-type: GenericCrafter
+
 
 health: 500
 size: 2
@@ -7,7 +7,7 @@ hasItems: true
 hasLiquids: true
 hasPower: true
 itemCapacity: 150
-liquidsCapacity: 150
+liquidCapacity: 150
 
 requirements: [
     copper/130
