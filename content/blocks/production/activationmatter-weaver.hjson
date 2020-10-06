@@ -1,5 +1,6 @@
-health: 500
+type: GenericCrafter
 
+health: 500
 size: 2
 
 hasItems: true
