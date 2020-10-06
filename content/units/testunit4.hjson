@@ -42,7 +42,7 @@ weapons: [
     },
     {
         name: testmissile1
-        reload: 30
+        reload: 45
         rotate: true
         top: true
         shake: 1
@@ -101,7 +101,7 @@ weapons: [
     },
     {
         name: testmissile1
-        reload: 45
+        reload: 60
         rotate: true
         top: true
         shake: 1
