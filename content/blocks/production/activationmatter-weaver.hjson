@@ -31,10 +31,8 @@ consumes: {
                 item: phase-fabric
                 amount: 3
             },
-            silicon/5
-            graphite/7
+            metaglass/7
             titanium/8
-            thorium/10
         ]
     }
     liquid: {
@@ -44,9 +42,8 @@ consumes: {
     }
     power: 20
 }
-outputItem: metaglass/100
+outputItem: activationmatter/1
 
 craftTime: 90
-craftEffect: teleport
 
 category: crafting
