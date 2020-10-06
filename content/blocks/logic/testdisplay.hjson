@@ -6,6 +6,16 @@ requirements: [
   lead/30
 ]
 
+consumes: {
+    items: {
+        items: [
+            {
+                item: activationmatter
+                amount: 10
+            }
+        ]
+    }
+}
 displaySize: 256
 size: 8
 health: 400

@@ -10,6 +10,14 @@ requirements: [
 ]
 
 consumes: {
+    items: {
+        items: [
+            {
+            item: activationmatter
+            amount: 10
+            }
+        ]
+    }
     liquid: {
         liquid: cryofluid
         amount: 0.08

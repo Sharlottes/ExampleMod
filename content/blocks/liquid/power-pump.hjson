@@ -17,6 +17,14 @@ requirements: [
 ]
 
 consumes: {
+    items: {
+        items: [
+            {
+                item: activationmatter
+                amount: 10
+            }
+        ]
+    }
     power: 3.5
 }
 pumpAmount: 0.3
