@@ -1,4 +1,4 @@
-type: GenericCrafter
+
 
 health: 350
 size: 2
@@ -23,7 +23,7 @@ consumes: {
 }
 outputItem: spore-pod/2
 
-craftTime: 80
+craftTime: 90
 craftEffect: steam
 
 category: crafting
