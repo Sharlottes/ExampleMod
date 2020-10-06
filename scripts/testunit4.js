@@ -108,7 +108,7 @@ testWeapon2.shootSound = Sounds.missile;
 testWeapon2.bullet = testBullet1;
 
 testWeapon3.reload = 40;
-testWeapon3.shoot = 2.5;
+testWeapon3.shootY = 2.5;
 testWeapon3.shake = 2.2;
 testWeapon3.shots = 3;
 testWeapon3.inaccuracy = 35;
