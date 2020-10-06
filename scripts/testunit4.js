@@ -79,10 +79,11 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, -7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0));
-testunit4.weapons.add(new Weapon("testmissile1"));
-testunit4.weapons.add(new Weapon("testmissile1"));
-testunit4.weapons.add(new Weapon("testshotgun1"));
+testunit4.weapons.add(testWeapon1);
+testunit4.weapons.add(testWeapon2);
+testunit4.weapons.add(testWeapon3);
     //무기
+    /*
 testWeapon1.reload = 60;
 testWeapon1.shake = 1;
 testWeapon1.shots = 2;
@@ -121,7 +122,7 @@ testWeapon3.top = true;
 testWeapon3.ejectEffect = Fx.none;
 testWeapon3.shootSound = Sounds.spark;
 testWeapon3.bullet = testBullet2;
-
+*/
     //탄환
 testBullet1.drag = -0.003;
 testBullet1.homingRange = 20 * 8;
