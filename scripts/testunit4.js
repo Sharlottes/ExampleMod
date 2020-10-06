@@ -172,27 +172,27 @@ testFragBullet1.incendChance = 1;
 //로그 확인
 
     //어빌리티
-print(healColor);
-print(spawnUnit);
-print(spawnUnit2);
-print(spawnUnit3);
-print(UnitSpawn1);
-print(healField1);
-print(healField1.healEffect);
+print("HealColor" + " : " + healColor);
+print("spawnUnit" + " : " + spawnUnit);
+print("spawnUnit2" + " : " + spawnUnit2);
+print("spawnUnit3" + " : " + spawnUnit3);
+print("UnitSpawn1" + " : " + UnitSpawn1);
+print("healField1" + " : " + healField1);
+print("healField1.healEffect" + " : " + healField1.healEffect);
     //엔티티
-print(testunit4Entity);
-print(testunit4);
+print("testunit4Entity" + " : " + testunit4Entity);
+print("testunit4Entity" + " : " + testunit4);
     //탄환
-print(testFragBullet1);
-print(testBullet1);
-print(testBullet2);
+print("testFragBullet1" + " : " + testFragBullet1);
+print("testBullet1" + " : " + testBullet1);
+print("testBullet2" + " : " + testBullet2);
     //무기
 //print(testWeapon1);
 //print(testWeapon2);
 //print(testWeapon3);
     //그래픽 효과
-print(mendSpawn);
-print(healIn);
+print("mendSpawn" + " : " + mendSpawn);
+print("healIn" + " : " + healIn);
     //유닛
-print(testunit4.abilities);
-print(testunit4.weapons);
+print("testunit4.abilities" + " : " + testunit4.abilities);
+print("testunit4.weapons" + " : " + testunit4.weapons);
