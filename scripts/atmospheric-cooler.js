@@ -7,7 +7,7 @@ const rotateBlock = extend(DrawMixer, {
         Draw.rect(this.top, entity.x, entity.y, rotation);
         if(entity.liquids.total() > 0.001){
             Draw.color(entity.block.outputLiquid.liquid.color);
-            Draw.alpha(entity.liquids.get(entity.block.outputLiquid.liquid) / entity.block.liquidCapacity - 50);
+            Draw.alpha(entity.liquids.get(entity.block.outputLiquid.liquid) / entity.block.liquidCapacity);
             Draw.rect(this.liquid, entity.x, entity.y, rotation);
             Draw.color();
         }
@@ -27,5 +27,5 @@ const rotateBlock = extend(DrawMixer, {
     }
 });
 
-const atmosphericCooler = extendContent(GenericCrafter, "atmospheric-cooler", {});
+const atmosphericCooler = extendContent(LiquidConverter, "atmospheric-cooler", {});
 atmosphericCooler.drawer = rotateBlock;
