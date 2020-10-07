@@ -20,8 +20,8 @@ consumes: {
 }
 outputLiquid : {
     liquid: cryofluid
-    amount: 100
+    amount: 75
 }
 
-craftTime: 90
+craftTime: 150
 category: crafting

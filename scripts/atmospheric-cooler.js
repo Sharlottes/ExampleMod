@@ -10,10 +10,9 @@ const rotateBlock = extend(DrawMixer, {
             Draw.rect(this.liquid, entity.x, entity.y, rotation);
             Draw.color();
         }
-        Draw.rect(this.top, entity.x, entity.y, rotation);
-
         Draw.rect(entity.block.region, entity.x, entity.y);
         Draw.rect(this.rotator, entity.x, entity.y, entity.totalProgress * 6);
+        Draw.rect(this.top, entity.x, entity.y, rotation);
     },
     load(block){
         this.rotator = Core.atlas.find(block.name + "-rotator");
