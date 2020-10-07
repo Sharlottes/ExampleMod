@@ -18,14 +18,14 @@ const rotateBlock = extend(DrawMixer, {
     load(block){
         this.rotator = Core.atlas.find(block.name + "-rotator");
         this.liquid = Core.atlas.find(block.name + "-liquid");
-        this.top = Core.atlas.find(block.name + "-top");
+        this.top1 = Core.atlas.find(block.name + "-top1");
         this.bottom = Core.atlas.find(block.name + "-bottom");
     },
     icons(block){
         return [
           this.bottom,
           this.rotator,
-          this.top
+          this.top1
         ];
     }
 });
