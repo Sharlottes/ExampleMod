@@ -17,4 +17,4 @@ requiresWater: true
 placeableLiquid: true
 
 category: distribution
-research: armored-conveyor
+research: titanium-conveyor

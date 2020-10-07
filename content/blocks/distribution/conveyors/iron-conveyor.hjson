@@ -1,0 +1,17 @@
+type: Conveyor
+
+health: 200
+
+hasItems: true
+itemCapacity: 6
+
+speed: 0.0825
+displayedSpeed: 11
+
+requirements: [
+  copper/3
+  iron/1
+]
+
+category: distribution
+research: conveyor

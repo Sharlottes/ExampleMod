@@ -1,0 +1,20 @@
+type: ArmoredConveyor
+
+health: 100
+
+hasItems: true
+itemCapacity: 8
+
+speed: 0.08
+displayedSpeed: 11
+
+requirements: [
+  copper/2
+  iron/1
+  blast-compound/1
+]
+
+category: distribution
+research: armored-conveyor
+
+baseExplosiveness: 0.5

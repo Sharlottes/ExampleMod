@@ -29,12 +29,12 @@ consumes: {
 }
 itemUseTime: 60
 pumpAmount: 0.2
-rotateSpeed: 1.7
+rotateSpeed: 1.6
 result: cryofluid
 baseEfficiency: 0.5
 attribute: water
 updateEffect: pulverize
-updateEffectChance: 0.55
+updateEffectChance: 0.4
 
 category: production
 research: water-extractor
