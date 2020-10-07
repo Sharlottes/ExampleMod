@@ -1,5 +1,5 @@
 const iron = Vars.content.getByName(ContentType.item, "testmod-iron");
-const ironOre = new OreBlock(iron);
+const ironOre = new OreBlock("iron");
 //const ironOre = extend(OreBlock, {});
 /*
 const ironItem = extendContent(Item, "iron", {});
@@ -17,3 +17,5 @@ print("ironOre.variants" + " : " + ironOre.variants);
 print("ironOre.mapColor" + " : " + ironOre.mapColor);
 
 */
+print("ironOre" + " : " + ironOre);
+print("iron" + " : " + iron);
