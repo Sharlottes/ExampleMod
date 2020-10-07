@@ -22,7 +22,11 @@ const rotateBlock = extend(DrawMixer, {
         this.bottom = Core.atlas.find(block.name + "-bottom");
     },
     icons(block){
-        return new TextureRegion[]{bottom, rotator, top};
+        return [
+          this.bottom,
+          this.rotator,
+          this.top
+        ];
     }
 });
 
