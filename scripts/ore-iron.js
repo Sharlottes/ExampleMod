@@ -1,8 +1,8 @@
-const ironOre = extend(OreBlock, {});
-
-const ironItem = extendContent(Item, "iron", {});
 const iron = Vars.content.getByName(ContentType.item, "testmod-iron");
-
+const ironOre = new OreBlock(iron);
+//const ironOre = extend(OreBlock, {});
+/*
+const ironItem = extendContent(Item, "iron", {});
 //ironOre.localizedName = ironItem.localizedName;
 ironOre.itemDrop = iron;
 ironOre.variants = 3;
@@ -15,3 +15,5 @@ print("ironOre.localizedName" + " : " + ironOre.localizedName);
 print("ironOre.itemDrop" + " : " + ironOre.itemDrop);
 print("ironOre.variants" + " : " + ironOre.variants);
 print("ironOre.mapColor" + " : " + ironOre.mapColor);
+
+*/
