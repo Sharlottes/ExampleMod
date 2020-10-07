@@ -22,6 +22,10 @@ outputLiquid : {
     liquid: cryofluid
     amount: 100
 }
+attribute: water
+baseEfficiency: 1
+boostScale: 0.3
+maxHeatBoost: 1.5
 
 craftTime: 90
 category: crafting
