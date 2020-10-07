@@ -1,4 +1,4 @@
-const ironOre = extendContent(OreBlock, "iron", {});
+//const ironOre = extendContent(OreBlock, "iron", {});
 /*
 const ironItem = extendContent(Item, "iron", {});
 const iron = Vars.content.getByName(ContentType.item, "testmod-iron");
