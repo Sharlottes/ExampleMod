@@ -20,9 +20,9 @@ consumes: {
 }
 outputLiquid : {
     liquid: cryofluid
-    amount: 75
+    amount: 70
 }
 craftTime: 150
 
 category: crafting
-research: cryofluid-mixer
+research: cryofluidmixer

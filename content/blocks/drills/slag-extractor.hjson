@@ -3,7 +3,7 @@ type: SolidPump
 health: 500
 size: 2
 hasPower: true
-hasLiquid: true
+hasLiquids: true
 liquidCapacity: 30
 
 requirements: [
@@ -12,7 +12,7 @@ requirements: [
     lead/85
     metaglass/70
 ]
-consume: {
+consumes: {
     power: 2
 }
 

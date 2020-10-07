@@ -7,6 +7,7 @@ block.testmod-titanium-payload-conveyor.name = titanium payload conveyor
 block.testmod-titanium-payload-router.name = titanium payload router
 
 block.testmod-slag-extractor.name = slag extractor
+block.testmod-cryofluid-extractor.name = cryofluid extractor
 block.testmod-titanium-drill.name = titanium drill
 
 block.testmod-hyper-pulse-conduit.name = hyper pulse conduit

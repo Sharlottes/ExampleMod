@@ -1,0 +1,40 @@
+type: Fracker
+
+health: 1000
+size: 3
+hasPower: true
+hasLiquids: true
+liquidCapacity: 50
+
+requirements: [
+    copper/200
+    graphite/175
+    lead/150
+    metaglass/70
+    titanium/100
+    thorium/115
+    silicon/90
+]
+consumes: {
+    power: 5
+    items: {
+        items: [
+            titanium/2
+        ]
+    }
+    liquid: {
+        liquid: water
+        amount: 0.3
+    }
+}
+itemUseTime: 60
+pumpAmount: 0.2
+rotateSpeed: 1.7
+result: cryofluid
+baseEfficiency: 0.5
+attribute: water
+updateEffect: pulverize
+updateEffectChance: 0.75
+
+category: production
+research: water-extractor
