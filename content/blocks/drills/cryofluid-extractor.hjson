@@ -34,7 +34,7 @@ result: cryofluid
 baseEfficiency: 0.5
 attribute: water
 updateEffect: pulverize
-updateEffectChance: 0.75
+updateEffectChance: 0.55
 
 category: production
 research: water-extractor
