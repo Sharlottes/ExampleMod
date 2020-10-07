@@ -171,6 +171,7 @@ testFragBullet1.incendAmount = 4;
 testFragBullet1.incendSpread = 15;
 testFragBullet1.incendChance = 1;
 
+/*
 
 //로그 확인
 
@@ -199,3 +200,5 @@ print("healIn" + " : " + healIn);
     //유닛
 print("testunit4.abilities" + " : " + testunit4.abilities);
 print("testunit4.weapons" + " : " + testunit4.weapons);
+
+*/
