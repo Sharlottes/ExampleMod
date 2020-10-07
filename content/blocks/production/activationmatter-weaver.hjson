@@ -1,5 +1,3 @@
-
-
 health: 500
 size: 2
 
@@ -43,7 +41,7 @@ consumes: {
     power: 20
 }
 outputItem: activationmatter/1
-
 craftTime: 90
 
 category: crafting
+research: alloy-smelter

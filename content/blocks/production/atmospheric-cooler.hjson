@@ -1,0 +1,28 @@
+health: 1500
+size: 3
+
+hasItems: true
+hasLiquids: true
+hasPower: true
+itemCapacity: 20
+liquidCapacity: 50
+
+requirements: [
+    lead/150
+    metaglass/130
+    titanium/120
+    silicon/100
+]
+
+consumes: {
+    items:{items:[titanium/5]}
+    power: 20
+}
+outputLiquid : {
+    liquid: cryofluid
+    amount: 0.5
+}
+
+craftTime: 90
+category: crafting
+research: cryofluid-mixer

@@ -17,6 +17,7 @@ block.testmod-power-processor.name = power processor
 block.testmod-pressed-memory-cell.name = pressed memory cell
 block.testmod-testdisplay.name = test display
 
+block.testmod-atmospheric-cooler.name = atmospheric cooler
 block.testmod-activationmatter-weaver.name = activationmatter weaver
 block.testmod-multi-blast-mixer.name = multi blast mixer
 block.testmod-multi-pyratite-mixer.name = multi pyratite mixer
@@ -39,7 +40,7 @@ block.testmod-iron-wall.name = iron wall
 block.testmod-iron-wall-large.name = large iron wall
 
 item.testmod-iron.name = iron
-item.activationmatter.name = activation matter
+item.testmod-activationmatter.name = activation matter
 
 unit.testmod-electricdagger.name = electric dagger
 unit.testmod-electricmace.name = electric mace
