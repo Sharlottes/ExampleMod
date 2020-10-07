@@ -15,12 +15,12 @@ requirements: [
 ]
 
 consumes: {
-    items:{items:[titanium/5]}
+    items:{items:[titanium/4]}
     power: 20
 }
 outputLiquid : {
     liquid: cryofluid
-    amount: 0.5
+    amount: 100
 }
 
 craftTime: 90
