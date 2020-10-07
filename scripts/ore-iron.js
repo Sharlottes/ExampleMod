@@ -1,4 +1,4 @@
-const iron = Vars.content.getByName(ContentType.item, "iron");
+const iron = Vars.content.getByName(ContentType.item, "testmod-iron");
 print("iron" + " : " + iron);
 print("ironName" + " : " + iron.name);
 const ironOre = new OreBlock(iron.name);
