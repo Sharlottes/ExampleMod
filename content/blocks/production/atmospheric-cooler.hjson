@@ -16,11 +16,6 @@ requirements: [
 
 consumes: {
     items:{items:[titanium/4]}
-    liquid: {
-        liquid: water
-        amount: 0.4
-        timePeriod: 60
-    }
     power: 20
 }
 outputLiquid : {

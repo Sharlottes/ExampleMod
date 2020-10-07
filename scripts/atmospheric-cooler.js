@@ -27,5 +27,5 @@ const rotateBlock = extend(DrawMixer, {
     }
 });
 
-const atmosphericCooler = extendContent(LiquidConverter, "atmospheric-cooler", {});
+const atmosphericCooler = extendContent(GenericCrafter, "atmospheric-cooler", {});
 atmosphericCooler.drawer = rotateBlock;
