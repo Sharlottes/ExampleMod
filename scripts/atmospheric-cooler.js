@@ -18,17 +18,17 @@ const rotateBlock = extend(DrawMixer, {
     load(block){
         this.rotator = Core.atlas.find(block.name + "-rotator");
         this.liquid = Core.atlas.find(block.name + "-liquid");
-        this.top1 = Core.atlas.find(block.name + "-top1");
+        this.top = Core.atlas.find(block.name + "-top");
         this.bottom = Core.atlas.find(block.name + "-bottom");
     },
     icons(block){
         return [
           this.bottom,
           this.rotator,
-          this.top1
+          this.top
         ];
     }
 });
 
-const atmosphericCooler = extendContent(AttributeSmelter, "atmospheric-cooler", {});
+const atmosphericCooler = extendContent(GenericCrafter, "atmospheric-cooler", {});
 atmosphericCooler.drawer = rotateBlock;
