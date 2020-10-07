@@ -5,7 +5,7 @@ hasItems: true
 hasLiquids: true
 hasPower: true
 itemCapacity: 20
-liquidCapacity: 50
+liquidCapacity: 200
 
 requirements: [
     lead/150

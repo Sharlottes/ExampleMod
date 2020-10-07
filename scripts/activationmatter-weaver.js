@@ -1,5 +1,5 @@
 const activationMatterColor = Color.valueOf("a3ddf5");
-const activationMatterWeaver = extendContent(AttributeSmelter, "activationmatter-weaver", {});
+const activationMatterWeaver = extendContent(GenericCrafter, "activationmatter-weaver", {});
 
 
 const weaverOut = new Effect (60, e => { //아이템 생성 그래픽 효과
