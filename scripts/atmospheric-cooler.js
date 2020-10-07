@@ -5,8 +5,8 @@ const rotateBlock = extend(DrawMixer, {
         Draw.rect(this.bottom, entity.x, entity.y, rotation);
 
         if(entity.liquids.total() > 0.001){
-            Draw.color(((GenericCrafter)entity.block).outputLiquid.liquid.color);
-            Draw.alpha(entity.liquids.get(((GenericCrafter)entity.block).outputLiquid.liquid) / entity.block.liquidCapacity);
+            Draw.color(entity.block.outputLiquid.liquid.color);
+            Draw.alpha(entity.liquids.get(entity.block.outputLiquid.liquid) / entity.block.liquidCapacity);
             Draw.rect(this.liquid, entity.x, entity.y, rotation);
             Draw.color();
         }
