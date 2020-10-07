@@ -6,8 +6,8 @@ const rotateBlock = extend(DrawRotator, {
     if(n >= 360){
       Time.run(90, () => {});
       n = 0;
-    }
-  }
+    };
+  };
 });
 const atmosphericCooler = extendContent(GenericCrafter, "atmospheric-cooler", {});
 atmosphericCooler.drawer = rotateBlock;
