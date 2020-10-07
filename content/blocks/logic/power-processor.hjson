@@ -1,5 +1,11 @@
 type: LogicBlock
 
+size: 3
+health: 600
+
+hasLiquids: true
+hasPower: true
+
 requirements: [
     lead/1000
     silicon/350
@@ -27,9 +33,6 @@ consumes: {
 
 instructionsPerTick: 40
 range: 800
-size: 3
-health: 600
 
-hasLiquids: true
-hasPower: true
 category: logic
+research: hyper-processor

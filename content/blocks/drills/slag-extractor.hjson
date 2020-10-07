@@ -1,0 +1,27 @@
+type: SolidPump
+
+health: 500
+size: 2
+hasPower: true
+hasLiquid: true
+liquidCapacity: 30
+
+requirements: [
+    copper/85
+    graphite/70
+    lead/85
+    metaglass/70
+]
+consume: {
+    power: 2
+}
+
+pumpAmount: 0.15
+rotateSpeed: 1.5
+result: slag
+baseEfficiency: 0.5
+attribute: heat
+
+
+category: production
+research: water-extractor

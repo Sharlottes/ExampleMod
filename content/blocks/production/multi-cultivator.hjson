@@ -26,4 +26,5 @@ outputItem: spore-pod/2
 craftTime: 90
 craftEffect: steam
 
-category: crafting
+category: production
+research: cultivator

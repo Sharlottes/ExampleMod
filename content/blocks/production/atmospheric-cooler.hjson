@@ -22,6 +22,7 @@ outputLiquid : {
     liquid: cryofluid
     amount: 75
 }
-
 craftTime: 150
+
 category: crafting
+research: cryofluid-mixer
