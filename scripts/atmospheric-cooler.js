@@ -9,7 +9,7 @@ const rotateBlock = extend(DrawMixer, {
             Draw.alpha(entity.liquids.get(((GenericCrafter)entity.block).outputLiquid.liquid) / entity.block.liquidCapacity);
             Draw.rect(this.liquid, entity.x, entity.y, rotation);
             Draw.color();
-        };
+        }
         Draw.rect(this.top, entity.x, entity.y, rotation);
 
         Draw.rect(entity.block.region, entity.x, entity.y);
@@ -22,7 +22,7 @@ const rotateBlock = extend(DrawMixer, {
         this.bottom = Core.atlas.find(block.name + "-bottom");
     },
     icons(block){
-    return new TextureRegion[]{bottom, rotator, top};
+        return new TextureRegion[]{bottom, rotator, top};
     }
 });
 
