@@ -86,8 +86,8 @@ const techtree = extend(TechTree, {
                     });
                 });
 
-                node(Items.coal, ItemStack.ItemStack.with(Items.lead, 3000), () => {
-                    node(Items.graphite, ItemStack.ItemStack.with(Items.coal, 1000), () => {
+                node(Items.graphite, ItemStack.ItemStack.with(Items.lead, 3000), () => {
+                    node(Items.coal, ItemStack.ItemStack.with(Items.coal, 1000), () => {
                         node(illuminator, () => {
                         });
 
