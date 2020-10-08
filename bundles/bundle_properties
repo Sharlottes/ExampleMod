@@ -3,6 +3,7 @@ block.testmod-titaniumlaunchpad.name = titanium launchpad
 block.testmod-mend-dome.name = mend dome
 
 block.testmod-hyper-driver.name = hyper driver
+block.testmod-impact-driver.name = impact driver
 block.testmod-floating-conveyor.name = floating conveyor
 block.testmod-impact-conveyor.name = impact conveyor
 block.testmod-iron-conveyor.name = iron conveyor

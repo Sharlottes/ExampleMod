@@ -1,0 +1,34 @@
+type: MassDriver
+
+size: 3
+health: 2000
+itemCapacity: 300
+liquidCapacity: 50
+
+requirements: [
+    titanium/250
+    silicon/150
+    blast-compound/75
+    lead/250
+    thorium/100
+]
+consumes: {
+    power: 7
+    liquid: {
+        liquid: slag
+        amount: 0.4
+    }
+}
+
+range: 1000
+rotateSpeed: 0.02
+translation: 8.5
+minDistribute: 50
+knockback: 5
+reloadTime: 240
+bulletSpeed: 2.75
+bulletLifetime: 500
+shake: 7
+
+category: distribution
+research: mass-driver

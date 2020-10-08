@@ -2,7 +2,8 @@ type: MassDriver
 
 size: 3
 health: 1500
-itemCapacity: 250
+itemCapacity: 200
+liquidCapacity: 25
 
 requirements: [
     titanium/250
@@ -12,22 +13,22 @@ requirements: [
     thorium/100
 ]
 consumes: {
-    power: 3
+    power: 5
     liquid: {
         liquid: water
-        amount: 0.2
+        amount: 0.25
     }
 }
 
-range: 800
+range: 600
 rotateSpeed: 0.08
 translation: 10
 minDistribute: 30
-knockback: 10
+knockback: 5
 reloadTime: 320
 bulletSpeed: 10
 bulletLifetime: 500
-shake: 5
+shake: 3
 
 category: distribution
 research: mass-driver

@@ -59,8 +59,8 @@ const ironOre = extendContent(OreBlock, "iron", {
 });
 
 //광물 생성 매개변수
-ironOre.oreScale = 25;
-ironOre.oreThreshold = 0.95;
+ironOre.oreScale = 25.105874;
+ironOre.oreThreshold = 0.873;
 ironOre.oreDefault = true;
 
 ironOre.cost = 2;
