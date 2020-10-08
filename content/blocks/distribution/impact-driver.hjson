@@ -26,7 +26,7 @@ translation: 8.5
 minDistribute: 50
 knockback: 5
 reloadTime: 240
-bulletSpeed: 2.75
+bulletSpeed: 2.25
 bulletLifetime: 500
 shake: 7
 
