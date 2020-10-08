@@ -35,9 +35,9 @@ const createIconsC = (packer, block) => {
 };
 
 
-const briumOre = extendContent(OreBlock, "brium", {
+const ironOre = extendContent(OreBlock, "iron", {
     init(){
-        this.itemDrop = Vars.content.getByName(ContentType.item, "modName-brium");
+        this.itemDrop = Vars.content.getByName(ContentType.item, "testmod-iron");
         this.super$init();
     },
     createIcons(packer){
@@ -45,6 +45,6 @@ const briumOre = extendContent(OreBlock, "brium", {
     }
 });
 
-briumOre.oreScale = 24.77;
-briumOre.oreThreshold = 0.893;
-briumOre.oreDefault = true;
+ironOre.oreScale = 24.77;
+ironOre.oreThreshold = 0.893;
+ironOre.oreDefault = true;
