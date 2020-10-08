@@ -86,21 +86,21 @@ const techtree = extend(TechTree, {
                     });
                 });
 
-                node(Items.coal, with(Items.lead, 3000), () => {
-                    node(Items.graphite, with(Items.coal, 1000), () => {
+                node(Items.coal, ItemStack.ItemStack.with(Items.lead, 3000), () => {
+                    node(Items.graphite, ItemStack.ItemStack.with(Items.coal, 1000), () => {
                         node(illuminator, () => {
                         });
 
                         node(graphitePress, () => {
-                            node(Items.titanium, with(Items.graphite, 6000, Items.copper, 10000, Items.lead, 10000), () => {
+                            node(Items.titanium, ItemStack.with(Items.graphite, 6000, Items.copper, 10000, Items.lead, 10000), () => {
                                 node(pneumaticDrill, () => {
-                                    node(Items.sporePod, with(Items.coal, 5000, Items.graphite, 5000, Items.lead, 5000), () => {
+                                    node(Items.sporePod, ItemStack.with(Items.coal, 5000, Items.graphite, 5000, Items.lead, 5000), () => {
                                         node(cultivator, () => {
 
                                         });
                                     });
 
-                                    node(Items.thorium, with(Items.titanium, 10000, Items.lead, 15000, Items.copper, 30000), () => {
+                                    node(Items.thorium, ItemStack.with(Items.titanium, 10000, Items.lead, 15000, Items.copper, 30000), () => {
                                         node(laserDrill, () => {
                                             node(blastDrill, () => {
 
@@ -116,9 +116,9 @@ const techtree = extend(TechTree, {
                                 });
                             });
 
-                            node(Items.pyratite, with(Items.coal, 6000, Items.lead, 10000, Items.sand, 5000), () => {
+                            node(Items.pyratite, ItemStack.with(Items.coal, 6000, Items.lead, 10000, Items.sand, 5000), () => {
                                 node(pyratiteMixer, () => {
-                                    node(Items.blastCompound, with(Items.pyratite, 3000, Items.sporePod, 3000), () => {
+                                    node(Items.blastCompound, ItemStack.with(Items.pyratite, 3000, Items.sporePod, 3000), () => {
                                         node(blastMixer, () => {
 
                                         });
@@ -126,10 +126,10 @@ const techtree = extend(TechTree, {
                                 });
                             });
 
-                            node(Items.silicon, with(Items.coal, 4000, Items.sand, 4000), () => {
+                            node(Items.silicon, ItemStack.with(Items.coal, 4000, Items.sand, 4000), () => {
                                 node(siliconSmelter, () => {
 
-                                    node(Liquids.oil, with(Items.coal, 8000, Items.pyratite, 6000, Items.sand, 20000), () => {
+                                    node(Liquids.oil, ItemStack.with(Items.coal, 8000, Items.pyratite, 6000, Items.sand, 20000), () => {
                                         node(sporePress, () => {
                                             node(coalCentrifuge, () => {
                                                 node(multiPress, () => {
@@ -139,9 +139,9 @@ const techtree = extend(TechTree, {
                                                 });
                                             });
 
-                                            node(Items.plastanium, with(Items.titanium, 10000, Items.silicon, 10000), () => {
+                                            node(Items.plastanium, ItemStack.with(Items.titanium, 10000, Items.silicon, 10000), () => {
                                                 node(plastaniumCompressor, () => {
-                                                    node(Items.phasefabric, with(Items.thorium, 15000, Items.sand, 30000, Items.silicon, 5000), () => {
+                                                    node(Items.phasefabric, ItemStack.with(Items.thorium, 15000, Items.sand, 30000, Items.silicon, 5000), () => {
                                                         node(phaseWeaver, () => {
 
                                                         });
@@ -151,13 +151,13 @@ const techtree = extend(TechTree, {
                                         });
                                     });
 
-                                    node(Items.metaglass, with(Items.sand, 6000, Items.lead, 10000), () => {
+                                    node(Items.metaglass, ItemStack.with(Items.sand, 6000, Items.lead, 10000), () => {
                                         node(kiln, () => {
                                             node(incinerator, () => {
-                                                node(Items.scrap, with(Items.copper, 20000, Items.sand, 10000), () => {
-                                                    node(Liquids.slag, with(Items.scrap, 4000), () => {
+                                                node(Items.scrap, ItemStack.with(Items.copper, 20000, Items.sand, 10000), () => {
+                                                    node(Liquids.slag, ItemStack.with(Items.scrap, 4000), () => {
                                                         node(melter, () => {
-                                                            node(Items.surgealloy, with(Items.thorium, 20000, Items.silicon, 30000, Items.lead, 40000), () => {
+                                                            node(Items.surgealloy, ItemStack.with(Items.thorium, 20000, Items.silicon, 30000, Items.lead, 40000), () => {
                                                                 node(surgeSmelter, () => {
 
                                                                 });
@@ -171,7 +171,7 @@ const techtree = extend(TechTree, {
                                                                 });
                                                             });
 
-                                                            node(Liquids.cryofluid, with(Items.titanium, 8000, Items.metaglass, 5000), () => {
+                                                            node(Liquids.cryofluid, ItemStack.with(Items.titanium, 8000, Items.metaglass, 5000), () => {
                                                                 node(cryofluidMixer, () => {
 
                                                                 });
@@ -247,7 +247,7 @@ const techtree = extend(TechTree, {
                             node(steamGenerator, () => {
                                 node(thermalGenerator, () => {
                                     node(differentialGenerator, () => {
-                                        node(thoriumReactor, Seq.with(new Research(Liquids.cryofluid)), () => {
+                                        node(thoriumReactor, Seq.ItemStack.with(new Research(Liquids.cryofluid)), () => {
                                             node(impactReactor, () => {
 
                                             });
@@ -439,17 +439,17 @@ const techtree = extend(TechTree, {
             });
 
             node(groundZero, () => {
-                node(frozenForest, Seq.with(
+                node(frozenForest, Seq.ItemStack.with(
                     new SectorComplete(groundZero),
                     new Research(junction),
                     new Research(router)
                 ), () => {
-                    node(craters, Seq.with(
+                    node(craters, Seq.ItemStack.with(
                         new SectorComplete(frozenForest),
                         new Research(mender),
                         new Research(combustionGenerator)
                     ), () => {
-                        node(ruinousShores, Seq.with(
+                        node(ruinousShores, Seq.ItemStack.with(
                             new SectorComplete(craters),
                             new Research(graphitePress),
                             new Research(combustionGenerator),
@@ -457,13 +457,13 @@ const techtree = extend(TechTree, {
                             new Research(mechanicalPump)
                         ), () => {
 
-                            node(tarFields, Seq.with(
+                            node(tarFields, Seq.ItemStack.with(
                                 new SectorComplete(ruinousShores),
                                 new Research(coalCentrifuge),
                                 new Research(conduit),
                                 new Research(wave)
                             ), () => {
-                                node(desolateRift, Seq.with(
+                                node(desolateRift, Seq.ItemStack.with(
                                     new SectorComplete(tarFields),
                                     new Research(thermalGenerator),
                                     new Research(thoriumReactor)
@@ -472,7 +472,7 @@ const techtree = extend(TechTree, {
                                 });
                             });
 
-                            node(saltFlats, Seq.with(
+                            node(saltFlats, Seq.ItemStack.with(
                                 new SectorComplete(ruinousShores),
                                 new Research(groundFactory),
                                 new Research(airFactory),
@@ -483,7 +483,7 @@ const techtree = extend(TechTree, {
                             });
                         });
 
-                        node(overgrowth, Seq.with(
+                        node(overgrowth, Seq.ItemStack.with(
                             new SectorComplete(craters),
                             new SectorComplete(fungalPass),
                             new Research(cultivator),
@@ -495,19 +495,19 @@ const techtree = extend(TechTree, {
                         });
                     });
 
-                    node(stainedMountains, Seq.with(
+                    node(stainedMountains, Seq.ItemStack.with(
                         new SectorComplete(frozenForest),
                         new Research(pneumaticDrill),
                         new Research(powerNode),
                         new Research(steamGenerator)
                     ), () => {
-                        node(fungalPass, Seq.with(
+                        node(fungalPass, Seq.ItemStack.with(
                             new SectorComplete(stainedMountains),
                             new Research(groundFactory),
                             new Research(door),
                             new Research(siliconSmelter)
                         ), () => {
-                            node(nuclearComplex, Seq.with(
+                            node(nuclearComplex, Seq.ItemStack.with(
                                 new SectorComplete(fungalPass),
                                 new Research(thermalGenerator),
                                 new Research(laserDrill)
