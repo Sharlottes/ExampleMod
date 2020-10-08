@@ -10,7 +10,7 @@ consumes: {
     items: {
         items: [
             {
-                item: activationmatter
+                item: activation-matter
                 amount: 10
             }
         ]
