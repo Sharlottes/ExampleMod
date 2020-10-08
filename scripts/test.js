@@ -45,6 +45,8 @@ const createIconsC = (packer, block) => { //람다함수 정의, createIconsC �
     }
 };
 
+
+
 //콘텐츠 확장
 const ironOre = extendContent(OreBlock, "iron", {
     init(){
@@ -57,6 +59,9 @@ const ironOre = extendContent(OreBlock, "iron", {
 });
 
 //광물 생성 매개변수
-ironOre.oreScale = 24.77;
-ironOre.oreThreshold = 0.893;
+ironOre.oreScale = 25;
+ironOre.oreThreshold = 0.95;
 ironOre.oreDefault = true;
+
+ironOre.cost = 2;
+ironOre.hardness = 5;

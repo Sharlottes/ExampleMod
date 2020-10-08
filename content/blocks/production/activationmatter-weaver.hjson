@@ -40,7 +40,7 @@ consumes: {
     }
     power: 20
 }
-outputItem: activationmatter/1
+outputItem: activation-matter/1
 craftTime: 90
 
 category: crafting

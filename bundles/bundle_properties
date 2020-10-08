@@ -2,13 +2,17 @@ block.testmod-titaniumlaunchpad.name = titanium launchpad
 
 block.testmod-mend-dome.name = mend dome
 
+block.testmod-hyper-driver.name = hyper driver
 block.testmod-floating-conveyor.name = floating conveyor
+block.testmod-impact-conveyor.name = impact conveyor
+block.testmod-iron-conveyor.name = iron conveyor
 block.testmod-titanium-payload-conveyor.name = titanium payload conveyor
 block.testmod-titanium-payload-router.name = titanium payload router
 
 block.testmod-slag-extractor.name = slag extractor
 block.testmod-cryofluid-extractor.name = cryofluid extractor
 block.testmod-titanium-drill.name = titanium drill
+
 
 block.testmod-hyper-pulse-conduit.name = hyper pulse conduit
 block.testmod-plated-hyper-conduit.name = plated hyper conduit
