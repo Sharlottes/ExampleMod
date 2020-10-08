@@ -20,7 +20,7 @@ consumes: {
         items: [
             {
                 item: activationmatter
-                amount: 10
+                amount: 5
             }
         ]
     }

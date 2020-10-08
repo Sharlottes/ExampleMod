@@ -17,4 +17,4 @@ requirements: [
 category: distribution
 research: armored-conveyor
 
-baseExplosiveness: 0.5
+baseExplosiveness: 20
