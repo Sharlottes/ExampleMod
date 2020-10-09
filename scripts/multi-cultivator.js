@@ -3,6 +3,7 @@ const rtfmUI = require("rtfm/library");
 
 
 multiCultivator.drawer = new DrawAnimation();
+multiCultivator.configurable = true;
 multiCultivator.buildType = () => {
     return extendContent(GenericCrafter.GenericCrafterBuild, multiCultivator, {
         buildConfiguration(table){
