@@ -1,16 +1,15 @@
 2020-09-16
 
 
-#Cliff
+##Cliff
 
-class name: Cliff
+~class name: Cliff
 extend class: [white]Block[]
 
 description: cliff
 
 #fields
 
-size: [orange]float[]
-    default: [orange]11[]
+size: [orange]float[] | [orange]11[]
 
 
