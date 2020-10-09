@@ -17,7 +17,7 @@ consumes: {
 }
 
 lightColor: 87ceeb
-buildVisibility: hidden
+buildVisibility: shown
 category: effect
 
 research: launch-pad
