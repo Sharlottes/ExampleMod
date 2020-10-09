@@ -3,6 +3,11 @@ try {
 
 	/* Lone pages, good for small mods */
 	// Page is stored in manuals/Epic file page
+
+	rtfm.addSection("&test3", {
+        "$test3.test",
+        "$test3.test1"
+    });
 	rtfm.buildPage([
         "# test",
         "but not test"
