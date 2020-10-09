@@ -12,7 +12,7 @@ try {
 
 	/* Sections for bigger mods.
 		 Files have content as null.
-		 Sections have content as an object, not an array. *//*
+		 Sections have content as an object, not an array. */
 	rtfm.addSection("OP Walls", {
 		"$op-walls.epic-bundle": [
 			"# Bundle page",
@@ -20,7 +20,7 @@ try {
 		],
 		"Page 2 from a file": null
 	});
-    /*
+
 	/* Custom elements with the default builder.
 		 Cannot be done with a file. *//*
 	rtfm.addPage("hack zone", [
