@@ -48,7 +48,7 @@ try {
 				}).center().size(500, 40);
 			}).size(4000);
 		}
-	}, "$block.title");
+	}, rtfm.pages["$block.title"]);
 
 	// Still here? Check out RTFM Docs / API or scripts/library.js and get your hands real dirty.
 } catch (e) {
