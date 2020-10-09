@@ -55,4 +55,5 @@ try {
 	// Message here
 	Log.warn("Please install [#00aaff]DeltaNedas/rtfm[] to view OP Walls's manual pages.");
 	print(e);
+	print(e.trace);
 }
