@@ -6,5 +6,5 @@ require("atmospheric-cooler");
 //require("ore-iron");
 require("test");
 //require("techtree");
-
+require("page");
 
