@@ -13,7 +13,7 @@ try {
 	]);
 
     rtfm.addSection("$block.mod.title", {
-        "$block.mod.ironWall": null
+        "$block.mod.ironWall": null,
         "test": null
     });
 	rtfm.addSection("$block.title", {
