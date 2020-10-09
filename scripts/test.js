@@ -1,5 +1,5 @@
-//json version doesnt work at the time oㅊf the development of this
-
+//json version doesnt work at the time of the development of this
+//thanks for sk
 
 const createIconsC = (packer, block) => { //람다함수 정의, createIconsC 라는 변수는 packer, block 라는 매개변수를 가지고 {...} 실행문을 실행할 함수로써 정의됨.
     for(var i = 0; i < block.variants; i++){ //block.variants 만큼 반복, 기본값이 3이므로 여기선 3번 반복
