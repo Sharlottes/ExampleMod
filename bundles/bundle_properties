@@ -62,3 +62,6 @@ unit.testmod-sporedfortress.name = spored fortress
 block.title = block
 block.cliff = cliff
 block.floor = floor
+
+block.mod.title = modded block
+block.mod.ironWall = iron wall
