@@ -4,7 +4,7 @@ try {
 	/* Lone pages, good for small mods */
 	// Page is stored in manuals/Epic file page
 
-	rtfm.addSection("&block", {
+	rtfm.addSection("$block", {
         "$block.floor": null,
         "$block.cliff": null
     });
