@@ -58,3 +58,7 @@ unit.testmod-heavyfortress.name = heavy fortress
 unit.testmod-sporeddagger.name = spored dagger
 unit.testmod-sporedmace.name = spored mace
 unit.testmod-sporedfortress.name = spored fortress
+
+block = block
+block.cliff = cliff
+block.floor = floor
