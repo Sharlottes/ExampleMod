@@ -19,10 +19,7 @@ try {
         "$block.floor": null,
         "$block.cliff": null
     });
-    print(rtfm.currentPage);
-    print(rtfm.pages);
-    print(rtfm.dialog);
-    print(rtfm);
+
 	/* Sections for bigger mods.
 		 Files have content as null.
 		 Sections have content as an object, not an array. *//*
