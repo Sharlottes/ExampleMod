@@ -4,17 +4,16 @@ try {
 	/* Lone pages, good for small mods */
 	// Page is stored in manuals/Epic file page
 
-
+    /*
 	rtfm.addPage("test");
 	rtfm.addPage("test2", [
 		"# Steps",
 		"1. stop chaining routers",
 		"2. done"
 	]);
-
+    */
     rtfm.addSection("$block.mod.title", {
-        "$block.mod.ironWall": null,
-        "test": null
+        "$block.mod.ironWall": null
     });
 	rtfm.addSection("$block.title", {
         "$block.floor": null,
