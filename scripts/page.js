@@ -4,14 +4,7 @@ try {
 	/* Lone pages, good for small mods */
 	// Page is stored in manuals/Epic file page
 
-	rtfm.addSection("$block.title", {
-        "$block.floor": null,
-        "$block.cliff": null
-    });
-	rtfm.buildPage([
-        "# test",
-        "but not test"
-	]);
+
 	rtfm.addPage("test");
 	rtfm.addPage("test2", [
 		"# Steps",
@@ -19,6 +12,14 @@ try {
 		"2. done"
 	]);
 
+    rtfm.addSection("$block.mod.title", {
+        "$block.mod.ironWall": null
+        "test": null
+    });
+	rtfm.addSection("$block.title", {
+        "$block.floor": null,
+        "$block.cliff": null
+    });
     print(rtfm.currentPage);
     print(rtfm.pages);
     print(rtfm.dialog);
