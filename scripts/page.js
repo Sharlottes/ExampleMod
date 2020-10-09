@@ -5,8 +5,8 @@ try {
 	// Page is stored in manuals/Epic file page
 
 	rtfm.addSection("&test3", {
-        "$test3.test",
-        "$test3.test1"
+        "$test3.test": null,
+        "$test3.test1": null
     });
 	rtfm.buildPage([
         "# test",
