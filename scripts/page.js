@@ -13,7 +13,8 @@ try {
 	]);
     */
     rtfm.addSection("$block.mod.title", {
-        "$block.mod.ironWall": null
+        "$block.mod.ironWall": null,
+        "$block.mod.multicultivator": null
     });
 	rtfm.addSection("$block.title", {
         "$block.floor": null,

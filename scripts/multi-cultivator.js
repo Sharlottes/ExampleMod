@@ -10,7 +10,7 @@ multiCultivator.buildType = () => {
             this.super$buildConfiguration(table);
             table.button(Icon.star, () => {
                 this.configure(new Integer(1));
-                rtfmUI.showPage("$block.mod.title", false);
+                rtfmUI.showPage("$block.mod.title", true);
             }).size(40);
         }
     });
