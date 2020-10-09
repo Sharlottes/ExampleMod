@@ -1,4 +1,7 @@
-{testmod-blocks-defense-mend-dome}
-~lol
-{testmod-mend-dome}
-~hehe
+{testmod-iron-wall}
+#Iron Wall
+~health: 350
+~size: 1
+~requirements: {testmod-iron}/6
+~category: [green]defense[]
+~[royal]solid[]: [coral]false[]
