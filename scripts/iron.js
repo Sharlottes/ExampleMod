@@ -5,7 +5,7 @@ irons.hardness = 5;
 const irons = extend(Item, {
 	init() {
 		this.super$init();
-		routorio.research(this, "ubuntium-router");
+		routorio.research(this, "router");
 	},
 
 	researchRequirements: () => ItemStack.with(
@@ -15,3 +15,4 @@ const irons = extend(Item, {
 
 	color: Color.valueOf("#c3d6c7")
 });
+*/
