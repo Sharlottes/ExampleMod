@@ -1,6 +1,6 @@
 const multiCultivator = extendContent(GenericCrafter,"multi-cultivator",{});
 const rtfmUI = require("rtfm/library");
-onst Integer = java.lang.Integer;
+const Integer = java.lang.Integer;
 
 multiCultivator.drawer = new DrawAnimation();
 multiCultivator.configurable = true;
