@@ -28,7 +28,7 @@ try {
 		new Label(prov(() => Mathf.random(0, 10) + ""))
 	]);
     */
-	/* Entirely custom page! */
+	/* Entirely custom page! *//*
 	rtfm.addPage("s p a c e", {
 		build(page) {
 			page.table.table(t => {
@@ -38,7 +38,7 @@ try {
 			}).size(4000);
 		}
 	});
-
+    */
 	// Still here? Check out RTFM Docs / API or scripts/library.js and get your hands real dirty.
 } catch (e) {
 	// Message here
