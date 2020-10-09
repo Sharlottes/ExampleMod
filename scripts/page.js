@@ -3,8 +3,8 @@ try {
 
 	/* Lone pages, good for small mods */
 	// Page is stored in manuals/Epic file page
-	rtfm.addPage("Epic file page");
-	rtfm.addPage("How to play [coral]mindustry", [
+	rtfm.addPage("test");
+	rtfm.addPage("test2", [
 		"# Steps",
 		"1. stop chaining routers",
 		"2. done"
