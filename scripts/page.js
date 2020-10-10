@@ -12,7 +12,7 @@ try {
 		"2. done"
 	]);
     */
-    rtfm.addSection("$block.mod.title", {
+  rtfm.addSection("$block.mod.title", {
         "$block.mod.ironWall": null,
         "$block.mod.multicultivator": null
     });
@@ -20,7 +20,13 @@ try {
         "$block.floor": null,
         "$block.cliff": null
     });
-
+	for (var block of [Blocks.router, Blocks.sorter, Blocks.duo]) {
+	    rtfm.addPage(block.localizedName, [
+		    "then, this is page. Right?",
+		    () => new Label(prov(() => Mathf.random(0, 10) + "")),
+		    "so.. can i add page under new Label?"
+	    ], rtfm.pages["$block.mod.title"]);
+	};
 	/* Sections for bigger mods.
 		 Files have content as null.
 		 Sections have content as an object, not an array. *//*
@@ -40,6 +46,7 @@ try {
 	]);
     */
 	/* Entirely custom page! */
+	/*
 	rtfm.addPage("s p a c e", {
 		build(page) {
 			page.table.table(t => {
@@ -49,7 +56,7 @@ try {
 			}).size(4000);
 		}
 	}, rtfm.pages["$block.title"]);
-
+	*/
 	// Still here? Check out RTFM Docs / API or scripts/library.js and get your hands real dirty.
 } catch (e) {
 	// Message here

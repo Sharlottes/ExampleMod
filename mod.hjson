@@ -4,3 +4,7 @@ author: "[royal]Sharlotte[]"
 description: "the mod for test."
 version: "0.6.5.5"
 minGameVersion: 105
+dependencies: [
+  rtfm
+  ui-lib
+]
