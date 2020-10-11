@@ -43,9 +43,10 @@ try {
 
 			}
 		}
+		print(front);
 		var centeralStr = "~"+str;
-		rtfm.addPage(blockArr[h], [centeralStr]);
-		rtfm.addSection("$block.title", {blockArr[h]: null});
+		rtfm.addPage(front+"", [centeralStr]);
+		rtfm.addSection("$block.title", {front+"": null});
 	}
 } catch (e) {
 	// Message here
