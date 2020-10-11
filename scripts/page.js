@@ -51,7 +51,7 @@ try {
 	  //print(block.localizedName);
 		var centeralStr = "~"+str;
 
-		rtfm.addPage(block.localizedName, ["{"+block.name+"}", "#"+block.localizedName, "", centeralStr], rtfm.pages["$block.title"]);
+		rtfm.addPage(block.localizedName, ["~{"+block.name+"}", "# "+block.localizedName, "", centeralStr], rtfm.pages["$block.title"]);
 		//var blockPage = blockArr[h]+"";
 		//rtfm.addSection("$block.title", {blockPage: [centeralStr]});
 	}
