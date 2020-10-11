@@ -1,0 +1,15 @@
+~{testmod-multi-cultivator}
+# multi cultivator
+~health: [sky]350[]
+~size: [sky]2[]
+~item capacity: [sky]20[]
+~liquid capacity: [stat]100[]
+
+~requirements: lead/[sky]65[], titanium/[sky]40[], metaglass/[sky]50[]
+~consumes: [yellow]power[]/[stat]108[], [blue]water[]/[stat]54[]
+~output: [#7457ce]spore-pod[]/[sky]2[]
+~craft time: [stat]1.5[]sec
+~craft effect: [coral]steam[]
+~category: [coral]production[]
+~research: [coral]cultivator[]
+~{testmod-cultivator}
