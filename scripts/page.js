@@ -5,11 +5,12 @@ try {
         "$block.mod.ironWall": null,
         "$block.mod.multicultivator": null
     });
+	/*
 	rtfm.addSection("$block.title", {
         "$block.floor": null,
         "$block.cliff": null
     });
-
+	*/
 	for (var block of [Blocks.router, Blocks.sorter, Blocks.duo]) {
     rtfm.addPage(block.localizedName, [
 	    "then, this is page. Right?",
@@ -20,8 +21,8 @@ try {
 	};
 
 	const blockArr = Vars.content.blocks().toArray();
-	for (var blocks of blockArr){
-		var front = blockArr[h];
+	for (var block of blockArr){
+		var front = block;
 		if(front == null) break; //아무것도 없는데 뭘 하겠다는거요?
 		var str = ""; //형변환 유도를 위한 빈 문자열 선언/정의
 		const arr = Object.keys(front); //대상 키-값쌍의 키들을 수집해서 배열로 반환
@@ -43,10 +44,11 @@ try {
 
 			}
 		}
-		print(front);
+		//print(front);
+	  //print(block.localizedName);
 		var centeralStr = "~"+str;
-		rtfm.addPage(blocks.localizedName, [centeralStr]);
-		var blockPage = blockArr[h]+"";
+		rtfm.addPage(block.localizedName, [centeralStr], rtfm.pages["$block.title"]);
+		//var blockPage = blockArr[h]+"";
 		//rtfm.addSection("$block.title", {blockPage: [centeralStr]});
 	}
 } catch (e) {
