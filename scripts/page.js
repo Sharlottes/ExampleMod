@@ -43,9 +43,8 @@ try {
 
 			}
 		}
-		rtfm.addPage("$block.title", {
-			"~"+str
-		});
+		var centeralStr = "~"+str;
+		rtfm.addPage("$block.title", [centeralStr]);
 	}
 } catch (e) {
 	// Message here
