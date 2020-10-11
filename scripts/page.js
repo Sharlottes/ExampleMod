@@ -38,7 +38,7 @@ try {
 					continue; //반복문 반영구 정지
 				};
 				str += arr[i]; //빈 문자열에 arr 인수 추가. 형변환 유도
-				//arr 인수가 추가된 문자열에서 front객체의 arr배열의 i번째 인수의 자료형 유형에 다른 색 변환.
+				//arr 인수가 추가된 문자열에서 front객체의 arr배열의 i번째 인수의 자료형 유형에 따른 색 변환.
 				str += (front[arr[i]] == null)?(": [lightgray]null[]"):((typeof front[arr[i]]) === "object")?(": [coral]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "number")?(": [sky]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "boolean")?(": [stat]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "undefined")?(": [darkgray]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "string")?(": [green]" + front[arr[i]] + "[]"):(": [accent]" + front[arr[i]] + "[]");
 
 				if(i < arr.length - 1) str += "\n"; //arr 배열의 길이-1가 i보다 클 경우, \n 까지 덧붙임. 줄 바꿔쓰기
