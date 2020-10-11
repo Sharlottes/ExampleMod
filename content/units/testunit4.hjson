@@ -9,7 +9,7 @@ range: 160
 lowAltitude: true
 flying: true
 engineOffset: 10.5
-rotateShooting: flase
+rotateShooting: false
 hitSize: 32
 engineSize: 3
 payloadCapacity: 500
