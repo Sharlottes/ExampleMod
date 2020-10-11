@@ -45,8 +45,7 @@ try {
 		}
 		print(front);
 		var centeralStr = "~"+str;
-		rtfm.addPage(front+"", [centeralStr]);
-		rtfm.addSection("$block.title", {front+"": null});
+		rtfm.addSection("$block.title", {front+"": [centeralStr]});
 	}
 } catch (e) {
 	// Message here
