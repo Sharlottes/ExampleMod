@@ -45,8 +45,11 @@ try {
 		}
 		print(front);
 		var centeralStr = "~"+str;
+		var blockPage = front+"";
 		rtfm.addSection("$block.title", {
-			front+"": [centeralStr, ""]
+			blockPage: [
+				centeralStr
+			]
 		});
 	}
 } catch (e) {
