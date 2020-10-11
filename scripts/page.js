@@ -1,6 +1,6 @@
 try {
 	const rtfm = require("rtfm/library");
-	/*
+
   rtfm.addSection("$block.mod.title", {
         "$block.mod.ironWall": null,
         "$block.mod.multicultivator": null
@@ -18,9 +18,9 @@ try {
 			"bruh.. this is array. don't be dump anymore"
     ], rtfm.pages["$block.mod.title"]);
 	};
-	*/
+
 	const blockArr = Vars.content.blocks().toArray();
-	for (var h=0; h<blockArr.length; h++){
+	for (var blocks of blockArr){
 		var front = blockArr[h];
 		if(front == null) break; //아무것도 없는데 뭘 하겠다는거요?
 		var str = ""; //형변환 유도를 위한 빈 문자열 선언/정의
@@ -45,8 +45,9 @@ try {
 		}
 		print(front);
 		var centeralStr = "~"+str;
+		rtfm.addPage(blocks.localizedName, [centeralStr]);
 		var blockPage = blockArr[h]+"";
-		rtfm.addSection("$block.title", {blockPage: [centeralStr]});
+		//rtfm.addSection("$block.title", {blockPage: [centeralStr]});
 	}
 } catch (e) {
 	// Message here
