@@ -1,3 +1,13 @@
 name: iron
 color: b0bac0
-research: titanium
+
+research: {
+    parent:titanium
+    requirements:
+    [
+        {item: graphite, amount: 8000},
+        {item: copper, amount: 15000},
+        {item: lead, amount: 15000},
+        {item: titanium, amount: 5000}
+    ]
+}
