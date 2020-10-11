@@ -34,11 +34,13 @@ try {
 				continue; //반복문 반영구 정지
 			}
 			try{
-				if((typeof front[arr[i]]) === "function"){ //arr 인수를 매개변수로 가진? front[]가 문자열 function일 경우
+				if((typeof front[arr[i]]) === "function"){ //front객체의 arr배열의 i번째 인수가 문자열 function일 경우
 					continue; //반복문 반영구 정지
 				};
 				str += arr[i]; //빈 문자열에 arr 인수 추가. 형변환 유도
-				str += (front[arr[i]] == null)?(": [lightgray]null[]"):(": [accent]" + front[arr[i]] + "[]");//arr 인수가 추가된 문자열에서 arr 인수를 매개변수로 가진? front[]가 null일 경우, : null을 추가. null이 아닐 경우, front[]를 추가
+				str += (front[arr[i]] == null)?(": [lightgray]null[]"):(": [accent]" + front[arr[i]] + "[]");//arr 인수가 추가된 문자열에서 front객체의 arr배열의 i번째 인수가 null일 경우, : null을 추가. null이 아닐 경우, front[]를 추가
+				str += ((typeof front[arr[i]]) === "object")?(": [coral]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "number")?(": [sky]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "boolean")?(": [stat]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "undefined")?(": [darkgray]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "string")?(": [green]" + front[arr[i]] + "[]"):(": [lightgray]null[]");
+
 				if(i < arr.length - 1) str += "\n"; //arr 배열의 길이-1가 i보다 클 경우, \n 까지 덧붙임. 줄 바꿔쓰기
 			}
 			catch(ignore){ //예외 발생시 실행문
@@ -48,7 +50,8 @@ try {
 		//print(front);
 	  //print(block.localizedName);
 		var centeralStr = "~"+str;
-		rtfm.addPage(block.localizedName, [centeralStr], rtfm.pages["$block.title"]);
+
+		rtfm.addPage(block.localizedName, ["{"+block.localizedName+"}", "",  centeralStr], rtfm.pages["$block.title"]);
 		//var blockPage = blockArr[h]+"";
 		//rtfm.addSection("$block.title", {blockPage: [centeralStr]});
 	}
