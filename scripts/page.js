@@ -22,7 +22,7 @@ try {
 	const blockArr = Vars.content.blocks().toArray();
 	for (var h=0; h<blockArr.length; h++){
 		var front = blockArr[h];
-		//if(front == null) return; 아무것도 없는데 뭘 하겠다는거요?
+		if(front == null) break; //아무것도 없는데 뭘 하겠다는거요?
 		var str = ""; //형변환 유도를 위한 빈 문자열 선언/정의
 		const arr = Object.keys(front); //대상 키-값쌍의 키들을 수집해서 배열로 반환
 		arr.sort(); //배열 인수들을 생성순서대로 정렬
@@ -45,12 +45,8 @@ try {
 		}
 		print(front);
 		var centeralStr = "~"+str;
-		var blockPage = front+"";
-		rtfm.addSection("$block.title", {
-			blockPage: [
-				centeralStr
-			]
-		});
+		var blockPage = blockArr[h]+"";
+		rtfm.addSection("$block.title", {blockPage: [centeralStr]});
 	}
 } catch (e) {
 	// Message here
