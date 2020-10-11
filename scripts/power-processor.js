@@ -1,6 +1,6 @@
 const rtfmUI = require("rtfm/library");
-const Integer = java.lang.Integer;
 const powerProcessor = extendContent(LogicBlock,"power-processor",{});
+const Integer = java.lang.Integer;
 powerProcessor.configurable = true;
 powerProcessor.buildType = () => {
     return extendContent(LogicBlock.LogicBuild, powerProcessor, {

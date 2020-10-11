@@ -19,3 +19,4 @@ Object 클래스의 매개변수 object가 UnlockableContent클래스의 unlock�
                 customRequirements ItemStack[1차배열] 추상필드를 parser 메소드 객체의 ItemStack[1차배열]클래스의 class 필드의 값과 JsonValue 클래스의 research 객체의 매개변수 "requirements"를 가진 getChild 메소드를 실행한 반환값을 매개변수로 가진 readValue 메소드를 실행한 반환값으로 정의
             JsonValue 클래스의 research 객체의 매개변수 "requirements"를 가진 hasChild 메소드를 실행한 반환값이 거짓일 경우
                 customRequirements ItemStack[1차배열] 추상필드를 null으로 정의
+*/
