@@ -2,7 +2,7 @@ name: "testmod"
 displayName: "The Test Mod"
 author: "[royal]Sharlotte[]"
 description: "the mod for test. [red]warming[]: this is for BE version. not 107"
-version: "0.6.13.1"
+version: "0.6.14"
 minGameVersion: 105
 dependencies: [
   rtfm

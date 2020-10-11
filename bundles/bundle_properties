@@ -29,6 +29,7 @@ block.testmod-activationmatter-weaver.name = activationmatter weaver
 block.testmod-multi-blast-mixer.name = multi blast mixer
 block.testmod-multi-pyratite-mixer.name = multi pyratite mixer
 block.testmod-multi-cultivator.name = multi cultivator
+block.testmod-always-source.name = always source
 
 block.testmod-core-valut.name = cored valut
 block.testmod-titanium-unloader.name = titanium unloader
