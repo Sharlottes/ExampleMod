@@ -43,9 +43,9 @@ try {
 
 			}
 		}
-	rtfm.addPage("$block.title", {
-		"~"+str
-	});
+		rtfm.addPage("$block.title", {
+			"~"+str
+		});
 	}
 } catch (e) {
 	// Message here
