@@ -44,7 +44,8 @@ try {
 			}
 		}
 		var centeralStr = "~"+str;
-		rtfm.addPage("$block.title", [centeralStr]);
+		rtfm.addPage(blockArr[h], [centeralStr]);
+		rtfm.addSection("$block.title", {blockArr[h]: null});
 	}
 } catch (e) {
 	// Message here
