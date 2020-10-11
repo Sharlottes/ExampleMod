@@ -5,12 +5,13 @@ try {
         "$block.mod.ironWall": null,
         "$block.mod.multicultivator": null
     });
-	/*
+
 	rtfm.addSection("$block.title", {
-        "$block.floor": null,
-        "$block.cliff": null
+				"$block.mod.multicultivator": null
+        //"$block.floor": null,
+        //"$block.cliff": null
     });
-	*/
+
 	for (var block of [Blocks.router, Blocks.sorter, Blocks.duo]) {
     rtfm.addPage(block.localizedName, [
 	    "then, this is page. Right?",
