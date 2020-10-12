@@ -33,3 +33,4 @@ weapons: [
         shootSound: artillery
     }
 ]
+research: heavy-multiplicative-reconstructor

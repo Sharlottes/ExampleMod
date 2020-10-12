@@ -48,3 +48,5 @@ weapons: [
         }
     }
 ]
+
+research: electric-multiplicative-reconstructor

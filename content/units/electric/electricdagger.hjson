@@ -26,3 +26,13 @@ weapons: [
         }
     }
 ]
+
+research: {
+    parent: electric-factory
+    requirements:
+    [
+        {item: surge-alloy, amount: 6000},
+        {item: plastanium, amount: 50000},
+        {item: silicon, amount: 100000}
+    ]
+}
