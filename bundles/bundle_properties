@@ -5,8 +5,8 @@ block.testmod-impact-projector.name = impact projector
 block.testmod-overdriver.name = overdriver
 block.testmod-mend-dome.name = mend dome
 
-block.testmod-block-loader.name = block loader
-block.testmod-block-unloader.name = block unloader
+block.testmod-blocks-loader.name = block loader
+block.testmod-blocks-unloader.name = block unloader
 block.testmod-hyper-driver.name = hyper driver
 block.testmod-impact-driver.name = impact driver
 block.testmod-floating-conveyor.name = floating conveyor
@@ -29,7 +29,7 @@ block.testmod-power-processor.name = power processor
 block.testmod-pressed-memory-cell.name = pressed memory cell
 block.testmod-testdisplay.name = test display
 
-block.testmod-block-forge.name = block forge
+block.testmod-blocks-forge.name = block forge
 block.testmod-atmospheric-cooler.name = atmospheric cooler
 block.testmod-activationmatter-weaver.name = activationmatter weaver
 block.testmod-multi-blast-mixer.name = multi blast mixer
