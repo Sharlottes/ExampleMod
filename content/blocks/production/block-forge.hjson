@@ -1,0 +1,12 @@
+type: BlockForge
+requirements: [
+    thorium/100
+]
+
+hasPower: true
+size: 3
+consumes: {
+    power: 2
+}
+BuildVisibility: shown
+category: production
