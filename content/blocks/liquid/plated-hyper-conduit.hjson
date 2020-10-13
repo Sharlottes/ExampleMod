@@ -2,7 +2,6 @@ type: Conduit
 
 liquidCapacity: 25
 liquidPressure: 1.25
-leakResistance: 1.75
 health: 300
 displayFlow: true
 

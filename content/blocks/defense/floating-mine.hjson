@@ -13,7 +13,7 @@ placeableLiquid: true
 health: 50
 damage: 50
 tileDamage: 50
-tendrills: 10
+tendrils: 10
 length: 25
 cooldown: 30
 
