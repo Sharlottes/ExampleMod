@@ -30,7 +30,6 @@ consumes: {
 
 speedBoost: 1.25
 speedBoostPhase: 0.25
-canOverdrive: true
 
 category: effect
 research: mender

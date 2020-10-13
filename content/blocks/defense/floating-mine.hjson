@@ -1,18 +1,20 @@
 type: ShockMine
 
-size: 1
+size: 2
 requirements: [
     lead/30
     silicon/25
     metaglass/12
 ]
 
-hasShadow: true
+hasShadow: false
+requiresWater: true
+placeableLiquid: true
 health: 50
 damage: 50
 tileDamage: 50
 tendrills: 10
-length: 5
+length: 25
 cooldown: 30
 
 category: effect
