@@ -1,0 +1,36 @@
+type: OverdriveProjector
+
+requirements: [
+    lead/70
+    copper/50
+    silicon/20
+]
+
+size: 1
+reload: 240
+range: 40
+useTime: 90
+
+hasPower: true
+hasItems: true
+
+consumes: {
+    items: {
+        items: [
+            {
+                item: silicon
+                amount: 2
+            }
+        ]
+        booster: true
+        optional: true
+    }
+    power: 0.5
+}
+
+speedBoost: 1.25
+speedBoostPhase: 0.25
+canOverdrive: true
+
+category: effect
+research: mender

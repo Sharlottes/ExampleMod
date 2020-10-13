@@ -1,5 +1,8 @@
 block.testmod-titaniumlaunchpad.name = titanium launchpad
 
+block.testmod-floating-mine.name = floating mine
+block.testmod-impact-projector.name = impact projector
+block.testmod-overdriver.name = overdriver
 block.testmod-mend-dome.name = mend dome
 
 block.testmod-hyper-driver.name = hyper driver

@@ -8,7 +8,7 @@ require("test");
 //require("techtree");
 require("page");
 require("power-processor");
-
+require("impact-projector");
 
 /*
 credit({

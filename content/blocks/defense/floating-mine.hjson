@@ -1,0 +1,19 @@
+type: ShockMine
+
+size: 1
+requirements: [
+    lead/30
+    silicon/25
+    metaglass/12
+]
+
+hasShadow: true
+health: 50
+damage: 50
+tileDamage: 50
+tendrills: 10
+length: 5
+cooldown: 30
+
+category: effect
+research: wave
