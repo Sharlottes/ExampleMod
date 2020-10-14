@@ -7,7 +7,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
 
             Draw.z(Layer.shields);
 
-            Draw.color(team.color.cpy().mul(1, 1, 1, 0.5), Color.white.cpy(), Mathf.clamp(this.hit));
+            Draw.color(this.team.color.cpy().mul(1, 1, 1, 0.5), Color.white.cpy(), Mathf.clamp(this.hit));
 
             if(Core.settings.getBool("animatedshields")){
                 Fill.poly(this.x, this.y, 6, radius);
