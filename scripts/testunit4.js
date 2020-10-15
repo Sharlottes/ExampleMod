@@ -78,7 +78,7 @@ healField1.healEffect = healIn;
 testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 50, 2 * 60, 20 * 8));
 testunit4.abilities.add(new JavaAdapter(ForceFieldAbility, {
   draw(unit){
-      this.checkRadius(unit);
+      ForceFieldAbility.checkRadius(unit);
 
       if(unit.shield > 0){
           Draw.z(Layer.shields);
