@@ -85,6 +85,7 @@ testunit4.abilities.add(new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0));
 testunit4.weapons.add(testWeapon1);
 testunit4.weapons.add(testWeapon2);
 testunit4.weapons.add(testWeapon3);
+testunit4.weapons.add(testWeapon4);
     //무기
 
 testWeapon1.reload = 60;
@@ -143,6 +144,7 @@ testWeapon4.shootStatusDuration = 120;
 testWeapon4.firstShotDelay = 80;
 testWeapon4.x = 17;
 testWeapon4.y = -8;
+testWeapon4.bullet = testBullet3;
 
     //탄환
 testBullet1.drag = -0.003;
