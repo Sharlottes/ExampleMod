@@ -14,12 +14,15 @@ EntityMapping.nameMap.put("testunit4", testunit4Entity);
 const testunit4 = extendContent(UnitType, "testunit4", {});
     //탄환
 const testFragBullet1 = new BombBulletType(15, 24);
+const testFragBullet2 = new BasicBulletType(3, 20, "large-bomb")
 const testBullet1 = new MissileBulletType(3, 35);
 const testBullet2 = new LightningBulletType();
+const testBullet3 = new PointBulletType();
     //무기
-const testWeapon1 = new Weapon("testmissile1");
-const testWeapon2 = new Weapon("testmissile1");
-const testWeapon3 = new Weapon("testshotgun1");
+const testWeapon1 = new Weapon("testmod-testmissile1");
+const testWeapon2 = new Weapon("testmod-testmissile1");
+const testWeapon3 = new Weapon("testmod-testshotgun1");
+const testWeapon4 = new Weapon("testmod-testpointgun1");
     //그래픽 효과
 const mendSpawn = new Effect (120, e => { //유닛 소환 그래픽 효과
     if(!(e.data instanceof UnitType)) {
@@ -73,7 +76,27 @@ healField1.healEffect = healIn;
 
     //어빌리티
 testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 50, 2 * 60, 20 * 8));
-testunit4.abilities.add(new ForceFieldAbility(96, 0.5, 550, 2 * 60));
+testunit4.abilities.add(new JavaAdapter(ForceFieldAbility, {
+  draw(unit){
+      checkRadius(unit);
+
+      if(unit.shield > 0){
+          Draw.z(Layer.shields);
+
+          Draw.color(unit.team.color.cpy(), Pal.heal.cpy(), Mathf.clamp(this.alpha));
+
+          if(Core.settings.getBool("animatedshields")){
+              Fill.poly(unit.x, unit.y, 6, realRad);
+          }else{
+              Lines.stroke(1.5);
+              Draw.alpha(0.09);
+              Fill.poly(unit.x, unit.y, 6, radius);
+              Draw.alpha(1);
+              Lines.poly(unit.x, unit.y, 6, radius);
+          }
+      }
+  }
+}, 15*8, 0.5, 550, 2 * 60));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, -7));
@@ -124,6 +147,23 @@ testWeapon3.ejectEffect = Fx.none;
 testWeapon3.shootSound = Sounds.spark;
 testWeapon3.bullet = testBullet2;
 
+testWeapon4.mirror = true;
+testWeapon4.top = true;
+testWeapon4.rotateSpeed = 2.5;
+testWeapon4.rotate = true;
+testWeapon4.reload = 180;
+testWeapon4.recoil = 5;
+testWeapon4.shake = 4;
+testWeapon4.cooldownTime = 0.009;
+testWeapon4.shots = 1;
+testWeapon4.shootCone = 2;
+testWeapon4.shootSound = Sounds.laser;
+testWeapon4.shootStatus = StatusEffects.unmoving;
+testWeapon4.shootStatusDuration = 120;
+testWeapon4.firstShotDelay = 80;
+testWeapon4.x = 17;
+testWeapon4.y = -8;
+
     //탄환
 testBullet1.drag = -0.003;
 testBullet1.homingRange = 20 * 8;
@@ -156,6 +196,26 @@ testBullet2.shootEffect = Fx.shootHeal;
 testBullet2.lightningColor = healColor;
 testBullet2.hitColor = healColor;
 
+testBullet3.trailSpacing = 20;
+testBullet3.damage = 1500;
+testBullet3.tileDamageMultiplier = 0.75;
+testBullet3.speed = 750;
+testBullet3.lifetime = 150;
+testBullet3.hitShake = 6;
+testBullet3.shootEffect = Fx.greenLaserCharge;
+testBullet3.hitEffect = Fx.healWave;
+testBullet3.hitColor = healColor;
+testBullet3.smokeEffect = Fx.smokeCloud;
+testBullet3.trailEffect = Fx.heal;
+testBullet3.despawnEffect = Fx.greenBomb;
+testBullet3.splashDamage = 500;
+testBullet3.splashDamageRadius = 16;
+testBullet3.fragBullets = 5;
+testBullet3.fragLifeMin = 0.3;
+testBullet3.fragVelocityMax = 0.5;
+testBullet3.fragVelocityMin = 0.15;
+testBullet3.fragBullet = testFragBullet2;
+
 testFragBullet1.width = 10;
 testFragBullet1.height = 14;
 testFragBullet1.hitEffect = Fx.explosion;
@@ -171,6 +231,22 @@ testFragBullet1.incendAmount = 4;
 testFragBullet1.incendSpread = 15;
 testFragBullet1.incendChance = 1;
 
+testFragBullet2.width = 30;
+testFragBullet2.height = 30;
+testFragBullet2.range = 30;
+testFragBullet2.backColor = healColor;
+testFragBullet2.despawnShake = 4;
+testFragBullet2.collidesAir = true;
+testFragBullet2.lifetime = 70;
+testFragBullet2.despawnEffect = Fx.greenBomb;
+testFragBullet2.hitEffect = Fx.massiveExplosion;
+testFragBullet2.keepVelocity = false;
+testFragBullet2.spin = 2;
+testFragBullet2.shrinkX = 0.7;
+testFragBullet2.shrinkY = 0.7;
+testFragBullet2.collides = false;
+testFragBullet2.splashDamage = 240;
+testFragBullet2.splashDamageRadius = 115;
 /*
 
 //로그 확인
