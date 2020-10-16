@@ -11,7 +11,7 @@ const customConsumer = trait => {
 
 impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impactProjector, {
     updateTile(){
-        var phaseValid = this.consumes.get(ConsumeType.item).valid(ForceBuild);
+        var phaseValid = ForceProjector.ForceBuild.consumes.get(ConsumeType.item).valid(ForceBuild);
 
         this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
 
