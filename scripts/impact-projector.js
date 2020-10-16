@@ -1,6 +1,64 @@
 const impactProjector = new ForceProjector("impact-projector");
 impactProjector.consumes.add(new ConsumeLiquidFilter(liquid => liquid.temperature <= 1 && liquid.flammability < 1.3, 0.5)).boost().update(false);
+const customConsumer = trait => {
+    if(trait.team != paramEntity.team && trait.type.absorbable && Intersector.isInsideHexagon(this.paramEntity.x, this.paramEntity.y, this.paramEntity.realRadius() * 2, trait.x(), trait.y())){
+        trait.absorb();
+        Fx.absorb.at(trait);
+        this.paramEntity.hit = 1;
+        this.paramEntity.buildup += trait.damage() * this.paramEntity.warmup;
+    }
+};
+
 impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impactProjector, {
+    updateTile(){
+        var phaseValid = consumes.get(ConsumeType.item).valid(this);
+
+        this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
+
+        if(phaseValid && !this.broken && timer(this.timerUse, this.phaseUseTime) && this.efficiency() > 0){
+            BuildingComp.consume();
+        }
+
+        this.radscl = Mathf.lerpDelta(this.radscl, this.broken ? 0 : this.warmup, 0.05);
+
+        if(Mathf.chanceDelta(this.buildup / this.breakage * 0.1)){
+            Fx.reactorsmoke.at(this.x + Mathf.range(this.tilesize / 2), this.y + Mathf.range(this.tilesize / 2));
+        }
+
+        this.warmup = Mathf.lerpDelta(this.warmup, this.efficiency(), 0.1);
+
+        if(this.buildup > 0){
+            var scale = !this.broken ? this.cooldownNormal : this.cooldownBrokenBase;
+            var cons = consumes.get(ConsumeType.liquid);
+            if(cons.valid(this)){
+                cons.update(this);
+                scale *= (this.cooldownLiquid * (1 + (liquids.current().heatCapacity - 0.4) * 0.9));
+            }
+
+            this.buildup -= BuildingComp.delta() * this.scale;
+        }
+
+        if(this.broken && this.buildup <= 0){
+            this.broken = false;
+        }
+
+        if(this.buildup >= this.breakage + this.phaseShieldBoost && !this.broken){
+            this.broken = true;
+            this.buildup = this.breakage;
+            Fx.shieldBreak.at(this.x, this.y, this.realRadius(), this.team.color.cpy());
+        }
+
+        if(this.hit > 0){
+            this.hit -= 1 / 5 * Time.delta;
+        }
+
+        var realRadius = this.realRadius();
+
+        if(realRadius > 0 && !this.broken){
+            this.paramEntity = this;
+            Groups.bullet.intersect(this.x - realRadius, this.y - realRadius, realRadius * 2, realRadius * 2, customConsumer);
+        }
+    }
     drawShield(){
         if(!this.broken){
             var radius = this.realRadius();
