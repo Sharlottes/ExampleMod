@@ -11,7 +11,7 @@ const customConsumer = trait => {
 
 impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impactProjector, {
     updateTile(){
-        var phaseValid = this.consumes.get(ConsumeType.item).valid(this);
+        var phaseValid = this.consumes.get(ConsumeType.item).valid(ForceBuild);
 
         this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
 
@@ -55,7 +55,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
         var realRadius = this.realRadius();
 
         if(realRadius > 0 && !this.broken){
-            this.paramEntity = this;
+            this.paramEntity = ForceBuild;
             Groups.bullet.intersect(this.x - realRadius, this.y - realRadius, realRadius * 2, realRadius * 2, customConsumer);
         }
     },
