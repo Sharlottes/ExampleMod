@@ -6,7 +6,7 @@ const healerColor = Color.valueOf("db401c");
 const spawnUnit = Vars.content.getByName(ContentType.unit, "fortress");
 const spawnUnit2 = Vars.content.getByName(ContentType.unit, "dagger");
 const spawnUnit3 = Vars.content.getByName(ContentType.unit, "pulsar");
-const UnitSpawn1 = new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0);
+const unitSpawn1 = new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0);
 const healField1 = new HealFieldAbility(50, 2 * 60, 20 * 8);
     //엔티티
 const testunit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
@@ -14,7 +14,7 @@ EntityMapping.nameMap.put("testunit4", testunit4Entity);
 const testunit4 = extendContent(UnitType, "testunit4", {});
     //탄환
 const testFragBullet1 = new BombBulletType(15, 24);
-const testFragBullet2 = new BasicBulletType(3, 20, "large-bomb")
+const testFragBullet2 = new BasicBulletType(3, 20, "large-bomb");
 const testBullet1 = new MissileBulletType(3, 35);
 const testBullet2 = new LightningBulletType();
 const testBullet3 = new PointBulletType();
@@ -71,17 +71,37 @@ const healIn = new Effect (60, e => { //유닛 치료 그래픽 효과
 //실행문
 
     //그래픽 효과
-UnitSpawn1.spawnEffect = mendSpawn;
+unitSpawn1.spawnEffect = mendSpawn;
 healField1.healEffect = healIn;
 
     //어빌리티
 testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 50, 2 * 60, 20 * 8));
-testunit4.abilities.add(new ForceFieldAbility(15*8, 0.5, 550, 2 * 60));
+testunit4.abilities.add(new JavaAdapter(ForceFieldAbility, {
+  draw(Unit unit){
+        ForceFieldAbility.checkRadius(unit);
+
+        if(unit.shield > 0){
+            Draw.z(Layer.shields);
+
+            Draw.color(unit.team.color.cpy(), Pal.heal.cpy(), Mathf.clamp(this.alpha));
+
+            if(Core.settings.getBool("animatedshields")){
+                Fill.poly(unit.x, unit.y, 6, realRad);
+            }else{
+                Lines.stroke(1.5);
+                Draw.alpha(0.09);
+                Fill.poly(unit.x, unit.y, 6, radius);
+                Draw.alpha(1);
+                Lines.poly(unit.x, unit.y, 6, radius);
+            }
+        }
+    }
+}, 15*8, 0.5, 550, 2 * 60));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, 18, 7));
 testunit4.abilities.add(new UnitSpawnAbility(spawnUnit2, 5 * 60, -18, 7));
-testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, 18, -7));
-testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 5 * 60, -18, -7));
-testunit4.abilities.add(new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0));
+testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 7 * 60, 18, -7));
+testunit4.abilities.add(new UnitSpawnAbility(spawnUnit, 7 * 60, -18, -7));
+testunit4.abilities.add(new UnitSpawnAbility(spawnUnit3, 10 * 60, 0, 0));
 testunit4.weapons.add(testWeapon1);
 testunit4.weapons.add(testWeapon2);
 testunit4.weapons.add(testWeapon3);
@@ -132,19 +152,20 @@ testWeapon4.mirror = true;
 testWeapon4.top = true;
 testWeapon4.rotateSpeed = 2.5;
 testWeapon4.rotate = true;
-testWeapon4.reload = 180;
+testWeapon4.reload = 360;
 testWeapon4.recoil = 5;
 testWeapon4.shake = 4;
 testWeapon4.cooldownTime = 0.009;
 testWeapon4.shots = 1;
 testWeapon4.shootCone = 2;
 testWeapon4.shootSound = Sounds.laser;
-testWeapon4.shootStatus = StatusEffects.unmoving;
+testWeapon4.shootStatus = StatusEffects.slow;
 testWeapon4.shootStatusDuration = 120;
 testWeapon4.firstShotDelay = 80;
 testWeapon4.x = 17;
 testWeapon4.y = -8;
 testWeapon4.bullet = testBullet3;
+testWeapon4.alternate = false;
 
     //탄환
 testBullet1.drag = -0.003;
