@@ -9,7 +9,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
                 trait.absorb();
                 Fx.absorb.at(trait);
                 this.paramEntity.hit = 1;
-                this.paramEntity.buildup += trait.damage() * this.paramEntity.warmup;
+                this.paramEntity.buildup += trait.damage * this.paramEntity.warmup;
             }
         };
         var phaseValid = impactProjector.consumes.get(ConsumeType.item).valid(this);
