@@ -15,7 +15,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
 
         this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
 
-        if(phaseValid && !this.broken && timer(this.timerUse, this.phaseUseTime) && this.efficiency() > 0){
+        if(phaseValid && !this.broken && timer(this.timerUse, this.phaseUseTime) && BuildingComp.efficiency() > 0){
             BuildingComp.consume();
         }
 
@@ -25,7 +25,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             Fx.reactorsmoke.at(this.x + Mathf.range(this.tilesize / 2), this.y + Mathf.range(this.tilesize / 2));
         }
 
-        this.warmup = Mathf.lerpDelta(this.warmup, this.efficiency(), 0.1);
+        this.warmup = Mathf.lerpDelta(this.warmup, BuildingComp.efficiency(), 0.1);
 
         if(this.buildup > 0){
             var scale = !this.broken ? this.cooldownNormal : this.cooldownBrokenBase;
@@ -35,7 +35,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
                 scale *= (this.cooldownLiquid * (1 + (liquids.current().heatCapacity - 0.4) * 0.9));
             }
 
-            this.buildup -= BuildingComp.delta() * this.scale;
+            this.buildup -= BuildingComp.delta() * scale;
         }
 
         if(this.broken && this.buildup <= 0){
@@ -81,5 +81,5 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             }
         }
         Draw.reset();
-    }
+    }u
 });
