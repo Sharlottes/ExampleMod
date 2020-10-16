@@ -77,7 +77,7 @@ healField1.healEffect = healIn;
     //어빌리티
 testunit4.abilities.add(new JavaAdapter(HealFieldAbility, {}, 50, 2 * 60, 20 * 8));
 testunit4.abilities.add(new JavaAdapter(ForceFieldAbility, {
-  draw(Unit unit){
+  draw(unit){
         ForceFieldAbility.checkRadius(unit);
 
         if(unit.shield > 0){
@@ -86,13 +86,13 @@ testunit4.abilities.add(new JavaAdapter(ForceFieldAbility, {
             Draw.color(unit.team.color.cpy(), Pal.heal.cpy(), Mathf.clamp(this.alpha));
 
             if(Core.settings.getBool("animatedshields")){
-                Fill.poly(unit.x, unit.y, 6, realRad);
+                Fill.poly(unit.x, unit.y, 6, this.realRad);
             }else{
                 Lines.stroke(1.5);
                 Draw.alpha(0.09);
-                Fill.poly(unit.x, unit.y, 6, radius);
+                Fill.poly(unit.x, unit.y, 6, this.radius);
                 Draw.alpha(1);
-                Lines.poly(unit.x, unit.y, 6, radius);
+                Lines.poly(unit.x, unit.y, 6, this.radius);
             }
         }
     }
