@@ -5,7 +5,7 @@ impactProjector.consumes.add(new ConsumeLiquidFilter(liquid => liquid.temperatur
 impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impactProjector, {
     updateTile(){
         const customConsumer = trait => {
-            if(trait.team != this.paramEntity.team && trait.type.absorbable && Intersector.isInsideHexagon(this.paramEntity.x, this.paramEntity.y, this.paramEntity.realRadius() * 2, trait.x(), trait.y())){
+            if(trait.team != this.paramEntity.team && trait.type.absorbable && Intersector.isInsideHexagon(this.paramEntity.x, this.paramEntity.y, this.paramEntity.realRadius() * 2, trait.x, trait.y)){
                 trait.absorb();
                 Fx.absorb.at(trait);
                 this.paramEntity.hit = 1;
