@@ -81,5 +81,5 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             }
         }
         Draw.reset();
-    }u
+    }
 });
