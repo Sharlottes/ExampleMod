@@ -11,7 +11,7 @@ const customConsumer = trait => {
 
 impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impactProjector, {
     updateTile(){
-        var phaseValid = Block.consumes.get(ConsumeType.item).valid(this);
+        var phaseValid = impactProjector.consumes.get(ConsumeType.item).valid(this);
 
         this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
 
@@ -22,7 +22,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
         this.radscl = Mathf.lerpDelta(this.radscl, this.broken ? 0 : this.warmup, 0.05);
 
         if(Mathf.chanceDelta(this.buildup / this.breakage * 0.1)){
-            Fx.reactorsmoke.at(this.x + Mathf.range(this.tilesize / 2), this.y + Mathf.range(this.tilesize / 2));
+            Fx.reactorsmoke.at(this.x + Mathf.range(Vars.tilesize / 2), this.y + Mathf.range(Vars.tilesize / 2));
         }
 
         this.warmup = Mathf.lerpDelta(this.warmup, BuildingComp.efficiency(), 0.1);
