@@ -15,8 +15,8 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
 
         this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
 
-        if(phaseValid && !this.broken && timer(this.timerUse, this.phaseUseTime) && BuildingComp.efficiency() > 0){
-            BuildingComp.consume();
+        if(phaseValid && !this.broken && timer(this.timerUse, this.phaseUseTime) && this.efficiency() > 0){
+            this.consume();
         }
 
         this.radscl = Mathf.lerpDelta(this.radscl, this.broken ? 0 : this.warmup, 0.05);
@@ -25,11 +25,11 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             Fx.reactorsmoke.at(this.x + Mathf.range(Vars.tilesize / 2), this.y + Mathf.range(Vars.tilesize / 2));
         }
 
-        this.warmup = Mathf.lerpDelta(this.warmup, BuildingComp.efficiency(), 0.1);
+        this.warmup = Mathf.lerpDelta(this.warmup, this.efficiency(), 0.1);
 
         if(this.buildup > 0){
             var scale = !this.broken ? this.cooldownNormal : this.cooldownBrokenBase;
-            var cons = this.consumes.get(ConsumeType.liquid);
+            var cons = impactProjector.consumes.get(ConsumeType.liquid);
             if(cons.valid(this)){
                 cons.update(this);
                 scale *= (this.cooldownLiquid * (1 + (liquids.current().heatCapacity - 0.4) * 0.9));
