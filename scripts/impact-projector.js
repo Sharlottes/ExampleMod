@@ -36,7 +36,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
                 scale *= (this.cooldownLiquid * (1 + (liquids.current().heatCapacity - 0.4) * 0.9));
             }
 
-            this.buildup -= BuildingComp.delta() * scale;
+            this.buildup -= this.delta() * scale;
         }
 
         if(this.broken && this.buildup <= 0){
