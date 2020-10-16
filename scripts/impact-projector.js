@@ -1,16 +1,17 @@
 const impactProjector = new ForceProjector("impact-projector");
 impactProjector.consumes.add(new ConsumeLiquidFilter(liquid => liquid.temperature <= 1 && liquid.flammability < 1.3, 0.5)).boost().update(false);
-const customConsumer = trait => {
-    if(trait.team != paramEntity.team && trait.type.absorbable && Intersector.isInsideHexagon(this.paramEntity.x, this.paramEntity.y, this.paramEntity.realRadius() * 2, trait.x(), trait.y())){
-        trait.absorb();
-        Fx.absorb.at(trait);
-        this.paramEntity.hit = 1;
-        this.paramEntity.buildup += trait.damage() * this.paramEntity.warmup;
-    }
-};
+
 
 impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impactProjector, {
     updateTile(){
+        const customConsumer = trait => {
+            if(trait.team != paramEntity.team && trait.type.absorbable && Intersector.isInsideHexagon(this.paramEntity.x, this.paramEntity.y, this.paramEntity.realRadius() * 2, trait.x(), trait.y())){
+                trait.absorb();
+                Fx.absorb.at(trait);
+                this.paramEntity.hit = 1;
+                this.paramEntity.buildup += trait.damage() * this.paramEntity.warmup;
+            }
+        };
         var phaseValid = impactProjector.consumes.get(ConsumeType.item).valid(this);
 
         this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
