@@ -16,7 +16,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
 
         this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
 
-        if(phaseValid && !this.broken && this.timer(this.timerUse, this.phaseUseTime) && this.efficiency() > 0){
+        if(phaseValid && !this.broken && this.timer.get(this.timerUse, this.phaseUseTime) && this.efficiency() > 0){
             this.consume();
         }
 
