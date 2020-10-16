@@ -58,7 +58,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             this.paramEntity = this;
             Groups.bullet.intersect(this.x - realRadius, this.y - realRadius, realRadius * 2, realRadius * 2, customConsumer);
         }
-    }
+    },
     drawShield(){
         if(!this.broken){
             var radius = this.realRadius();
