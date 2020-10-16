@@ -11,7 +11,7 @@ const customConsumer = trait => {
 
 impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impactProjector, {
     updateTile(){
-        var phaseValid = consumes.get(ConsumeType.item).valid(this);
+        var phaseValid = this.consumes.get(ConsumeType.item).valid(this);
 
         this.phaseHeat = Mathf.lerpDelta(this.phaseHeat, Mathf.num(phaseValid), 0.1);
 
@@ -29,7 +29,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
 
         if(this.buildup > 0){
             var scale = !this.broken ? this.cooldownNormal : this.cooldownBrokenBase;
-            var cons = consumes.get(ConsumeType.liquid);
+            var cons = this.consumes.get(ConsumeType.liquid);
             if(cons.valid(this)){
                 cons.update(this);
                 scale *= (this.cooldownLiquid * (1 + (liquids.current().heatCapacity - 0.4) * 0.9));
