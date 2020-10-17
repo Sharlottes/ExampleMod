@@ -1,4 +1,21 @@
-const impactProjector = new ForceProjector("impact-projector");
+const impactProjector = new JavaAdapter(ForceProjector, {
+  drawPlace(x, y, rotation, valid){
+    this.super$drawPlace(x, y, rotation, valid);
+
+    Draw.color(Pal.gray);
+    Lines.stroke(3);
+    Lines.circle(x * Vars.tilesize + offset, y * Vars.tilesize + offset, this.radius);
+    Draw.color(this.team.color.cpy());
+    Lines.stroke(1);
+    Lines.circle(x * Vars.tilesize + offset, y * Vars.tilesize + offset, this.radius);
+    Lines.stroke(3);
+    Lines.circle(x * Vars.tilesize + offset, y * Vars.tilesize + offset, this.radius + this.phaseRadiusBoost);
+    Draw.color(this.team.color.cpy().mul(1, 0.25, 0.25, 1));
+    Lines.stroke(1);
+    Lines.circle(x * Vars.tilesize + offset, y * Vars.tilesize + offset, this.radius + this.phaseRadiusBoost);
+    Draw.color();
+  }
+}, "impact-projector");
 impactProjector.consumes.add(new ConsumeLiquidFilter(liquid => liquid.temperature <= 1 && liquid.flammability < 1.3, 0.5)).boost().update(false);
 
 
