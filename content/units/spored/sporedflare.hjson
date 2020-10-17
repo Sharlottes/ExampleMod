@@ -2,6 +2,7 @@ type: MinerUnit
 speed: 3
 accel: 0.08
 flying: true
+drag: 0.01
 health: 90
 engineOffset: 5.5
 range: 140

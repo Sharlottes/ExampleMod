@@ -16,6 +16,7 @@ weapons: [
     name: none
     minShootVelocity: 0.75
     x: 3
+    shootY: 0
     reload: 10
     shootCone: 180
     ejectEffect: none
@@ -25,7 +26,7 @@ weapons: [
     shots: 2
     bullet: {
       type: BombBulletType
-      speed: 23
+      radius: 25
       damage: 14
       width: 10
       height: 14
