@@ -13,6 +13,7 @@ armor: 5
 
 weapons: [
   {
+    name: none
     minShootVelocity: 0.75
     x: 3
     reload: 10

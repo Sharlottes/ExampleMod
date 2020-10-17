@@ -1,5 +1,5 @@
 type: MechUnit
-speed: 2.5
+speed: 2.75
 accel: 0.08
 flying: true
 health: 150
@@ -8,6 +8,7 @@ range: 140
 armor: 1
 weapons: [
   {
+    name: none
     y: 0
     x: 2
     reload: 12

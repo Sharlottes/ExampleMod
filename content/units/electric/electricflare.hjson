@@ -7,6 +7,7 @@ engineOffset: 5.5
 range: 140
 weapons: [
   {
+    name: none
     y: 0
     x: 2
     reload: 14
@@ -30,6 +31,7 @@ weapons: [
     }
   },
   {
+    name: none
     y: 0
     x: 2
     reload: 12
