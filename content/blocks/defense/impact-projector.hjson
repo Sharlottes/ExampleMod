@@ -34,8 +34,8 @@ phaseShieldBoost: 750
 radius: 136
 breakage: 1000
 cooldownNormal: 2.25
-cooldownLiquid: 2
-cooldownBrokenBase: 0.5
+cooldownLiquid: 1.75
+cooldownBrokenBase: 0.75
 
 category: effect
 research: force-projector

@@ -54,7 +54,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             var cons = impactProjector.consumes.get(ConsumeType.liquid);
             if(cons.valid(this)){
                 cons.update(this);
-                scale *= (this.cooldownLiquid * (1 + (liquids.current().heatCapacity - 0.4) * 0.9));
+                scale *= (this.cooldownLiquid * (1 + (liquids.current().temperature - 0.4) * 0.9));
             }
 
             this.buildup -= this.delta() * scale;
