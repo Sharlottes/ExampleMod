@@ -65,6 +65,15 @@ unit.testmod-heavyfortress.name = heavy fortress
 unit.testmod-sporeddagger.name = spored dagger
 unit.testmod-sporedmace.name = spored mace
 unit.testmod-sporedfortress.name = spored fortress
+unit.testmod-electricflare.name = electric flare
+unit.testmod-electrichorizon.name = electric horizon
+unit.testmod-electriczenith.name = electric zenith
+unit.testmod-heavyflare.name = heavy flare
+unit.testmod-heavyhorizon.name = heavy horizon
+unit.testmod-heavyzenith.name = heavy zenith
+unit.testmod-sporedflare.name = spored flare
+unit.testmod-sporedhorizon.name = spored horizon
+unit.testmod-sporedzenith.name = spored zenith
 
 block.title = block
 block.cliff = cliff

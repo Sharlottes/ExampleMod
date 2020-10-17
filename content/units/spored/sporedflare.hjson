@@ -1,0 +1,31 @@
+type: MechUnit
+speed: 2.75
+accel: 0.08
+flying: true
+health: 90
+engineOffset: 5.5
+range: 140
+weapons: [
+  {
+    y: 0
+    x: 2
+    reload: 10
+    ejectEffect: shellEjectSmall
+    shootSound: shoot
+    shots: 3
+    spacing: 2
+    bullet: {
+      type: BasicBulletType
+      damage: 5
+      speed: 3
+      width: 7
+      height: 9
+      frontColor: bf92f9
+      backColor: 6d56bf
+      status: sapped
+      inaccuracy: 3
+      lifetime: 90
+      sprite: bullet
+    }
+  }
+]

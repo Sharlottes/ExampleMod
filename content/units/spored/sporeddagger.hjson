@@ -14,7 +14,7 @@ weapons: [
         ejectEffect: shellEjectSmall
         bullet: {
             type: BasicBulletType
-            damage: 14
+            damage: 9
             speed: 2.5
             width: 8
             height: 14

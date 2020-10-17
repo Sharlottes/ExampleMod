@@ -19,6 +19,15 @@ plans: [
             lead/20
         ]
         time: 1200
+    },
+    {
+        unit: electricflare
+        requirements: [
+            silicon/20
+            lead/20
+            titanium/10
+        ]
+        time: 1400
     }
 ]
 

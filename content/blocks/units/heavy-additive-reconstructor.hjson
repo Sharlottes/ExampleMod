@@ -12,7 +12,8 @@ requirements: [
 ]
 
 upgrades: [
-    [heavydagger, heavymace]
+    [heavydagger, heavymace],
+    [heavyflare, heavyhorizon]
 ]
 
 consumes: {

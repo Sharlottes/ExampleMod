@@ -15,7 +15,8 @@ requirements: [
 ]
 
 upgrades: [
-    [heavymace, heavyfortress]
+    [heavymace, heavyfortress],
+    [heavyhorizon, heavyzenith]
 ]
 
 consumes: {

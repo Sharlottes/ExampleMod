@@ -12,7 +12,8 @@ requirements: [
 ]
 
 upgrades: [
-    [electricdagger, electricmace]
+    [electricdagger, electricmace],
+    [electricflare, electrichorizon]
 ]
 
 consumes: {

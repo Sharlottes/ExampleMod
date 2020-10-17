@@ -1,0 +1,40 @@
+type: MechUnit
+health: 600
+speed: 1.75
+accel: 0.08
+drag: 0.016
+flying: true
+hitSize: 9
+targetAir: false
+engineOffset: 7.8
+range: 140
+faceTarget: false
+armor: 6
+
+weapons: [
+  {
+    minShootVelocity: 0.75
+    x: 3
+    reload: 13
+    shootCone: 180
+    ejectEffect: none
+    inaccuracy: 15
+    ignoreRotation: true
+    shootSound: none
+    bullet: {
+      type: BombBulletType
+      speed: 28
+      damage: 28
+      width: 10
+      height: 14
+      hitEffect: flakExplosion
+      shootEffect: none
+      smokeEffect: none
+      frontColor: f8ad42
+      backColor: f68021
+      status: burning
+      incendAmount: 2
+      incendSpread: 3
+    }
+  }
+]

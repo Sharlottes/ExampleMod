@@ -20,6 +20,16 @@ plans: [
             spore-pod/5
         ]
         time: 1100
+    },
+    {
+        unit: sporedflare
+        requirements: [
+            silicon/15
+            lead/20
+            spore-pod/5
+            titanium/10
+        ]
+        time: 1300
     }
 ]
 

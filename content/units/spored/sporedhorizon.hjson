@@ -1,0 +1,39 @@
+type: MechUnit
+health: 500
+speed: 2.25
+accel: 0.08
+drag: 0.016
+flying: true
+hitSize: 9
+targetAir: false
+engineOffset: 7.8
+range: 140
+faceTarget: false
+armor: 5
+
+weapons: [
+  {
+    minShootVelocity: 0.75
+    x: 3
+    reload: 10
+    shootCone: 180
+    ejectEffect: none
+    inaccuracy: 15
+    ignoreRotation: true
+    shootSound: none
+    shots: 2
+    bullet: {
+      type: BombBulletType
+      speed: 23
+      damage: 14
+      width: 10
+      height: 14
+      hitEffect: flakExplosion
+      shootEffect: none
+      smokeEffect: none
+      frontColor: bf92f9
+      backColor: 6d56bf
+      status: sapped
+    }
+  }
+]

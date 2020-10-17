@@ -1,0 +1,47 @@
+type: MechUnit
+health: 1000
+speed: 1.5
+accel: 0.04
+drag: 0.016
+flying: true
+range: 140
+hitSize: 20
+lowAltitude: true
+armor: 8
+
+engineOffset: 12
+engineSize: 3
+
+weapons: [
+  {
+    name: zenith-missiles
+    reload: 40
+    x: 7
+    rotate: rotate
+    shake: 1
+    shots: 2
+    inaccuracy: 5
+    velocityRnd: 0.2
+    bullet: {
+      type: MissileBulletType
+      speed: 3
+      damage: 12
+      width: 8
+      height: 8
+      shrinkY: 0
+      drag: -0.003
+      homingRange: 60
+      keepVelocity: false
+      splashDamageRadius: 25
+      splashDamage: 10
+      lifetime: 60
+      trailColor: d06b53
+      backColor: d06b53
+      frontColor: d06b53
+      hitEffect: blastExplosion
+      despawnEffect: blastExplosion
+      weaveScale: 6
+      weaveMag: 1
+    }
+  }
+]

@@ -15,7 +15,8 @@ requirements: [
 ]
 
 upgrades: [
-    [electricmace, electricfortress]
+    [electricmace, electricfortress],
+    [electrichorizon, electriczenith]
 ]
 
 consumes: {

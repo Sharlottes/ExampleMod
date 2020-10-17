@@ -1,0 +1,31 @@
+type: MechUnit
+speed: 2.5
+accel: 0.08
+flying: true
+health: 150
+engineOffset: 5.5
+range: 140
+armor: 1
+weapons: [
+  {
+    y: 0
+    x: 2
+    reload: 12
+    ejectEffect: shellEjectSmall
+    shootSound: shoot
+    bullet: {
+      speed: 2
+      damage: 10
+      width: 7
+      height: 9
+      lifetime: 60
+      shootEffect: shootSmall
+      smokeEffect: shootSmallSmoke
+      incendAmount: 1
+      incendSpread: 2
+      frontColor: f8ad42
+      backColor: f68021
+      status: burning
+    }
+  }
+]

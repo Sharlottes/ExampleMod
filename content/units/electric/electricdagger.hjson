@@ -10,7 +10,7 @@ weapons: [
         reload: 15
         bullet: {
             type: BasicBulletType
-            damage: 15
+            damage: 12
             speed: 4.25
             width: 6
             height: 8

@@ -1,0 +1,42 @@
+type: MechUnit
+health: 450
+speed: 2.5
+accel: 0.08
+drag: 0.016
+flying: true
+hitSize: 9
+targetAir: false
+engineOffset: 7.8
+range: 140
+faceTarget: false
+armor: 4
+
+weapons: [
+  {
+    minShootVelocity: 0.75
+    x: 3
+    reload: 13
+    shootCone: 180
+    ejectEffect: none
+    inaccuracy: 15
+    ignoreRotation: true
+    shootSound: none
+    bullet: {
+      type: BombBulletType
+      speed: 28
+      damage: 27
+      width: 10
+      height: 14
+      hitEffect: flakExplosion
+      shootEffect: none
+      smokeEffect: none
+      frontColor: f3e979
+      backColor: f3e97966
+      lightningColor: f3e979
+      lightning: 4
+      lightningLength: 4
+      lightningLengthRand: 3
+      lightningDamage: 4
+    }
+  }
+]

@@ -12,7 +12,8 @@ requirements: [
 ]
 
 upgrades: [
-    [sporeddagger, sporedmace]
+    [sporeddagger, sporedmace],
+    [sporedflare, sporedhorizon]
 ]
 
 consumes: {
