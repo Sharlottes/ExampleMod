@@ -2,16 +2,16 @@ const impactProjector = new JavaAdapter(ForceProjector, {
   drawPlace(x, y, rotation, valid){
     this.super$drawPlace(x, y, rotation, valid);
 
-    Draw.color(Pal.gray);
-    Lines.stroke(3);
-    Lines.circle(x * Vars.tilesize + this.offset, y * Vars.tilesize + this.offset, this.radius);
+    //Draw.color(Pal.gray);
+    //Lines.stroke(3);
+    //Lines.circle(x * Vars.tilesize + this.offset, y * Vars.tilesize + this.offset, this.radius);
     //Draw.color(Vars.player.team().color.cpy());
-    Draw.color(Vars.player.team().color.cpy(), Color.white.cpy().mul(1, 0.25, 0.25, 1), 5);
+    Draw.color(Vars.player.team().color.cpy().mul(1, 0.75, 0.25, 1));
     Lines.stroke(1);
     Lines.circle(x * Vars.tilesize + this.offset, y * Vars.tilesize + this.offset, this.radius);
-    Draw.color(Pal.gray);
-    Lines.stroke(3);
-    Lines.circle(x * Vars.tilesize + this.offset, y * Vars.tilesize + this.offset, this.radius + this.phaseRadiusBoost);
+    //Draw.color(Pal.gray);
+    //Lines.stroke(3);
+    //Lines.circle(x * Vars.tilesize + this.offset, y * Vars.tilesize + this.offset, this.radius + this.phaseRadiusBoost);
     Draw.color(Vars.player.team().color.cpy().mul(1, 0.25, 0.25, 1));
     Lines.stroke(1);
     Lines.circle(x * Vars.tilesize + this.offset, y * Vars.tilesize + this.offset, this.radius + this.phaseRadiusBoost);
