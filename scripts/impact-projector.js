@@ -6,7 +6,7 @@ const impactProjector = new JavaAdapter(ForceProjector, {
     Lines.stroke(3);
     Lines.circle(x * Vars.tilesize + this.offset, y * Vars.tilesize + this.offset, this.radius);
     //Draw.color(Vars.player.team().color.cpy());
-    Draw.color(Vars.player.team().color.cpy(), Color.white.cpy().mul(1, 0.25, 0.25, 1), Mathf.clamp(this.hit));
+    Draw.color(Vars.player.team().color.cpy(), Color.white.cpy().mul(1, 0.25, 0.25, 1), 5);
     Lines.stroke(1);
     Lines.circle(x * Vars.tilesize + this.offset, y * Vars.tilesize + this.offset, this.radius);
     Draw.color(Pal.gray);
