@@ -5,7 +5,9 @@ impactProjector.consumes.add(new ConsumeLiquidFilter(liquid => liquid.temperatur
 impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impactProjector, {
     updateTile(){
         const customConsumer = trait => {
-            if(trait.team != this.paramEntity.team && trait.type.absorbable && Intersector.isInsideHexagon(this.paramEntity.x, this.paramEntity.y, this.paramEntity.realRadius() * 2, trait.x, trait.y)){
+            const d = Mathf.dst(this.paramEntity.x, this.paramEntity.y, trait.x, trait.y);
+            //if(trait.team != this.paramEntity.team && trait.type.absorbable && Intersector.isInsideHexagon(this.paramEntity.x, this.paramEntity.y, this.paramEntity.realRadius() * 2, trait.x, trait.y)){
+            if(trait.team != this.paramEntity.team && trait.type.absorbable && d <= this.realRadius()){
                 trait.absorb();
                 Fx.absorb.at(trait);
                 this.paramEntity.hit = 1;
@@ -71,13 +73,13 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             Draw.alpha(0.6);
             Draw.z(Layer.shields);
             if(Core.settings.getBool("animatedshields")){
-                Fill.poly(this.x, this.y, 6, radius);
+                Fill.circle(this.x, this.y, radius);
             }else{
                 Lines.stroke(1.5);
                 Draw.alpha(0.09 + Mathf.clamp(0.08 * this.hit));
-                Fill.poly(this.x, this.y, 6, radius);
+                Fill.circle(this.x, this.y, radius);
                 Draw.alpha(1);
-                Lines.poly(this.x, this.y, 6, radius);
+                Lines.circle(this.x, this.y, radius);
                 Draw.reset();
             }
         }

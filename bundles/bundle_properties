@@ -54,7 +54,7 @@ block.testmod-iron-wall.name = iron wall
 block.testmod-iron-wall-large.name = large iron wall
 
 item.testmod-iron.name = iron
-item.testmod-activationmatter.name = activation matter
+item.testmod-activation-matter.name = activation matter
 
 unit.testmod-electricdagger.name = electric dagger
 unit.testmod-electricmace.name = electric mace
