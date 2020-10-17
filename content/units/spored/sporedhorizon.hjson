@@ -1,4 +1,4 @@
-type: MechUnit
+type: MinerUnit
 health: 500
 speed: 2.25
 accel: 0.08
