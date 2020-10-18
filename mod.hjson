@@ -2,5 +2,5 @@ name: "testmod"
 displayName: "The Test Mod"
 author: "[royal]Sharlotte[]"
 description: "well, i don't know what i made.. what is this mod?"
-version: "0.9.5"
+version: "0.9.5.1"
 minGameVersion: 105
