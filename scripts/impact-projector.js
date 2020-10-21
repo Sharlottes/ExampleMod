@@ -1,3 +1,4 @@
+const unitParam = Vars.content.getByID(ContentType.unit, this._unit);
 const impactProjector = new JavaAdapter(ForceProjector, {
   drawPlace(x, y, rotation, valid){
     this.super$drawPlace(x, y, rotation, valid);
@@ -54,7 +55,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             var cons = impactProjector.consumes.get(ConsumeType.liquid);
             if(cons.valid(this)){
                 cons.update(this);
-                scale *= (this.cooldownLiquid * (1 + (liquids.current().temperature - 0.4) * 0.9));
+                scale *= (this.cooldownLiquid * (1 + (this.liquids.current().temperature - 0.4) * 0.9));
             }
 
             this.buildup -= this.delta() * scale;
@@ -104,4 +105,14 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
         }
         Draw.reset();
     }
+});
+Events.on(UnitDestroyEvent, e => {
+  print("A unit has died, you will too.");
+  spawnUnit(unit, team, x, y){ //There is no ${}
+  var teamColor = "[#" + team.color + "]";
+
+  unit.spawn(team, x, y);
+  //this.configure("Created unit " + teamColor + unit.localizedName + "[] at " + (x / Vars.tilesize) + ", " + (y / Vars.tilesize));
+  }
+  this.spawnUnit()
 });

@@ -70,6 +70,7 @@ const healIn = new Effect (60, e => { //유닛 치료 그래픽 효과
 
 //실행문
 
+
     //그래픽 효과
 unitSpawn1.spawnEffect = mendSpawn;
 healField1.healEffect = healIn;
