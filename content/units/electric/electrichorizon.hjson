@@ -25,7 +25,7 @@ weapons: [
     shootSound: none
     bullet: {
       type: BombBulletType
-      radius: 28
+      splashDamageRadius: 28
       damage: 27
       width: 10
       height: 14
