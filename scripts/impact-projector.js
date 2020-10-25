@@ -1,4 +1,3 @@
-const unitParam = Vars.content.getByID(ContentType.unit, this._unit);
 const impactProjector = new JavaAdapter(ForceProjector, {
   drawPlace(x, y, rotation, valid){
     Draw.color(Vars.player.team().color.cpy().mul(1, 0.75, 0.25, 1));
