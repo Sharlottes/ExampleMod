@@ -36,7 +36,6 @@ consumes: {
     liquid: {
         liquid: cryofluid
         amount: 0.7
-        timePeriod: 60
     }
     power: 20
 }

@@ -36,7 +36,6 @@ consumes: {
     liquid: {
         liquid: water
         amount: 0.5
-        timePeriod: 60
     }
     power: 6
 }
