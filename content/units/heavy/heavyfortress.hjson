@@ -26,7 +26,7 @@ weapons: [
         rotate: true
         rotateSpeed: 10
         top: true
-        ejectEffect: shellEjectSmall
+        ejectEffect: casing1
         bullet: artilleryExplosive
         alternate: false
         mirror: false

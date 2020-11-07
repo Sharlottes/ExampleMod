@@ -9,7 +9,7 @@ weapons: [
         name: heavy-middle-gun1
         reload: 75
         top: false
-        ejectEffect: shellEjectSmall
+        ejectEffect: casing1
         shake: 1.25
         recoil: 2
         spacing: 5
