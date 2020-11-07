@@ -12,7 +12,7 @@ weapons: [
     y: 0
     x: 2
     reload: 10
-    ejectEffect: shellEjectSmall
+    ejectEffect: casing1
     shootSound: shoot
     shots: 3
     spacing: 2

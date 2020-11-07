@@ -9,7 +9,7 @@ weapons: [
         x: 4
         y: 2
         top: false
-        ejectEffect: shellEjectSmall
+        ejectEffect: casing1
         bullet: {
             type: BasicBulletType
             damage: 11

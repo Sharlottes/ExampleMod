@@ -13,7 +13,7 @@ weapons: [
     y: 0
     x: 2
     reload: 12
-    ejectEffect: shellEjectSmall
+    ejectEffect: casing1
     shootSound: shoot
     bullet: {
       speed: 2

@@ -10,7 +10,7 @@ weapons: [
         x: 9
         y: 2
         top: true
-        ejectEffect: shellEjectSmall
+        ejectEffect: casing1
         bullet: standardIncendiary
     },
     {

@@ -11,7 +11,7 @@ weapons: [
         top: false
         shots: 2
         spacing: 2
-        ejectEffect: shellEjectSmall
+        ejectEffect: casing1
         bullet: {
             type: BasicBulletType
             damage: 9
