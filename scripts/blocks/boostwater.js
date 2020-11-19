@@ -5,8 +5,8 @@ const boosteffect = new Effect(50, e => {
 });
 
 const booststatus =new JavaAdapter(StatusEffect, {
-    init(){
-        var run = () => {
+    init(run){
+        var run1 = () => {
             booststatus.opposite(StatusEffects.unmoving);
             booststatus.trans(StatusEffects.burning, ((unit, time, newTime, result) => {
                 unit.damagePierce(8);
@@ -40,7 +40,7 @@ const booststatus =new JavaAdapter(StatusEffect, {
                 result.set(this, time);
             }));
         };
-        run.run();
+        this.initblock = run1;
     }
 });
 booststatus.speedMultiplier = 2;
