@@ -1,5 +1,4 @@
 //변수 정의
-
     //어빌리티
 const healColor = Color.valueOf("98ffa9");
 const healerColor = Color.valueOf("db401c");
@@ -9,7 +8,7 @@ const spawnUnit3 = Vars.content.getByName(ContentType.unit, "pulsar");
 const unitSpawn1 = new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0);
 const healField1 = new RepairFieldAbility(50, 2 * 60, 20 * 8);
     //엔티티
-const testunit4Entity = prov(() => extend(BuilderMinerPayloadUnit, {}));
+const testunit4Entity = prov(() => extend(BuilderPayloadUnit, {}));
 EntityMapping.nameMap.put("testunit4", testunit4Entity);
 const testunit4 = extendContent(UnitType, "testunit4", {});
     //탄환
