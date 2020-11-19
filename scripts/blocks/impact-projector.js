@@ -1,4 +1,4 @@
-shieldHealthconst shieldBrokens = function(x, y, lifetime, color, radius){
+const shieldBrokens = function(x, y, lifetime, color, radius){
     checkTime(lifetime);
     var shieldBrokensDown = new Effect(90, e => {
         e.scaled(lifetime, s => {
