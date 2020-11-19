@@ -1,4 +1,4 @@
-const coredvalut = extendContent(CoreBlock, "core-valut", {
+const coredvalut = extendContent(CoreBlock, "coredvalut", {
     canReplace(other){
         //YOU CAN REPLACE STORAGEBLOCKS AHYES
         return this.super$canReplace(other) || ((other instanceof StorageBlock && coredvalut.size >= other.size) || (other instanceof CoreBlock && coredvalut.size >= other.size));

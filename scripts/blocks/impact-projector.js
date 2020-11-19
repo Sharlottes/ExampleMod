@@ -1,4 +1,4 @@
-const shieldBrokens = function(x, y, lifetime, color, radius){
+shieldHealthconst shieldBrokens = function(x, y, lifetime, color, radius){
     checkTime(lifetime);
     var shieldBrokensDown = new Effect(90, e => {
         e.scaled(lifetime, s => {
@@ -56,7 +56,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
 
         this.radscl = Mathf.lerpDelta(this.radscl, this.broken ? 0 : this.warmup, 0.05);
 
-        if(Mathf.chanceDelta(this.buildup / this.breakage * 0.1)){
+        if(Mathf.chanceDelta(this.buildup / this.shieldHealth * 0.1)){
             Fx.reactorsmoke.at(this.x + Mathf.range(Vars.tilesize / 2), this.y + Mathf.range(Vars.tilesize / 2));
         }
 
@@ -77,9 +77,9 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
             this.broken = false;
         }
 
-        if(this.buildup >= impactProjector.breakage + impactProjector.phaseShieldBoost && !this.broken){
+        if(this.buildup >= impactProjector.shieldHealth + impactProjector.phaseShieldBoost && !this.broken){
             this.broken = true;
-            this.buildup = this.breakage;
+            this.buildup = this.shieldHealth;
             shieldBrokens(this.x, this.y, 90, this.team.color.cpy(), this.realRadius());
         }
 
