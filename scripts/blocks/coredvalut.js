@@ -1,7 +1,7 @@
 const coredvalut = extendContent(CoreBlock, "core-valut", {
     canReplace(other){
         //YOU CAN REPLACE STORAGEBLOCKS AHYES
-        return this.super$canReplace(other) || (other instanceof StorageBlock && coredvalut.size >= other.size));
+        return this.super$canReplace(other) || (other instanceof StorageBlock && coredvalut.size >= other.size);
     },
     canPlaceOn(tile, team){
         if(tile == null) return false;
