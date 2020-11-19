@@ -4,6 +4,7 @@ require("blocks/atmospheric-cooler");
 require("blocks/impact-projector");
 require("blocks/multi-cultivator");
 require("blocks/power-processor");
+require("blocks/coredvalut");
 
 //experiement
 require("experiment/page");
@@ -12,6 +13,7 @@ require("experiment/oregen");
 //units
 require("units/testunit4");
 
+print("Load Complete!");
 
 
 
