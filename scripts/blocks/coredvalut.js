@@ -3,7 +3,7 @@ const coredvalut = extendContent(CoreBlock, "core-valut", {
         //YOU CAN REPLACE STORAGEBLOCKS AHYES
         return this.super$canReplace(other) || (other instanceof StorageBlock && coredvalut.size >= other.size));
     },
-    canPlaceOn(Tile tile, Team team){
+    canPlaceOn(tile, team){
         if(tile == null) return false;
         var core = team.core();
         //must have all requirements
