@@ -4,7 +4,7 @@ const boosteffect = new Effect(50, e => {
     Fill.square(e.x, e.y, e.fslope() * 2, 45);
 });
 
-const booststatus = extendContent(StatusEffect, "waterboost", {
+const booststatus =new JavaAdapter(StatusEffect, {
     init(){
         var run = () => {
             booststatus.opposite(StatusEffects.unmoving);
