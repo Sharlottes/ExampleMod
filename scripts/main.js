@@ -6,8 +6,8 @@ require("blocks/multi-cultivator");
 require("blocks/power-processor");
 
 //experiement
-require("experiement/page");
-require("experiement/oregen");
+require("experiment/page");
+require("experiment/oregen");
 
 //units
 require("units/testunit4");
