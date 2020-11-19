@@ -51,3 +51,7 @@ boostwater.status = booststatus;
 boostwater.statusDuration = 180;
 boostwater.cacheLayer = CacheLayer.water;
 boostwater.initblock = run1;
+
+boostwater.variants = 1;
+boostwater.liquidDrop = Liquids.water;
+boostwater.isLiquid = true;
