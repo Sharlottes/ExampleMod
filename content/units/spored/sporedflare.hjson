@@ -1,4 +1,4 @@
-type: MinerUnit
+type: MechUnit
 speed: 3
 accel: 0.08
 flying: true
