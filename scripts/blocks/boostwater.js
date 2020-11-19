@@ -38,7 +38,7 @@ const run1 = () => {
     }));
 };
 
-const booststatus =new JavaAdapter(StatusEffect, {});
+const booststatus = new JavaAdapter(StatusEffect, {}, "booststatus");
 booststatus.speedMultiplier = 2;
 booststatus.reloadMultiplier = 2;
 booststatus.damageMultiplier = 2;
