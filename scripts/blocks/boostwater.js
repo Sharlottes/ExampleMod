@@ -42,7 +42,7 @@ const booststatus = new StatusEffect("waterboost"){
         };
         run.run();
     }
-}
+};
 booststatus.speedMultiplier = 2;
 booststatus.reloadMultiplier = 2;
 booststatus.damageMultiplier = 2;

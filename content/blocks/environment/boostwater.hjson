@@ -2,4 +2,3 @@
 variants: 0;
 liquidDrop: water;
 isLiquid: true;
-albedo: 0.5;
