@@ -2,5 +2,4 @@
 variants: 0;
 liquidDrop: water;
 isLiquid: true;
-cacheLayer: water;
 albedo: 0.5;
