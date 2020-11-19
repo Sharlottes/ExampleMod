@@ -1,3 +1,6 @@
+//units
+require("units/testunit4");
+
 //blocks
 require("blocks/activationmatter-weaver");
 require("blocks/atmospheric-cooler");
@@ -10,10 +13,6 @@ require("blocks/boostwater");
 //experiement
 require("experiment/page");
 require("experiment/oregen");
-
-//units
-require("units/testunit4");
-
 print("Load Complete!");
 
 
