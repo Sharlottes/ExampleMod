@@ -39,8 +39,9 @@ const booststatus = new StatusEffect("waterboost"){
                 booststatus.reloadMultiplier = 3;
                 result.set(this, time);
             }));
-      };
-      this.initblock = run;
+        };
+        this.initblock = run;
+    }
 }
 booststatus.speedMultiplier = 2;
 booststatus.reloadMultiplier = 2;
