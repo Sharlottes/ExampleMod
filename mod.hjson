@@ -1,6 +1,6 @@
 name: "testmod"
 displayName: "Example Mod"
 author: "[royal]Sharlotte[]"
-description: "[empty]""
+description: "[empty]"
 version: "0.9.7.1"
 minGameVersion: 114.2
