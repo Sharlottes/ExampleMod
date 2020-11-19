@@ -1,28 +1,3 @@
-const shieldBrokens = function(x, y, lifetime, color, radius){
-    checkTime(lifetime);
-    var shieldBrokensDown = new Effect(90, e => {
-        e.scaled(lifetime, s => {
-            Draw.color(color);
-
-            Lines.stroke(s.fout() * 3);
-
-            Lines.poly(x, y, 6, radius * s.fout(Interp.pow10In));
-
-
-            Lines.stroke(s.fout(0.5) * 2);
-
-            Angles.randLenVectors(s.id, 15, 4 + 40 * (1 - s.fout(0.5)), (vx, vy) => {
-                Lines.lineAngle(x + vx, y + vy, Mathf.angle(vx, vy), (1 - s.fout(0.5)) * 4);
-            });
-        });
-    });
-    shieldBrokensDown.at(x, y, color);
-}
-
-
-
-
-
 const impactProjector = new JavaAdapter(ForceProjector, {
   drawPlace(x, y, rotation, valid){
     Draw.color(Vars.player.team().color.cpy().mul(1, 0.75, 0.25, 1));
@@ -79,8 +54,8 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
 
         if(this.buildup >= impactProjector.shieldHealth + impactProjector.phaseShieldBoost && !this.broken){
             this.broken = true;
-            this.buildup = this.shieldHealth;
-            shieldBrokens(this.x, this.y, 90, this.team.color.cpy(), this.realRadius());
+            this.buildup = impactProjector.shieldHealth;
+            Fx.shieldBreak.at(this.x, this.y, this.realRadius(), this.team.color.cpy());
         }
 
         if(this.hit > 0){
