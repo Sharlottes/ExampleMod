@@ -91,7 +91,7 @@ weapons: [
                 width: 30
                 height: 30
 
-                range: 30
+                maxRange: 30
                 backColor: 98ffa9
                 frontColor: ffffff
                 mixColorTo: ffffff

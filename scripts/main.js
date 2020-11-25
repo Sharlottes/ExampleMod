@@ -5,6 +5,7 @@ require("units/testunit4");
 require("blocks/activationmatter-weaver");
 require("blocks/atmospheric-cooler");
 require("blocks/impact-projector");
+require("blocks/multi-projector");
 require("blocks/multi-cultivator");
 require("blocks/power-processor");
 require("blocks/coredvalut");

@@ -73,8 +73,7 @@ impactProjector.buildType = () => extendContent(ForceProjector.ForceBuild, impac
         if(!this.broken){
             var radius = this.realRadius();
 
-            var flashThreshold = 0.46;
-            var flash = 1 + ((this.phaseHeat - flashThreshold) / (1 - flashThreshold)) * 5.4;
+            var flash = 10 * (this.phaseHeat - 0.46);
             flash += flash * Time.delta;
 
             Draw.color(this.team.color.cpy(), this.team.color.cpy().mul(1, 0.25, 0.25, 1), Mathf.absin(flash, 9, 1));

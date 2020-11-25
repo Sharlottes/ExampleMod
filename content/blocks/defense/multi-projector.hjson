@@ -1,0 +1,27 @@
+
+
+requirements: [
+    lead/200
+    copper/200
+    silicon/230
+    titanium/150
+]
+
+size: 3
+hasItems: true
+hasLiquids: true
+hasPower: true
+
+consumes: {
+    power: 6.5
+}
+phaseUseTime: 300
+phaseShieldBoost: 0
+radius: 64
+shieldHealth: 700
+cooldownNormal: 1.75
+cooldownLiquid: 1.5
+cooldownBrokenBase: 0.35
+
+category: effect
+research: force-projector
