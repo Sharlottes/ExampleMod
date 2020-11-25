@@ -216,7 +216,7 @@ testFragBullet1.incendChance = 1;
 
 testFragBullet2.width = 30;
 testFragBullet2.height = 30;
-testFragBullet2.range = 30;
+testFragBullet2.maxRange = 30;
 testFragBullet2.backColor = healColor;
 testFragBullet2.despawnShake = 4;
 testFragBullet2.collidesAir = true;
