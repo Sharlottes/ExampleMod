@@ -1,4 +1,4 @@
-type: MechUnit
+type: mech
 speed: 3
 accel: 0.08
 flying: true

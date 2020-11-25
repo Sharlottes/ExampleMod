@@ -1,4 +1,4 @@
-type: AmmoDistributePayloadUnit
+type: payload
 mineTier: 5
 speed: 0.4
 health: 45000

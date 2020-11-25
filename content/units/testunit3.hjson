@@ -1,4 +1,4 @@
-type: LegsUnit
+type: legs
 drag: 0.1
 speed: 0.5
 health: 30000

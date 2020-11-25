@@ -1,4 +1,4 @@
-type: MechUnit
+type: mech
 health: 600
 speed: 1.75
 accel: 0.08

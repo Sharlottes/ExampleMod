@@ -1,4 +1,4 @@
-type: MechUnit
+type: mech
 speed: 0.45
 health: 300
 range: 48

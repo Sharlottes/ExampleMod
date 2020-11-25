@@ -1,4 +1,4 @@
-type: MechUnit
+type: mech
 speed: 0.45
 health: 250
 weapons: [
