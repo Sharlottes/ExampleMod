@@ -1,6 +1,5 @@
 //units
 require("units/testunit4");
-require("units/electricmace");
 //blocks
 require("blocks/activationmatter-weaver");
 require("blocks/atmospheric-cooler");
