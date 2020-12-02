@@ -1,7 +1,6 @@
-type: mech
+type: flying
 speed: 2.75
 accel: 0.08
-flying: true
 drag: 0.01
 health: 150
 engineOffset: 5.5

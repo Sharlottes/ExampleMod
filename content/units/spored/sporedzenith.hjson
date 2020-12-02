@@ -1,9 +1,8 @@
-type: mech
+type: flying
 health: 850
 speed: 1.6
 accel: 0.04
 drag: 0.016
-flying: true
 range: 140
 hitSize: 20
 lowAltitude: true

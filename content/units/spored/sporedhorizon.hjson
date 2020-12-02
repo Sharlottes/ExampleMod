@@ -1,9 +1,8 @@
-type: mech
+type: flying
 health: 500
 speed: 2.25
 accel: 0.08
 drag: 0.016
-flying: true
 hitSize: 9
 targetAir: false
 engineOffset: 7.8
