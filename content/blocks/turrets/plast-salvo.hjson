@@ -1,0 +1,11 @@
+requirements: [
+    copper/350
+    graphite/150
+    titanium/100
+    thorium/80
+    silicon/120
+]
+size: 2
+range: 150
+health: 2480
+category: turret

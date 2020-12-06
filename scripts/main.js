@@ -9,6 +9,7 @@ require("blocks/multi-cultivator");
 require("blocks/power-processor");
 require("blocks/coredvalut");
 require("blocks/boostwater");
+require("blocks/plastsalvo");
 
 //experiement
 require("experiment/page");
