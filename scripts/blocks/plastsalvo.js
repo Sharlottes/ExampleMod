@@ -127,7 +127,7 @@ phaseMissile.height = 9;
 phaseMissile.shrinkY = 0;
 phaseMissile.drag = 0.01;
 phaseMissile.homingPower = 0.75;
-phaseMissile.splashDamage = 35;
+phaseMissile.splashDamage = 45;
 phaseMissile.splashDamageRadius = 4.5 * 8;
 phaseMissile.ammoMultiplier = 1;
 phaseMissile.backColor = Items.phaseFabric.color;
@@ -139,7 +139,7 @@ phaseMissile.despawnEffect = phaseHit;
 const standardSurgeFrag = extend(LightningBulletType, {});
 standardSurgeFrag.lightningLength = 3.5 * 8 * 0.2;
 standardSurgeFrag.lightningLengthRand = 4;
-standardSurgeFrag.damage = 6;
+standardSurgeFrag.damage = 2;
 
 const standardSurge = new BasicBulletType(4.5, 50, "bullet");
 standardSurge.width = 6;
@@ -149,12 +149,12 @@ standardSurge.smokeEffect = Fx.shootBigSmoke;
 standardSurge.ammoMultiplier = 6;
 standardSurge.lifetime = 60;
 standardSurge.homingPower = 0.05;
-standardSurge.splashDamage = 75;
+standardSurge.splashDamage = 60;
 standardSurge.splashDamageRadius = 3 * 8;
-standardSurge.lightning = 5;
+standardSurge.lightning = 3;
 standardSurge.lightningLength = 7 * 8 * 0.2;
 standardSurge.lightningType = standardSurgeFrag;
-standardSurge.fragBullets = 4;
+standardSurge.fragBullets = 2;
 standardSurge.fragBullet = standardSurgeFrag;
 
 const plastSalvo = extendContent(ItemTurret, "plast-salvo", {});
@@ -192,6 +192,17 @@ const plastSalvoBuild = () => extendContent(ItemTurret.ItemTurretBuild, plastSal
                 });
             });
         }
+    },
+    useAmmo(){
+        if(this.cheating()) return this.peekAmmo();
+
+        var entry = this.ammo.peek();
+        entry.amount -= plastSalvo.ammoPerShot;
+        this.ejectEffects();
+        if(entry.amount <= 0) this.ammo.pop();
+        this.totalAmmo -= plastSalvo.ammoPerShot;
+        this.totalAmmo = Math.max(this.totalAmmo, 0);
+        return entry.type();
     },
     ejectEffects(){
         if(!this.isValid()) return;
