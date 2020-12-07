@@ -1,4 +1,4 @@
-Events.on(EventType.ClientLoadEvent, () => {
+Events.on(ClientLoadEvent, () => { //thx Qmel
 		try {
 			const rtfm = require("rtfm/library");
 
@@ -21,12 +21,12 @@ Events.on(EventType.ClientLoadEvent, () => {
 					    "so.. can i add page under new Label?",
 							"bruh.. this is array. don't be dump anymore"
 			    ], rtfm.pages["$block.mod.title"]);
-			};
+			}; //thx ilya
 
 
 
 			const blockArr = Vars.content.blocks().toArray();
-			for(var block of blockArr){
+			for(var block of blockArr){ //thx sk
 				var front = block;
 				if(front == null) break;
 				var str = "";
