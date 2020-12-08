@@ -8,6 +8,8 @@ Events.on(ClientLoadEvent, () => { //thx Qmel
       rtfm.addSection("$liquid.title", {});
       rtfm.addSection("$sector.title", {});
       rtfm.addSection("$planet.title", {});
+      rtfm.addSection("$block.mod.title", {});
+
       rtfm.addPage(Blocks.router.localizedName, [
           "random go brr",
           () => new Label(() => Mathf.random(0, 10) + "")              
@@ -40,7 +42,8 @@ Events.on(ClientLoadEvent, () => { //thx Qmel
                       if(i < arr.length - 1) str += "\n~";
                   }catch(ignore){}
               }
-              rtfm.addPage(selectedContent.localizedName, ["~{"+selectedContent.name+"}", "# "+selectedContent.localizedName, "", str], rtfm.pages["$"+bundleName+".title"]);
+              
+              rtfm.addPage(selectedContent.localizedName, ["~{"+((objArr == itemArr) ? "item-" : ((objArr == liquidArr) ? "liquid-" : ((objArr == sectorArr) ? "zone-" : ((objArr == planetArr) ? "planet-" : ""))))+selectedContent.name+"}", "# "+selectedContent.localizedName, "", str], rtfm.pages["$"+bundleName+".title"]);
           }
       }
       
