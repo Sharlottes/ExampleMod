@@ -2,13 +2,13 @@ Events.on(ClientLoadEvent, () => { //thx Qmel
     try {
       const rtfm = require("rtfm/library");
 
-			rtfm.addSection("$block.title", {});
-			rtfm.addSection("$unit.title", {});
-			rtfm.addSection("$item.title", {});
-			rtfm.addSection("$liquid.title", {});
-			rtfm.addSection("$sector.title", {});
-			rtfm.addSection("$planet.title", {});
-			rtfm.addSection("$block.mod.title", {});
+      rtfm.addSection("$block.title", {});
+      rtfm.addSection("$unit.title", {});
+      rtfm.addSection("$item.title", {});
+      rtfm.addSection("$liquid.title", {});
+      rtfm.addSection("$sector.title", {});
+      rtfm.addSection("$planet.title", {});
+      rtfm.addSection("$block.mod.title", {});
 
       rtfm.addPage(Blocks.router.localizedName, [
           "random go brr",
@@ -21,8 +21,6 @@ Events.on(ClientLoadEvent, () => { //thx Qmel
       const liquidArr = Vars.content.liquids().toArray();
       const sectorArr = Vars.content.sectors().toArray();
       const planetArr = Vars.content.planets().toArray();
-
-
 
       const scanPage = function(objArr, bundleName){
           const vanilaSection = rtfm.addSection("$vanila.title", {}, rtfm.pages["$"+bundleName+".title"]);
@@ -47,10 +45,11 @@ Events.on(ClientLoadEvent, () => { //thx Qmel
                       once = true;
                   }
               }
+
               for(var i=0; i<arr.length; i++){
                   if(arr[i] === "") continue;
                   try{
-                  		if((typeof front[arr[i]]) === "function") continue;
+                      if((typeof front[arr[i]]) === "function") continue;
                       str += arr[i];
                       str += (front[arr[i]] == null)?(": [lightgray]null[]"):((typeof front[arr[i]]) === "object")?(": [coral]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "number")?(": [sky]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "boolean")?(": [stat]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "undefined")?(": [darkgray]" + front[arr[i]] + "[]"):((typeof front[arr[i]]) === "string")?(": [green]" + front[arr[i]] + "[]"):(": [accent]" + front[arr[i]] + "[]");
 
@@ -58,19 +57,10 @@ Events.on(ClientLoadEvent, () => { //thx Qmel
                   }catch(ignore){}
               }
 
-
-							if(isMod && selectedContent.minfo.mod != null){
-                  //rtfm.addPage(selectedContent.minfo.mod.meta.displayName, {pages: {}}, rtfm.pages["$"+bundleName+".title"]);
-
-                  //rtfm.addSection(selectedContent.minfo.mod.meta.displayName, {}, rtfm.pages["$"+bundleName+".title"]);
+	      if(isMod && selectedContent.minfo.mod != null){
                   rtfm.addPage(selectedContent.localizedName, ["~" + "{" + ((objArr == itemArr) ? selectedContent.minfo.mod.meta.name + "-item-" : ((objArr == liquidArr) ? selectedContent.minfo.mod.meta.name + "-liquid-" : ((objArr == sectorArr) ? selectedContent.minfo.mod.meta.name + "-zone-" : ((objArr == planetArr) ? "-planet-" : "")))) + selectedContent.name + "}", "# "+selectedContent.localizedName, "", str], modSection);
-
-            	}else{
-                  //rtfm.addPage("$vanila.title", {pages: {}}, rtfm.pages["$"+bundleName+".title"]);
-
-                  //rtfm.addSection("$vanila.title", {}, rtfm.pages["$"+bundleName+".title"]);
-									rtfm.addPage(selectedContent.localizedName, ["~" + "{" + ((objArr == itemArr) ? "item-" : ((objArr == liquidArr) ? "liquid-" : ((objArr == sectorArr) ? "testmod-zone-" : ((objArr == planetArr) ? "testmod-planet-" : "")))) + selectedContent.name + "}", "# "+selectedContent.localizedName, "", str], vanilaSection);
-
+              }else{
+	       	  rtfm.addPage(selectedContent.localizedName, ["~" + "{" + ((objArr == itemArr) ? "item-" : ((objArr == liquidArr) ? "liquid-" : ((objArr == sectorArr) ? "testmod-zone-" : ((objArr == planetArr) ? "testmod-planet-" : "")))) + selectedContent.name + "}", "# "+selectedContent.localizedName, "", str], vanilaSection);
               }
           }
       }
