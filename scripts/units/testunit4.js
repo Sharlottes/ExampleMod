@@ -2,9 +2,9 @@
     //어빌리티
 const healColor = Color.valueOf("98ffa9");
 const healerColor = Color.valueOf("db401c");
-const spawnUnit = Vars.content.getByName(ContentType.unit, "fortress");
-const spawnUnit2 = Vars.content.getByName(ContentType.unit, "dagger");
-const spawnUnit3 = Vars.content.getByName(ContentType.unit, "pulsar");
+const spawnUnit = Vars.content.getByName(ContentType.unit, "arkyid");
+const spawnUnit2 = Vars.content.getByName(ContentType.unit, "reign");
+const spawnUnit3 = Vars.content.getByName(ContentType.unit, "corvus");
 const unitSpawn1 = new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0);
 const healField1 = new RepairFieldAbility(50, 2 * 60, 20 * 8);
     //엔티티
