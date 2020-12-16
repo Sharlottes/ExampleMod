@@ -1,4 +1,4 @@
-type: LaunchPad
+
 
 size: 5
 itemCapacity: 500
@@ -8,7 +8,7 @@ requirements: [
     titanium/500
     silicon/300
     lead/500
-    plastanium/160
+    scrap/1000
     graphite/350
 ]
 

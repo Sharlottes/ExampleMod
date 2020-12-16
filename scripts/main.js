@@ -10,11 +10,13 @@ require("blocks/power-processor");
 require("blocks/coredvalut");
 require("blocks/boostwater");
 require("blocks/plastsalvo");
+require("blocks/titanium-launch-pad")
 
 //experiement
 require("experiment/page");
 require("experiment/oregen");
 
+require("campaign/planet");
 
 print("Load Complete!");
 
