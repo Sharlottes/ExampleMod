@@ -1,5 +1,4 @@
-//units
-require("units/testunit4");
+
 //blocks
 require("blocks/activationmatter-weaver");
 require("blocks/atmospheric-cooler");
@@ -17,6 +16,9 @@ require("experiment/page");
 require("experiment/oregen");
 
 require("campaign/planet");
+
+//units
+require("units/testunit4");
 
 print("Load Complete!");
 
