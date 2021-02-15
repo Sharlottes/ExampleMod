@@ -20,6 +20,9 @@ require("experiment/oregen");
 //campaign
 require("campaign/planet");
 
+//units
+require("units/testunit4");
+
 print("Load Complete!");
 
 

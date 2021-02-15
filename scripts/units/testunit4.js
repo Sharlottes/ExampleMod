@@ -181,7 +181,7 @@ testBullet2.hitColor = healColor;
 
 testBullet3.trailSpacing = 20;
 testBullet3.damage = 1500;
-testBullet3.tileDamageMultiplier = 0.75;
+//testBullet3.tileDamageMultiplier = 0.75;
 testBullet3.speed = 750;
 testBullet3.lifetime = 150;
 testBullet3.hitShake = 6;
