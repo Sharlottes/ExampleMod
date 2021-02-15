@@ -1,5 +1,6 @@
 //units
 require("units/testunit4");
+
 //blocks
 require("blocks/activationmatter-weaver");
 require("blocks/atmospheric-cooler");
@@ -16,6 +17,7 @@ require("blocks/titanium-launch-pad")
 require("experiment/page");
 require("experiment/oregen");
 
+//campaign
 require("campaign/planet");
 
 print("Load Complete!");

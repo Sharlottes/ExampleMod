@@ -8,7 +8,6 @@ requirements: [
 ]
 
 hasShadow: false
-requiresWater: true
 placeableLiquid: true
 health: 50
 damage: 50
