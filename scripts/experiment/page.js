@@ -12,7 +12,6 @@ Events.on(ClientLoadEvent, () => { //thx Qmel
       rtfm.addSection("$weather.title", {});
       rtfm.addSection("$block.mod.title", {});
 
-      rtfm.addPage("Extend Tree", ["{testmod-extend-tree}"], rtfm.pages["$block.mod.title"]);
       rtfm.addPage("random zone", [
           "random go brr",
           () => new Label(prov(() => Mathf.random(0, 10) + ""))
