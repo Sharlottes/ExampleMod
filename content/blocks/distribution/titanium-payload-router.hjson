@@ -2,6 +2,7 @@ type: PayloadRouter
 
 moveTime: 120
 size: 7
+payloadLimit: 7
 requirements: [
     graphite/40
     copper/50

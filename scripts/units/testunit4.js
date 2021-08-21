@@ -8,9 +8,10 @@ const spawnUnit3 = Vars.content.getByName(ContentType.unit, "corvus");
 const unitSpawn1 = new UnitSpawnAbility(spawnUnit3, 15 * 60, 0, 0);
 const healField1 = new RepairFieldAbility(50, 2 * 60, 20 * 8);
     //엔티티
-const testunit4Entity = prov(() => extend(AmmoDistributePayloadUnit, {}));
+const testunit4Entity = prov(() => extend(PayloadUnit, {}));
 EntityMapping.nameMap.put("testunit4", testunit4Entity);
-const testunit4 = extendContent(UnitType, "testunit4", {});
+const testunit4 = extend(UnitType, "testunit4", {});
+testunit4.constructor = testunit4Entity;
     //탄환
 const testFragBullet1 = new BombBulletType(15, 24);
 const testFragBullet2 = new BasicBulletType(3, 20, "large-bomb");
@@ -68,8 +69,6 @@ const healIn = new Effect (60, e => { //유닛 치료 그래픽 효과
 
 
 //실행문
-
-
     //그래픽 효과
 unitSpawn1.spawnEffect = mendSpawn;
 healField1.healEffect = healIn;
@@ -230,34 +229,3 @@ testFragBullet2.shrinkY = 0.7;
 testFragBullet2.collides = false;
 testFragBullet2.splashDamage = 240;
 testFragBullet2.splashDamageRadius = 115;
-/*
-
-//로그 확인
-
-    //어빌리티
-print("HealColor" + " : " + healColor);
-print("spawnUnit" + " : " + spawnUnit);
-print("spawnUnit2" + " : " + spawnUnit2);
-print("spawnUnit3" + " : " + spawnUnit3);
-print("UnitSpawn1" + " : " + UnitSpawn1);
-print("healField1" + " : " + healField1);
-print("healField1.healEffect" + " : " + healField1.healEffect);
-    //엔티티
-print("testunit4Entity" + " : " + testunit4Entity);
-print("testunit4Entity" + " : " + testunit4);
-    //탄환
-print("testFragBullet1" + " : " + testFragBullet1);
-print("testBullet1" + " : " + testBullet1);
-print("testBullet2" + " : " + testBullet2);
-    //무기
-print(testWeapon1);
-print(testWeapon2);
-print(testWeapon3);
-    //그래픽 효과
-print("mendSpawn" + " : " + mendSpawn);
-print("healIn" + " : " + healIn);
-    //유닛
-print("testunit4.abilities" + " : " + testunit4.abilities);
-print("testunit4.weapons" + " : " + testunit4.weapons);
-
-*/

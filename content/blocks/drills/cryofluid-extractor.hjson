@@ -22,10 +22,6 @@ consumes: {
             titanium/2
         ]
     }
-    liquid: {
-        liquid: water
-        amount: 0.3
-    }
 }
 itemUseTime: 60
 pumpAmount: 0.2

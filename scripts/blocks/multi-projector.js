@@ -21,7 +21,8 @@ var multiProjector = new JavaAdapter(ForceProjector, {
   }
 }, "multi-projector");
 
-multiProjector.consumes.add(new ConsumeLiquidFilter(liquid => liquid.temperature <= 1 && liquid.flammability < 1.3, 0.5)).boost().update(false);
+var consLiq = multiProjector.consumes.add(new ConsumeLiquidFilter(liquid => liquid.temperature <= 1 && liquid.flammability < 1.3, 0.5)).boost();
+consLiq.update = false;
 
 multiProjector.buildType = () => extendContent(ForceProjector.ForceBuild, multiProjector, {
     servX1: 0,
@@ -265,14 +266,6 @@ multiProjector.buildType = () => extendContent(ForceProjector.ForceBuild, multiP
             //this.paramEntity = this;
             Groups.bullet.intersect(this.servX3 - servRealRadius3, this.servY3 - servRealRadius3, servRealRadius3 * 2, servRealRadius3 * 2, servCustomConsumer3);
         }
-
-
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-        print(this.servX1);
-        print(this.servY1);
-        print(multiProjector.servRadius1);
-        print(this.servBroken1);
     },
     realRadius(){
         return (multiProjector.radius + this.phaseHeat + multiProjector.phaseRadiusBoost) * this.radscl;

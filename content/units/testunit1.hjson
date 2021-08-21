@@ -63,7 +63,6 @@ weapons: [
         shootY: 15
         recoil: 12
         shake: 10
-        occlusion: 50
         cooldownTime: 30
         mirror: true
         bullet: {

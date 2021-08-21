@@ -1,7 +1,0 @@
-~{testmod-iron-wall}
-# iron wall
-~health: [sky]350[]
-~size: [sky]1[]
-~requirements: iron/[sky]6[]
-~category: [stat]defense[]
-~solid: [coral]false[]

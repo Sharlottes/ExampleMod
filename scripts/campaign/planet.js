@@ -1,6 +1,5 @@
 Events.on(ClientLoadEvent, () => {
     const sirius = new Planet("sirius", Planets.sun, 0, 0.5);
-    //sirius.generator = new SerpuloPlanetGenerator();
     sirius.mesh = new SunMesh(
                 sirius, 4,
                 5, 0.3, 1.7, 1.2, 1,
@@ -25,7 +24,6 @@ Events.on(ClientLoadEvent, () => {
     sirius.localizedName = "Sirius";
 
     const cornal = new Planet("cornal", Planets.sun, 0, 0.3);
-    //cornal.generator = new SerpuloPlanetGenerator();
     cornal.mesh = new SunMesh(
                 cornal, 4,
                 5, 0.3, 1.7, 1.2, 1,
@@ -109,22 +107,6 @@ Events.on(ClientLoadEvent, () => {
     grasia.startSector = 1;
     grasia.localizedName = "Grasia";
 
-    const tantrosia = new Planet("tantrosia", sirius, 4, 0.8);
-    tantrosia.generator = new TantrosPlanetGenerator();
-    tantrosia.mesh = new HexMesh(tantrosia, 8);
-    tantrosia.orbitRadius = 4;
-    tantrosia.orbitTime = 1.5 * 60;
-    tantrosia.rotateTime = 60;
-    tantrosia.bloom = true;
-    tantrosia.accessible = true;
-    tantrosia.hasAtmosphere = true;
-    tantrosia.atmosphereColor = Liquids.water.color.cpy().mul(Pal.lancerLaser);
-    tantrosia.atmosphereRadIn = 0.075;
-    tantrosia.atmosphereRadOut = 0.3;
-    tantrosia.startSector = 10;
-    tantrosia.alwaysUnlocked = true;
-    tantrosia.localizedName = "Tantrosia";
-
     Planets.sun.accessible = true;
     Planets.sun.localizedName = "[coral]Sun"
 
@@ -136,7 +118,7 @@ Events.on(ClientLoadEvent, () => {
 
 
 
-    const antarcticaSurvival = new SectorPreset("antarcticaSurvival", tantrosia, 1);
+    const antarcticaSurvival = new SectorPreset("antarcticaSurvival", grasia, 1);
     antarcticaSurvival.captureWave = 60;
     antarcticaSurvival.localizedName = "Antarctica Survival";
     antarcticaSurvival.difficulty = 6;
@@ -155,27 +137,27 @@ Events.on(ClientLoadEvent, () => {
     desertCanyon.difficulty = 5;
     desertCanyon.alwaysUnlocked = true;
 
-    const iceBreak = new SectorPreset("iceBreak", tantrosia, 2);
+    const iceBreak = new SectorPreset("iceBreak", grasia, 2);
     iceBreak.localizedName = "Ice Break";
     iceBreak.difficulty = 8;
     iceBreak.alwaysUnlocked = true;
 
-    const polarOutpost = new SectorPreset("polarOutpost", tantrosia, 3);
+    const polarOutpost = new SectorPreset("polarOutpost", grasia, 3);
     polarOutpost.localizedName = "Polar Outpost";
     polarOutpost.difficulty = 5;
     polarOutpost.alwaysUnlocked = true;
 
-    const saltirekArchipelago = new SectorPreset("saltirekArchipelago", Planets.serpulo, 4);
+    const saltirekArchipelago = new SectorPreset("saltirekArchipelago", grasia, 4);
     saltirekArchipelago.localizedName = "Saltirek Archipelago";
     saltirekArchipelago.difficulty = 5;
     saltirekArchipelago.alwaysUnlocked = true;
 
-    const saltirekLanding = new SectorPreset("saltirekLanding", Planets.serpulo, 5);
+    const saltirekLanding = new SectorPreset("saltirekLanding", grasia, 5);
     saltirekLanding.localizedName = "Saltirek Landing";
     saltirekLanding.difficulty = 7;
     saltirekLanding.alwaysUnlocked = true;
 
-    const sporeErosion = new SectorPreset("sporeErosion", Planets.serpulo, 8);
+    const sporeErosion = new SectorPreset("sporeErosion", grasia, 8);
     sporeErosion.localizedName = "Spore Erosion";
     sporeErosion.difficulty = 8;
     sporeErosion.alwaysUnlocked = true;

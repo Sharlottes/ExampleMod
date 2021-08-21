@@ -16,14 +16,6 @@ requirements: [
     thorium/120
 ]
 consumes: {
-    items: {
-        items: [
-            {
-                item: activation-matter
-                amount: 5
-            }
-        ]
-    }
     liquid: {
         liquid: cryofluid
         amount: 0.3

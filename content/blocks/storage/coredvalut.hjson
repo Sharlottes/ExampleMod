@@ -8,10 +8,6 @@ requirements: [
     silicon/500
 ]
 
-resupplyRate: 8
-resupplyRange: 120
-ammoAmount: 7
-
 buildVisibility: shown
 category: effect
 research: core-shard
